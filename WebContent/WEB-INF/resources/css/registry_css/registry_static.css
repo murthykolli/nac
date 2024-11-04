@@ -1,0 +1,170 @@
+	.reg_top_home_bgi_adj { position: relative; top: -6px; left: 0px; width:100%; height:100%; z-index:-1; }
+	.reg_home_image_ht_adj { position: relative; top: -6px; left: 0px; }
+	.reg_top_home_text_frame { position: absolute; margin-top: -27%; margin-left: 15%; }
+	.reg_top_home_text_frame_bg { padding: 30px 40px; height: 300px; width: 100%; background: rgba(255,255,255, 0.85); }
+	.reg_top_home_sml_text_tbl { position: relative; top: 30px; }
+	.reg_top_home_sml_text_adj { padding: 0.75em 2em; }
+	.reg_top_home_sml_tl_adj { padding: 0.75em 2em; margin-left: 20px; }
+	.reg_home_arrow_adj { position: relative; left: -3.58% }
+	.reg_smal_img_wh_adj { width: 65%; height: 65%; }
+	.reg_shop_smal_img_wh_adj { width: 100%; height: 100%; object-fit: scale-down; position: relative; object-position: 50% 50%; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+	.reg_top_home_rem_text_cl { font: bold 1.4em/2.25em Georgia; text-align: center; letter-spacing: 2px; }
+	.reg_top_home_fst_text_cl { font: bold 1.25em/2.25em Georgia; }
+	.reg_sh_main_txt_bdsp { border-bottom: 1px solid #595959; width: 20%; margin-bottom: 10px; margin-top: 0px; }
+	.reg_sub_sml_txt_cl { font: 500 1.06em/1.5em Georgia; letter-spacing: 1px; }
+	.reg_rb_text_img_frame { position: relative; margin-top: 70px; }
+	.reg_md_big_img_fsdsp { position: relative; top: 6px; left: 0px; width: 100%; height: 100%; z-index: -1; }
+	.reg_ben_frame_cldsp_cl { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+	.reg_ben_bg_fulfrm_dsp { padding: 22px 40px; height: 200px; width: 100%; background: rgba(255,255,255, 0.3); }
+	.reg_sub_sml_txtdsp_cl { font:bold 1.4em/1.25em Georgia; text-align: center; letter-spacing: 2px; }
+	.home_but_ladj { margin-left: 15px; }
+	.reg_ben_mid_frame_dspcl { margin-top: 30px; margin-bottom: 20px; }
+	.reg_ben_st_nor_font_cl { font: 500 1.3em/1.5em Georgia; }
+	.reg_ben_devide_line_cl { border-left: 1px solid #595959; border-right: 1px solid #595959; }
+	.reg_ben_smtext_dsp_cl { font: bold 1.4em/1.25em Georgia; text-align: center; letter-spacing: 2px; }
+	.reg_ben_main_top_adj { margin-top: 40p; padding: 2% }
+	.reg_ben_bell_text_frame_dsp { border-bottom: 1px solid #595959; width: 65%; margin-bottom: 0px; margin-top: 0px; }
+	.reg_brand_ret_main_page { border: 2px solid #595959; margin-left: 120px; margin-right: 120px; }
+	.reg_brand_width_adj_dsp { background: white; padding: 10px; text-align: center; width: 1000px; font: 2em/1.5em Georgia; letter-spacing: 2px; color: black; position: relative; top: -36px }
+	.reg_brand_frm_right_adj { margin-right: -20% }
+	.reg_brand_pad3_dsp { padding-top: 3% }
+	.rbran_pd_top1_dsp { padding-top: 1% }
+	.rbran_pd_toph_dsp { padding-top: 1.5% }
+	.rbran_pd_top2_dsp { padding-top: 2% }
+	.rbran_pad1_dsp { padding: 1% }
+	.reg_brand_bh_adj { height: 30px; }
+	.reg_brand_btext_adj { padding: 10px; text-align: right; font: 1em/1.5em Georgia; letter-spacing: 2px; color: black; position: relative; top: -10px; right: 20px; }
+	.reg_bot_more_textf { font: 1.35em/1.5em Georgia; }
+	.reg_bot_img_dsp { position: relative; top: 6px; left: 0px; width:100%; height:100%; }
+	.reg_home_bott_img_bg_text { position: absolute; margin-left: 62.5%; margin-top: -12.2%; }
+	.reg_home_bott_text_dsp { font: bold italic 1.65em/2.25em Georgia; text-align: center; letter-spacing: 2px; }
+	.reg_bott_button_adj { position: absolute; margin-left: 70%; margin-top: -8.8%; }
+	.reg_bott_height_dsp { height: 4px; }
+	.tbody_ove_x_dsp { overflow-x: hidden }
+	
+	.home_shop_hdtxt_fl { font: bold 1.5em/1.5em Georgia; letter-spacing: 1px; }
+	.home_shop_hdtxt_nl { font: bold 1.3em/1.5em Georgia; letter-spacing: 1px; }
+	.home_shop_hdtxt_bfl { font: bold 3em/1.5em Georgia; letter-spacing: 1px; }
+	.home_shop_hdtxt_bnl { font: bold 2.3em/1.5em Georgia; letter-spacing: 1px; }
+	.home_shop_smltxt_fl { font: 1.3em/1.25em Georgia; letter-spacing: 1px; }
+	.home_shop_smlxt_nl { font: 1.0em/1.25em Georgia; letter-spacing: 1px; }
+	.home_shop_text_bar_dsp { border-bottom: 1px solid black; width: 860px; margin: 0 auto;}
+	.home_shop_submit_butt { display: block; margin: 0px auto; vertical-align: middle; background-color: #ff3b3b; color: white; display: inline-block; text-transform: uppercase; padding: 0.7em 4em; outline: none; border: none; font: 500 1.2em/1.25em Georgia; letter-spacing: 1px; background-position:50% 50%; background-repeat:no-repeat; height: 100%; -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+	.home_shop_submit_butt:hover { background-color: #2c2c2c; }
+	
+	#home-page .design-process .steps .step .number { font: 700 1.2em/2.05em Georgia; color: white; margin: 35px 0 15px; height: 45px; width: 45px; border: 2px solid #595959; background-color: #595959; border-radius: 50%; display: inline-block; z-index: 100; box-shadow: 2px 3px 5px grey; }
+	#home-page .design-process .steps .step .name { font-size: 1.02em; color: #000; text-transform: uppercase; letter-spacing: 2px; text-align: center; }
+	#home-page .design-process .steps .step .name:after { content: ''; border-bottom: 1px solid #F83939; width: 30%; display: block; text-align: center; margin: 20px auto; }
+	#home-page .design-process .steps .step .description { color: black; text-align: center; text-transform: uppercase; font-size: 0.9em; letter-spacing: 1px; line-height:1.5em; width: 100%; min-height: 70px; align-items: center; display: flex; }
+	.desin_border_text_box_frame { background-color: #f7f9fc; box-shadow: 2px 3px 5px grey; padding: 15px; margin-left: 15px; margin-right: 15px; margin-top: -25px; }
+	#home-page .gift-cards .gift-card {  background-color: #f7f9fc; box-shadow: 2px 3px 7px #5f5f5f; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 200px; width: 40%; margin: 0 auto; padding-bottom: 20px; }
+	#home-page .gift-cards .gift-card p { font: 500 0.92em/1.25em Georgia; letter-spacing: 1px; width: 96%; text-align: center; color: black; }
+	.room_number_dsp { font: 700 1.5em/2.05em Georgia; color: white; margin: -30px 0 5px; height: 60px; width: 60px; border: 2px solid #595959; background-color: #595959; border-radius: 50%; display: inline-block; z-index: 100; box-shadow: 2px 3px 5px grey; }
+	#home-page .gift-cards .gift-card .images { position: relative; text-align: center; min-height: 100px; margin-top: 10px; }
+	#home-page .gift-cards .gift-card .images img { margin: -10px 0 20px; -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0), 0 0px 0px rgba(0,0,0,0); -moz-box-shadow: 0 0px 0px rgba(0,0,0,0), 0 0px 0px rgba(0,0,0,0); box-shadow: 0 0px 0px rgba(0,0,0,0), 0 0px 0px rgba(0,0,0,0); width: 100%; min-height: 100px; }
+	#home-page .gift-cards { display: flex; justify-content: space-between; align-items: center; background-color: #f2f2f2; margin: 64px 0; padding: 70px 10%; }
+	.top_hd_fl_text_dsp { font: bold 1.9em/1.5em Georgia; letter-spacing: 0px; color: black; }
+	.top_hd_nl_text_dsp { font: bold 1.5em/1.5em Georgia; letter-spacing: 1px; color: black; }
+	.top_hd_small_text_dsp { font: bold 1.0em/1.5em Georgia; letter-spacing: 1px; color: black; }
+	.top_sub_small_text_dsp { font: 1.0em/1.5em Georgia; letter-spacing: 1px; color: black; margin-right: 200px; }
+	.bud_style_text_dsp { font: bold 1.5em/1.75em Georgia; letter-spacing: 1px; color: black; }
+	.bud_rs_hd_text_dsp { font: bold 1.2em/1.75em Georgia; letter-spacing: 1px; color: white; background-color: #404040; padding: 16px 80px; border-radius: 10px; box-shadow: 2px 0px 10px rgba(1, 1, 1, 0.15); cursor: default; }
+	.bullet_dsp_cl { margin-left: 60px; margin-right: 40px; margin-top: 20px; font: 1.02em/1.5em Georgia; letter-spacing: 1px; color: black; }
+	.design_fun_text_dsp { font: italic 500 1.8em/1.25em Times New Roman; letter-spacing: 0px; color: #7f6000; }
+	
+	.foot_ls_small_font { font: bold 1.0em/1.25em Georgia; letter-spacing: 1px; color: white; }
+	.foot_ls_medium_font { font: bold 1.2em/1.25em Georgia; letter-spacing: 1px; color: white; }
+	.foot_ls_big_fl_font { font: bold 2.1em/1.25em Georgia; letter-spacing: 0px; color: white; }
+	.foot_ls_big_nl_font { font: bold 1.7em/1.25em Georgia; letter-spacing: 1px; color: white; }
+	.foot_ls_big_number_font { font: bold 2.2em/1.25em Georgia; letter-spacing: 1px; color: white; }
+	.get_start_text_dsp { font: italic bold 1.7em/1.25em Times New Roman; letter-spacing: 0px; color: white; }
+	
+	.desn_home_car_sub_butt { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 10px 50px; outline: none; border: none; font: 500 1.1em/1.25em Georgia; letter-spacing: 2px; } 
+	.desn_home_car_sub_butt:hover { background-color: white; color: red }
+
+	.bullet_dsp_cl ul li::before { content: "\2022"; color: black; font-weight: bold; display: inline-block; width: 1.6em; margin-left: -1.6em; margin-top: 30px;  }
+	.lm_desn_ser_top_frame_adj { margin-top: 25px; width: 72%; margin: 0 auto; }
+    .lm_desn_ser_top_sub_text_dsp { min-height: 70px; align-items: center; display: flex; }
+    .lm_desn_ser_top_sub_text_ht { min-height: 90px; align-items: center; display: flex; }
+    .lm_desn_ser_mid_frm_adj { position: relative; top: 95px; left: -14.50%; }
+    .ln_dsn_ser_full_frm_dsp { margin-top: 120px; overflow-x: hidden; }
+    .ln_ds_full_wd_dsp { position: relative; top: 0px; left: 0px; width: 1100px; height: 620px; z-index:-1; }
+    .ln_ds_bgn_frm_cl { background-color: #f2f2f2; height: 620px; }
+    .ln_ds_pdn_dsp { padding: 70px 40px; }
+    .lm_dsn_bott_frm_dsp { margin-top: 60px; overflow-x: hidden; }
+    .lm_dsn_bott_bgn_frm_dsp { background-color: #283d4d; min-height: 100px; padding: 50px; }
+    
+    .reg_search_img_resize_dsp { object-fit: cover; width: 65px; height: 65px; position: relative; overflow: hidden; border-radius: 50%; background-size: cover; display: block; background: #ece7e7; box-shadow: 1px 1px 1px #808080; -webkit-box-shadow: 1px 1px 1px #808080; -moz-box-shadow: 1px 1px 1px #808080; top: -10px; }
+    .fin_reg_body_adj { overflow-x: hidden }
+    .fr_rpd_frame_adj { padding-right: 0px; }
+    .finr_lpd_frame_adj { padding-left: 30px; }
+    .fr_fr_name_fdsp { font-weight: bold; text-align: center; }
+    .fnr_text_name_fdsp { text-align: center; margin-left: 30px; }
+    .find_reg_rg_no_dsp { margin-right: 30px; letter-spacing: 0px; }
+    .fr_ln_text_dsp { display: none; color: black; }
+    .fn_reg_no_txt { color: black; cursor: default; }
+    .fn_reg_height_adj_cl { height: 80px; }
+    
+    .hrben_top_frm_cl { position: relative; margin-top: 70px; }
+	.hrben_top_img_frm_cl { position: relative; top: 6px; left: 0px; width:100%; height:100%; z-index:-1; }
+	.hrben_top_div_frm_adj { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+	.hrben_top_bg_frm_adj { padding: 22px 40px; height: 200px; width: 100%; background: rgba(255,255,255, 0.3); }
+	.hrben_team_view_tb_adj { margin-top: 30px; margin-bottom: 20px; }
+	.hrben_hd_text_dsp { font:bold 1.4em/1.25em Georgia; text-align: center; letter-spacing: 2px; }
+	.hrben_tdes_frm_dsp { font: 500 1.06em/1.5em Georgia; letter-spacing: 1px; }
+	.hrben_text_font_dsp { font: 500 1.3em/1.5em Georgia; }
+	.hrben_bl_and_br_dsp { border-left: 1px solid #595959; border-right: 1px solid #595959; }
+	.hrben_big_text_dsp { font:bold 1.4em/1.25em Georgia; text-align: center; letter-spacing: 2px; }
+	.hrben_frme_padng_dsp { padding: 2%; }
+	.hrben_line_frame_adjn { border-bottom: 1px solid #595959; width: 65%; margin-bottom: 0px; margin-top: 0px; }
+	.hrben_bott_height_adj { height: 85px; }
+	.hrben_body_adj { overflow-x: hidden }
+	
+	.big_font_flt_dsp { font: bold 2.8em/1.5em Georgia; letter-spacing: 2px; color: black; }
+    .big_font_rt_dsp { font: bold 2.3em/1.5em Georgia; letter-spacing: 2px; color: black; }
+    .midium_font_flt_dsp { font: bold 2.27em/1.5em Georgia; letter-spacing: 2px; color: black; }
+    .midium_font_rt_dsp { font: bold 1.70em/1.5em Georgia; letter-spacing: 2px; color: black; }
+    .heading_font_rt_dsp { font: 600 1.20em/1.5em Georgia; letter-spacing: 2px; color: black; }
+    .hiw_link_dsplay { font: 500 1.0em/1.5em Georgia; color: #1a69b3; text-decoration: underline; }
+    .hiw_link_dsplay:hover { color: red; text-decoration: underline; }
+    
+    #reg_how_it_works_frame .step { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; min-height: 400px; }
+	#reg_how_it_works_frame .step img{  margin-left: 0%; }
+	#reg_how_it_works_frame .step .description{ width: 55%; margin-right: 2%; color: black; letter-spacing: 1px; font-family: Georgia; font-size: 1.23em; margin-top: -10px; border-left: 1px solid black; padding-left: 40px; padding-bottom: 13px; }
+	#reg_how_it_works_frame .step .description .title { font-size: 1.5em; margin-bottom: 18px; font-family: Georgia; font-weight:700; text-transform: uppercase; line-height: 2em; }
+	#reg_how_it_works_frame .step.right .vertical.line { margin: 0 auto auto 3.3%; }
+	#reg_how_it_works_frame .ruler img{ margin: 0 auto; width: auto; }
+
+
+	@media screen and (max-width: 768px) { 
+ 	.mobile{ display: block; } .desktop { display: none; } #reg_how_it_works_frame .step { flex-direction: column;   align-items: center;   justify-content: center;   text-align: center; } #reg_how_it_works_frame .step img, #reg_how_it_works_frame .step.right img{ order: 1;   margin: 16px auto !important;   width: auto;  max-width: 96%; } #reg_how_it_works_frame .step .description, #reg_how_it_works_frame .step.right .description { order: 3;   width: 94%;  text-align: center;   margin: 16px auto !important; } #reg_how_it_works_frame .horizontal.line { order: 2;   margin-bottom: 32px; }
+ 	}
+ 	@media screen and (max-width: 375px) { #reg_how_it_works_frame .step .description .title { font-size: 0.9em; } #reg_how_it_works_frame .step .description p { font-size: 0.7em; } .input_box_disp { width: 320px; }
+ 	}
+	.how_it_wks_top_adj_cl { margin-top: 15px; }
+	.how_it_wks_small_text_dsp_cl { font: 1.0em/1.5em Georgia; margin-top: 20px; letter-spacing: 0px; color: black; }
+	.how_it_wks_mt_mb_dsp_cl { margin-top: 20px; margin-bottom: 20px; }
+	.how_it_wks_bg_bord_dsp_cl { border: 1px solid #f2f2f2; padding: 20px 35px; background: #f2f2f2; }
+	.how_it_wks_mt_adj_cl { margin-top: -80px; }
+	.how_it_wks_pdnt_adj_cl { padding-top: 160px; }
+	
+	.reg_login_abs_cl { position: absolute; }
+    .reg_login_error_msg_dsp { color: red; font: 1.1em/1.25em Georgia; letter-spacing: 2px; }
+    .reg_login_logout_msg_dsp { font: 1.1em/1.25em Georgia; letter-spacing: 2px; white-space: nowrap; color: #2b81ee; position: absolute; margin-top: -10px; width: 280px; }
+    .reg_login_tr_height { height: 20px; }
+    .reg_login_tr_smheight { height: 12px; }
+    
+	.mob_home_shop_hdtxt_fl { font: bold 1.3em/1.20em Georgia; letter-spacing: 1px; }
+	.mob_home_shop_hdtxt_nl { font: bold 1.0em/1.20em Georgia; letter-spacing: 1px; }
+	.mob_home_shop_hdtxt_bfl { font: bold 2.0em/1.20em Georgia; letter-spacing: 1px; }
+	.mob_home_shop_hdtxt_bnl { font: bold 1.4em/1.20em Georgia; letter-spacing: 1px; }
+	.mob_home_shop_smltxt_fl { font: 1.3em/1.25em Georgia; letter-spacing: 1px; }
+	.mob_home_shop_smlxt_nl { font: 0.95em/1.25em Georgia; letter-spacing: 1px; }
+	.mob_home_shop_text_bar_dsp { border-bottom: 1px solid black; width: 300px; margin: 0 auto;}
+	.mob_home_shop_submit_butt { display: block; margin: 0px auto; vertical-align: middle; background-color: #ff3b3b; color: white; display: inline-block; text-transform: uppercase; padding: 0.6em 3em; outline: none; border: none; font: 500 1.0em/1.25em Georgia; letter-spacing: 1px; background-position:50% 50%; background-repeat:no-repeat; height: 100%; -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+	.mob_home_shop_submit_butt:hover { background-color: #2c2c2c; }
+	.mob_reg_shop_smal_img_wh_adj { width: 290px; height: 100%; object-fit: scale-down; position: relative; object-position: 50% 50%; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); margin-top: 30px; }
+	.home_top_smltxt_dsp { font:bold 0.9em/1.25em Georgia; text-transform: lowercase; }
+    
+	
+	

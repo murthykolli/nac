@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!DOCTYPE urlrewrite
+    PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+    "http://www.tuckey.org/res/dtds/urlrewrite2.6.dtd">
+    
+<urlrewrite>
+<rule>
+<name>Domain Name Check for nookandcove.com</name>
+<condition name="host" operator="equal">^nookandcove.com</condition>
+<from>^(.*)$</from>
+<to type="redirect">http://www.nookandcove.com$1</to>
+</rule>
+</urlrewrite>

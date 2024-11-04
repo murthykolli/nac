@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: /admin_module/
+Disallow: /designer_module/
+Sitemap: https://nookandcove.com/sitemap.xml

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+			http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<context:component-scan base-package="com.nookandcove.controller"/>
+	<mvc:annotation-driven />
+		
+<!-- Tiles Configure -->
+	
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.tiles2.TilesView</value>
+		</property>
+	</bean>
+	
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles.xml</value>
+			</list>
+		</property>
+	</bean>		
+	
+<!-- With out using Tiles -->
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">		
+		<property name="prefix">
+			<value>/WEB-INF/view/</value>
+		</property>
+		
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>		
+	
+<!-- Configure to plugin JSON as request and response in method handler -->
+
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="jsonMessageConverter"/>
+			</list>
+		</property>
+	</bean>	
+	
+<!-- Configure bean to convert JSON to POJO and vice versa -->
+
+	<bean id="jsonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+	</bean>		
+	
+	<!--Live Data base -->
+	
+	<!-- <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://34.207.163.173:3306/ncdb?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"></property>
+		<property name="username" value="pmadmin"></property>
+		<property name="password" value="NCDBmf0rt3*"></property>
+		<property name="initialSize" value="1"></property>
+		<property name="maxActive" value="110"></property>
+		<property name="testWhileIdle" value="true" />
+		<property name="validationQuery" value="select 1"/>		
+	</bean> -->
+	
+	<!--Test Data base -->
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/ncdb?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"></property>
+		<property name="username" value="pmadmin"></property>
+		<property name="password" value="NCDBmf0rt3*"></property>
+		<property name="initialSize" value="1"></property>
+		<property name="maxActive" value="110"></property>
+		<property name="testWhileIdle" value="true" />
+		<property name="validationQuery" value="select 1"/>		
+	</bean>
+		
+	<mvc:annotation-driven/>
+	
+<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+
+	<bean id="hibernatetemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+<!--Annotation Session Factory Bean -->
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>				
+			</props>
+		</property>		
+		
+<!--Model Property -->
+
+		<property name="annotatedClasses">
+			<list>
+				<value>com.nookandcove.model.GiftInfoSaving</value>
+				<value>com.nookandcove.model.ClientInfoSaving</value>
+				<value>com.nookandcove.model.UserInformation</value>
+				<value>com.nookandcove.model.DesignerInfoSaving</value>
+				<value>com.nookandcove.model.ClientUploadedSpaceImagesSaving</value>
+				<value>com.nookandcove.model.ClientUploadedInspireImagesSaving</value>
+				<value>com.nookandcove.model.AdminAssignClientInfoToDesignerSaving</value>
+				<value>com.nookandcove.model.ClientDesignerMessageInfoSaving</value>
+				<value>com.nookandcove.model.AdminDesignerMessageInfoSaving</value>
+				<value>com.nookandcove.model.AddClientProductsToCartSaving</value>
+				<value>com.nookandcove.model.ItemsListForSpaceInfo</value>
+				<value>com.nookandcove.model.RegistrantInformationSaving</value>
+				<value>com.nookandcove.model.PromoCodeInfoSaving</value>
+				<value>com.nookandcove.model.ShoppingCartPaymentInfoSaving</value>
+				<value>com.nookandcove.model.ClientPackageAndRenderingPaymentInfoSaving</value>
+				<value>com.nookandcove.model.FurnitureSpecsProductsAccPackSaving</value>
+				<value>com.nookandcove.model.FurnitureSpecsProductsFullRoomPackSaving</value>
+				<value>com.nookandcove.model.AdminPurchasesInfoSaving</value>
+				<value>com.nookandcove.model.RegistryRoomFundsInfoSaving</value>
+				<value>com.nookandcove.model.GuestRoomFundPaymentInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantPaymentInfoSaving</value>
+				<value>com.nookandcove.model.DesignerEditableCalendarInfoSaving</value>
+				<value>com.nookandcove.model.AdminRegistryConceptBoardsSaving</value>
+				<value>com.nookandcove.model.AdminRegistryConceptBoardsFurnitureSpecsSaving</value>
+				<value>com.nookandcove.model.RegistryRoomFundsPaymentInfoSaving</value>
+				<value>com.nookandcove.model.AdminRegistryFinishingTouchesProductsInfoSaving</value>
+				<value>com.nookandcove.model.GuestUserPaymentInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantShippingInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantCustomGiftCardCodeSaving</value>
+				<value>com.nookandcove.model.RegistryCashFundsInfoSaving</value>
+				<value>com.nookandcove.model.RegistryCashFundsPaymentInfoSaving</value>
+				<value>com.nookandcove.model.GuestRegistryCashFundsPaymentInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantCashFundBankAccountInfoSaving</value>				
+				<value>com.nookandcove.model.RegistrantConceptBoardsContributedProductsInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantConceptBoardsIndividualProductsInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantConceptBoardsContributedPaymentSaving</value>
+				<value>com.nookandcove.model.RegistrantConceptBoardsIndividualPaymentSaving</value>
+				<value>com.nookandcove.model.GuestConceptBoardsContributedPaymentSaving</value>
+				<value>com.nookandcove.model.GuestConceptBoardsIndividualPaymentSaving</value>
+				<value>com.nookandcove.model.ShopUserPaymentInfoSaving</value>
+				<value>com.nookandcove.model.ShopConceptBoardsProductsInfoSaving</value>
+				<value>com.nookandcove.model.ShopReferralUsersInfoSaving</value>
+				<value>com.nookandcove.model.ReferralNookAndCoveStoreCreditInfoSaving</value>
+				<value>com.nookandcove.model.ReferralCustomGiftCardsInfoSaving</value>
+				<value>com.nookandcove.model.ReferralVisaGiftCardsInfoSaving</value>
+				<value>com.nookandcove.model.ReferralVisaCustomGiftCardInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantFinishingTouchesContributedProductsInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantFinishingTouchesContributedPaymentSaving</value>
+				<value>com.nookandcove.model.RegistrantFinishingTouchesIndividualProductsInfoSaving</value>
+				<value>com.nookandcove.model.RegistrantFinishingTouchesIndividualPaymentSaving</value>
+				<value>com.nookandcove.model.ShopFinishingTouchesProductsInfoSaving</value>
+				<value>com.nookandcove.model.GuestFinishingTouchesContributedPaymentSaving</value>
+				<value>com.nookandcove.model.GuestFinishingTouchesIndividualPaymentSaving</value>					
+			</list>
+		</property>		
+	</bean>
+	
+<!-- Content Negotiation Manager Factory Bean -->
+	
+	<bean id="contentManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+        <property name="favorPathExtension" value="true"/>
+        <property name="ignoreAcceptHeader" value="true" />
+        <property name="defaultContentType" value="text/html" />
+        <property name="useJaf" value="false"/>
+        <property name="mediaTypes">
+	    	<map>
+	        	<entry key="html" value="text/html" />
+	            <entry key="json" value="application/json" />
+	            <entry key="xml" value="application/xml" />
+	        </map>
+        </property>
+    </bean>
+        
+<!--Service Impl -->
+
+    <bean id="UserInformationService" class="com.nookandcove.serviceimpl.UserInformationServiceImpl"/>
+    <bean id="ClientInfoSavingService" class="com.nookandcove.serviceimpl.ClientInfoSavingServiceImpl"/>
+    <bean id="GiftInfoSavingService" class="com.nookandcove.serviceimpl.GiftInfoSavingServiceImpl"/>
+    <bean id="DesignerInfoSavingService" class="com.nookandcove.serviceimpl.DesignerInfoSavingServiceImpl"/>
+    <bean id="AdminInfoSavingService" class="com.nookandcove.serviceimpl.AdminInfoSavingServiceImpl"/>
+    <bean id="RegistryInfoSavingService" class="com.nookandcove.serviceimpl.RegistryInfoSavingServiceImpl"/>
+    <bean id="PortfolioService" class="com.nookandcove.serviceimpl.PortfolioServiceImpl"/>
+    <bean id="PaymentGatewayService" class="com.nookandcove.serviceimpl.PaymentGatewayServiceImpl"/>
+    <bean id="AdminRegistryInfoSavingService" class="com.nookandcove.serviceimpl.AdminRegistryInfoSavingServiceImpl"/>
+    <bean id="GuestRegistryInfoSavingService" class="com.nookandcove.serviceimpl.GuestRegistryInfoSavingServiceImpl"/>
+    <bean id="DesignerRegistryInfoSavingService" class="com.nookandcove.serviceimpl.DesignerRegistryInfoSavingServiceImpl"/>
+    <bean id="RegistrantMyAccountService" class="com.nookandcove.serviceimpl.RegistrantMyAccountServiceImpl"/>
+    <bean id="AdminRegistryDataDisplayService" class="com.nookandcove.serviceimpl.AdminRegistryDataDisplayServiceImpl"/>
+    <bean id="RegistrantCashFundsService" class="com.nookandcove.serviceimpl.RegistrantCashFundsServiceImpl"/>
+    <bean id="RegistryConceptBoardsService" class="com.nookandcove.serviceimpl.RegistryConceptBoardsServiceImpl"/>
+    <bean id="RegistryShopService" class="com.nookandcove.serviceimpl.RegistryShopServiceImpl"/>
+    <bean id="AdminShopDataDisplayService" class="com.nookandcove.serviceimpl.AdminShopDataDisplayServiceImpl"/>
+    <bean id="ShopReferralUsersInfoSavingService" class="com.nookandcove.serviceimpl.ShopReferralUsersInfoSavingServiceImpl"/>
+    <bean id="AdminReferralUserInfoSavingService" class="com.nookandcove.serviceimpl.AdminReferralUserInfoSavingServiceImpl"/>
+    <bean id="RegistryPaymentGatewayService" class="com.nookandcove.serviceimpl.RegistryPaymentGatewayServiceImpl"/>
+    <bean id="RegistryFinishingTouchesService" class="com.nookandcove.serviceimpl.RegistryFinishingTouchesServiceImpl"/>
+    <bean id="ShopFinishingTouchesService" class="com.nookandcove.serviceimpl.ShopFinishingTouchesServiceImpl"/>
+               
+<!--DAO Impl -->
+
+    <bean id="GiftInfoSavingDAO" class="com.nookandcove.daoimpl.GiftInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+		
+    <bean id="ClientInfoSavingDAO" class="com.nookandcove.daoimpl.ClientInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+    <bean id="UserInformationDAO" class="com.nookandcove.daoimpl.UserInformationDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+    <bean id="DesignerInfoSavingDAO" class="com.nookandcove.daoimpl.DesignerInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ClientUploadedSpaceImagesSavingDAO" class="com.nookandcove.daoimpl.ClientUploadedSpaceImagesSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ClientUploadedInspireImagesSavingDAO" class="com.nookandcove.daoimpl.ClientUploadedInspireImagesSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="AdminAssignClientInfoToDesignerSavingDAO" class="com.nookandcove.daoimpl.AdminAssignClientInfoToDesignerSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ClientDesignerMessageInfoSavingDAO" class="com.nookandcove.daoimpl.ClientDesignerMessageInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="AdminDesignerMessageInfoSavingDAO" class="com.nookandcove.daoimpl.AdminDesignerMessageInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="AddClientProductsToCartSavingDAO" class="com.nookandcove.daoimpl.AddClientProductsToCartSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ItemsListForSpaceInfoDAO" class="com.nookandcove.daoimpl.ItemsListForSpaceInfoDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantInformationSavingDAO" class="com.nookandcove.daoimpl.RegistrantInformationSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="PromoCodeInfoSavingDAO" class="com.nookandcove.daoimpl.PromoCodeInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ShoppingCartPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.ShoppingCartPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ClientPackageAndRenderingPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.ClientPackageAndRenderingPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="FurnitureSpecsProductsAccPackSavingDAO" class="com.nookandcove.daoimpl.FurnitureSpecsProductsAccPackSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="FurnitureSpecsProductsFullRoomPackSavingDAO" class="com.nookandcove.daoimpl.FurnitureSpecsProductsFullRoomPackSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="AdminPurchasesInfoSavingDAO" class="com.nookandcove.daoimpl.AdminPurchasesInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistryRoomFundsInfoSavingDAO" class="com.nookandcove.daoimpl.RegistryRoomFundsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="GuestRoomFundPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.GuestRoomFundPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.RegistrantPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="DesignerEditableCalendarInfoSavingDAO" class="com.nookandcove.daoimpl.DesignerEditableCalendarInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>	
+	
+	<bean id="AdminRegistryConceptBoardsSavingDAO" class="com.nookandcove.daoimpl.AdminRegistryConceptBoardsSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="AdminRegistryConceptBoardsFurnitureSpecsSavingDAO" class="com.nookandcove.daoimpl.AdminRegistryConceptBoardsFurnitureSpecsSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistryRoomFundsPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.RegistryRoomFundsPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="AdminRegistryFinishingTouchesProductsInfoSavingDAO" class="com.nookandcove.daoimpl.AdminRegistryFinishingTouchesProductsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="GuestUserPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.GuestUserPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>	
+	
+	<bean id="RegistrantShippingInfoSavingDAO" class="com.nookandcove.daoimpl.RegistrantShippingInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantCustomGiftCardCodeSavingDAO" class="com.nookandcove.daoimpl.RegistrantCustomGiftCardCodeSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistryCashFundsInfoSavingDAO" class="com.nookandcove.daoimpl.RegistryCashFundsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistryCashFundsPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.RegistryCashFundsPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="GuestRegistryCashFundsPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.GuestRegistryCashFundsPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantCashFundBankAccountInfoSavingDAO" class="com.nookandcove.daoimpl.RegistrantCashFundBankAccountInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	
+	<bean id="RegistrantConceptBoardsContributedProductsInfoSavingDAO" class="com.nookandcove.daoimpl.RegistrantConceptBoardsContributedProductsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantConceptBoardsIndividualProductsInfoSavingDAO" class="com.nookandcove.daoimpl.RegistrantConceptBoardsIndividualProductsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantConceptBoardsContributedPaymentSavingDAO" class="com.nookandcove.daoimpl.RegistrantConceptBoardsContributedPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantConceptBoardsIndividualPaymentSavingDAO" class="com.nookandcove.daoimpl.RegistrantConceptBoardsIndividualPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="GuestConceptBoardsContributedPaymentSavingDAO" class="com.nookandcove.daoimpl.GuestConceptBoardsContributedPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="GuestConceptBoardsIndividualPaymentSavingDAO" class="com.nookandcove.daoimpl.GuestConceptBoardsIndividualPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ShopUserPaymentInfoSavingDAO" class="com.nookandcove.daoimpl.ShopUserPaymentInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ShopConceptBoardsProductsInfoSavingDAO" class="com.nookandcove.daoimpl.ShopConceptBoardsProductsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ShopReferralUsersInfoSavingDAO" class="com.nookandcove.daoimpl.ShopReferralUsersInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ReferralNookAndCoveStoreCreditInfoSavingDAO" class="com.nookandcove.daoimpl.ReferralNookAndCoveStoreCreditInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ReferralCustomGiftCardsInfoSavingDAO" class="com.nookandcove.daoimpl.ReferralCustomGiftCardsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ReferralVisaGiftCardsInfoSavingDAO" class="com.nookandcove.daoimpl.ReferralVisaGiftCardsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ReferralVisaCustomGiftCardInfoSavingDAO" class="com.nookandcove.daoimpl.ReferralVisaCustomGiftCardInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantFinishingTouchesContributedPaymentSavingDAO" class="com.nookandcove.daoimpl.RegistrantFinishingTouchesContributedPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantFinishingTouchesContributedProductsInfoSavingDAO" class="com.nookandcove.daoimpl.RegistrantFinishingTouchesContributedProductsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantFinishingTouchesIndividualPaymentSavingDAO" class="com.nookandcove.daoimpl.RegistrantFinishingTouchesIndividualPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="RegistrantFinishingTouchesIndividualProductsInfoSavingDAO" class="com.nookandcove.daoimpl.RegistrantFinishingTouchesIndividualProductsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="ShopFinishingTouchesProductsInfoSavingDAO" class="com.nookandcove.daoimpl.ShopFinishingTouchesProductsInfoSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="GuestFinishingTouchesContributedPaymentSavingDAO" class="com.nookandcove.daoimpl.GuestFinishingTouchesContributedPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="GuestFinishingTouchesIndividualPaymentSavingDAO" class="com.nookandcove.daoimpl.GuestFinishingTouchesIndividualPaymentSavingDAOImpl">
+    	<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> 
+    	<property name="maxUploadSize" value="50971520" />
+    	<property name="maxInMemorySize" value="50485760" />
+    </bean> 
+      
+	<mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
+	<mvc:resources mapping="/outsideImages/**" location="file:///var/www/html/data/ncimages/"/>
+	
+	<mvc:resources mapping="/robots.txt" location="/WEB-INF/robots.txt" order="0"/>
+	<mvc:resources mapping="/sitemap.xml" location="/WEB-INF/sitemap.xml" order="0"/>	
+	
+	</beans>

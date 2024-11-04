@@ -1,0 +1,32 @@
+package com.nookandcove.dao;
+
+import java.util.List;
+
+import com.nookandcove.model.RegistrantConceptBoardsIndividualProductsInfoSaving;
+
+@SuppressWarnings("rawtypes")
+public interface RegistrantConceptBoardsIndividualProductsInfoSavingDAO {
+	
+	public void save(RegistrantConceptBoardsIndividualProductsInfoSaving transientInstance);
+	
+	public List registryConceptBoardsIndividualDataCheckInDB(long registrantUserId, long adminRegCBFSpecsSavingId);
+	public RegistrantConceptBoardsIndividualProductsInfoSaving registryConceptBoardsIndividualDataTakeFromDB(long registrantUserId, long adminRegCBFSpecsSavingId);
+	public List registryConceptBoardsIndividualTotalDataTakeFromDB(long registrantUserId);
+	public RegistrantConceptBoardsIndividualProductsInfoSaving registryConceptBoardsIndividualDataEditInDB(long registrantUserId, long regiCBIndividualProductSavingId);
+	public List regConceptBoardsIndividualLandingDeleteDataCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryMyAccountCBIndividualDataDisplay(long registrantUserId);
+	
+	public RegistrantConceptBoardsIndividualProductsInfoSaving registryConceptBoardsIndividualDataForAdminGiftReceived(long regiCBIndividualProductSavingId);
+	public List adminCBIndividualPricesListFromInDB(long productInfoSavingId, String productsPrice);
+	public RegistrantConceptBoardsIndividualProductsInfoSaving adminCBIndividualPricesUpdatedInDB(long productInfoSavingId, String productsPrice);
+	
+	
+	public void delete(RegistrantConceptBoardsIndividualProductsInfoSaving persistentInstance);	
+	public RegistrantConceptBoardsIndividualProductsInfoSaving findById(long id);	
+	public List<RegistrantConceptBoardsIndividualProductsInfoSaving> findByExample(RegistrantConceptBoardsIndividualProductsInfoSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public RegistrantConceptBoardsIndividualProductsInfoSaving merge(RegistrantConceptBoardsIndividualProductsInfoSaving detachedInstance);	
+	public void attachDirty(RegistrantConceptBoardsIndividualProductsInfoSaving instance);	
+	public void attachClean(RegistrantConceptBoardsIndividualProductsInfoSaving instance);
+}

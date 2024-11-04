@@ -1,0 +1,34 @@
+package com.nookandcove.dao;
+
+import java.util.List;
+
+import com.nookandcove.model.RegistrantConceptBoardsContributedProductsInfoSaving;
+
+@SuppressWarnings("rawtypes")
+public interface RegistrantConceptBoardsContributedProductsInfoSavingDAO {
+	
+	public void save(RegistrantConceptBoardsContributedProductsInfoSaving transientInstance);
+	
+	public List registryConceptBoardsContributedDataCheckInDB(long registrantUserId, long adminRegCBFSpecsSavingId);
+	public RegistrantConceptBoardsContributedProductsInfoSaving registryConceptBoardsContributedDataTakeFromDB(long registrantUserId, long adminRegCBFSpecsSavingId);
+	public List registryConceptBoardsContributedTotalDataTakeFromDB(long registrantUserId);
+	public List registryMyAccountCBContributedDataDisplay(long registrantUserId);
+	public RegistrantConceptBoardsContributedProductsInfoSaving registryConceptBoardsContributedDataEditInDB(long registrantUserId, long regiCBCotributedProductSavingId);
+	public List regConceptBoardsContributedLandingDeleteDataCheckInDB(long registrantUserId, long regiCBCotributedProductSavingId);
+	public List registryConceptBoardsContributedMyAccountsDataDisplay(long registrantUserId);
+	
+	public List guestRegAdminCBContributedGiftReceivedData(String contributedStatusRef);
+	public RegistrantConceptBoardsContributedProductsInfoSaving registryCBGiftReceivedContributedPaymentDataTakeFromDB(long regiCBCotributedProductSavingId);
+	
+	public List adminCBContributedPricesListFromInDB(long productInfoSavingId, String productsPrice);
+	public RegistrantConceptBoardsContributedProductsInfoSaving adminCBContributedPricesUpdatedInDB(long productInfoSavingId, String productsPrice);
+	
+	public void delete(RegistrantConceptBoardsContributedProductsInfoSaving persistentInstance);	
+	public RegistrantConceptBoardsContributedProductsInfoSaving findById(long id);	
+	public List<RegistrantConceptBoardsContributedProductsInfoSaving> findByExample(RegistrantConceptBoardsContributedProductsInfoSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public RegistrantConceptBoardsContributedProductsInfoSaving merge(RegistrantConceptBoardsContributedProductsInfoSaving detachedInstance);	
+	public void attachDirty(RegistrantConceptBoardsContributedProductsInfoSaving instance);	
+	public void attachClean(RegistrantConceptBoardsContributedProductsInfoSaving instance);
+}

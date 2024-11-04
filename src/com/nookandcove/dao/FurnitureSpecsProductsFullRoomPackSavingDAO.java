@@ -1,0 +1,56 @@
+package com.nookandcove.dao;
+
+import java.util.List;
+import com.nookandcove.model.FurnitureSpecsProductsFullRoomPackSaving;
+
+@SuppressWarnings("rawtypes")
+public interface FurnitureSpecsProductsFullRoomPackSavingDAO {
+	
+	public void save(FurnitureSpecsProductsFullRoomPackSaving transientInstance);
+	public void delete(FurnitureSpecsProductsFullRoomPackSaving persistentInstance);
+	public List furnitureSpecsConceptAndRendFRRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	
+	public List furnitureSpecsConcept1FRRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsConcept1FRRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecsConcept1FRRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsConcept1FRRowDeleteFromDB(long furSpecsProdSavingId);
+	
+	public List furnitureSpecsConcept2FRRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsConcept2FRRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecsConcept2FRRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsConcept2FRRowDeleteFromDB(long furSpecsProdSavingId);
+	
+	public List furnitureSpecsRoomRenderingFRRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsRoomRenderingFRRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecsRoomRenderingFRRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsRoomRenderingFRRowDeleteFromDB(long furSpecsProdSavingId);
+	
+	public List furnitureSpecs2ndRenderingFRRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecs2ndRenderingFRRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecs2ndRenderingFRRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecs2ndRenderingFRRowDeleteFromDB(long furSpecsProdSavingId);
+	
+	public List furnitureSpecsRevisedRenderingFRRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsRevisedRenderingFRRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecsRevisedRenderingFRRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving furnitureSpecsRevisedRenderingFRRowDeleteFromDB(long furSpecsProdSavingId);
+	public int updateAdminFullRmAssignedNewDesignerInfoInDB(long clientInfoSavingId, long designerInfoSavingId);
+	
+	public FurnitureSpecsProductsFullRoomPackSaving findById(long id);
+	public List<FurnitureSpecsProductsFullRoomPackSaving> findByExample(FurnitureSpecsProductsFullRoomPackSaving instance);
+	public List findByProperty(String propertyName, Object value);
+	public List findAll();
+	public FurnitureSpecsProductsFullRoomPackSaving merge(FurnitureSpecsProductsFullRoomPackSaving detachedInstance);
+	public void attachDirty(FurnitureSpecsProductsFullRoomPackSaving instance);
+	public void attachClean(FurnitureSpecsProductsFullRoomPackSaving instance);
+	
+	public List addProductToCartRowVerificationInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving addProductToCartRowUpdateInDB(long furSpecsProdSavingId);
+	public List adminFurnitureSpecsOrderStatusRowVerInDB(long furSpecsProdSavingId);
+	public List adminFurnitureSpecsDeliveryStatusRowVerInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsFullRoomPackSaving adminPurchasesFullRmProductListDisplay(long furSpecsProdSavingId);
+	public int furnitureSpecsRoomRenderingFRProdRowDeleteFromDB(long furSpecsProdSavingId);
+	public int furnitureSpecs2ndRenderingFRProdRowDeleteFromDB(long furSpecsProdSavingId);
+	public int furnitureSpecsRevisedRenderingFRProdRowDeleteFromDB(long furSpecsProdSavingId);
+	
+}

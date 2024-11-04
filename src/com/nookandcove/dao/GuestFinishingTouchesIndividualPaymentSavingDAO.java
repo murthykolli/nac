@@ -1,0 +1,43 @@
+package com.nookandcove.dao;
+
+import java.sql.Timestamp;
+import java.util.List;
+
+import com.nookandcove.model.GuestFinishingTouchesIndividualPaymentSaving;
+
+@SuppressWarnings("rawtypes")
+public interface GuestFinishingTouchesIndividualPaymentSavingDAO {
+	
+	public void save(GuestFinishingTouchesIndividualPaymentSaving transientInstance);
+	
+	public List registryFinishingTouchesIndividualPriceCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public GuestFinishingTouchesIndividualPaymentSaving registryFinishingTouchesIndividualPriceTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryFinishingTouchesIndividualPaymentStatusCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public GuestFinishingTouchesIndividualPaymentSaving registryFinishingTouchesIndividualPaymentStatusTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryFinishingTouchesIndividualTotalCartCount(long registrantUserId);
+	public GuestFinishingTouchesIndividualPaymentSaving regFinishingTouchesIndividualCartCountFromDB(long registrantUserId);
+	public List registryFTIndividualAddCartPaymentDataCheckInDB(long registrantUserId, long regFTIndividualPaymentSavingId);
+	public GuestFinishingTouchesIndividualPaymentSaving registryFTIndividualAddCartPaymentDataTakeFromDB(long registrantUserId, long regFTIndividualPaymentSavingId);
+	public int regFinishingTouchesIndividualPaymentInfoUpdateInDB(long registrantUserId, long regPaymentInfoSavingId, String returnType, Timestamp currentDate);
+	public List regFinishingTouchesIndividualMyAccountDataDisplay(long registrantUserId);
+	public List guestStoreCreditFTIndividualRemoveDuplicateRows(long registrantUserId);
+	public List guestStoreCreditFTIndividualAmountCheckingInDB(long registrantUserId, long regSelectedProdsId);
+	
+	public List guestFTMyAccountIndividualPaymentDataCheckInDB(long registrantUserId, long cbIndividualPaymentSavingId);
+	public GuestFinishingTouchesIndividualPaymentSaving guestFTMyAccountIndividualPaymentDataTakeFromDB(long registrantUserId, long cbIndividualPaymentSavingId);
+	
+	public List guestAdminFTIndividualGiftReceivedDataTakeFromDB(String individualStatusRef);
+	public GuestFinishingTouchesIndividualPaymentSaving guestFTGiftReceivedIndividualPaymentDataTakeFromDB(long cbIndividualPaymentSavingId);
+	
+	public List guestAdminFTIndividualNoActionGiftReceivedData();
+	public List guestAdminFTIndividualConvertedToCreditGiftReceivedData();
+	
+	public void delete(GuestFinishingTouchesIndividualPaymentSaving persistentInstance);	
+	public GuestFinishingTouchesIndividualPaymentSaving findById(long id);	
+	public List<GuestFinishingTouchesIndividualPaymentSaving> findByExample(GuestFinishingTouchesIndividualPaymentSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public GuestFinishingTouchesIndividualPaymentSaving merge(GuestFinishingTouchesIndividualPaymentSaving detachedInstance);	
+	public void attachDirty(GuestFinishingTouchesIndividualPaymentSaving instance);	
+	public void attachClean(GuestFinishingTouchesIndividualPaymentSaving instance);
+}

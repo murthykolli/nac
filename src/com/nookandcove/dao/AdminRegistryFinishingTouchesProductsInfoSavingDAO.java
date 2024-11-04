@@ -1,0 +1,41 @@
+package com.nookandcove.dao;
+
+import java.util.List;
+
+import com.nookandcove.model.AdminRegistryFinishingTouchesProductsInfoSaving;
+
+@SuppressWarnings("rawtypes")
+public interface AdminRegistryFinishingTouchesProductsInfoSavingDAO {
+	
+	public void save(AdminRegistryFinishingTouchesProductsInfoSaving transientInstance);
+	public List adminRegFinishingTouchesSelectedProductsListFromDB(String regFTSelectedCategory);
+	
+	public List adminRegFinishingTouchesCategoriesProductsTakeFromDB();
+	public List adminRegFurnitureSpecEditProductsInDB();
+	public List adminSelectedCheckBoxFinishingTouchesListFromDB(String prodCategory);
+	public List adminRegFinishingTouchesEditProductsInDB(long adminRegFinishingTouchesSavingId);
+	public AdminRegistryFinishingTouchesProductsInfoSaving adminRegFinishingTouchesEditProductsDataTakeFromDB(long adminRegFinishingTouchesSavingId);
+	public AdminRegistryFinishingTouchesProductsInfoSaving adminShopRegFinishingTouchesProductsDataTakeFromDB(long adminRegFinishingTouchesSavingId);
+	
+	public List registrantAdminRegFurnitureSpecEditProductsInDB();
+	public List registrantAdminSelectedCheckBoxFinishingTouchesListFromDB(String prodCategory);
+	public List registrantAdminRegFinishingTouchesEditProductsInDB(long adminRegFinishingTouchesSavingId);
+	public AdminRegistryFinishingTouchesProductsInfoSaving registrantAdminRegFinishingTouchesEditProductsDataTakeFromDB(long adminRegFinishingTouchesSavingId);
+	
+//	DESIGNER SIDE DISPLAY CODE
+	public List designerRegFTFurnitureSpecEditProductsInDB();
+	public List designerRegFinishingTouchesEditProductsInDB(long adminRegFinishingTouchesSavingId);
+	public AdminRegistryFinishingTouchesProductsInfoSaving designerRegFinishingTouchesEditProductsDataTakeFromDB(long adminRegFinishingTouchesSavingId);
+	public List designerSelectedCheckBoxFinishingTouchesListFromDB(String prodCategory);
+	public List designerRegFinishingTouchesApprovalStatusInDB(long adminRegFinishingTouchesSavingId);
+	
+	
+	public void delete(AdminRegistryFinishingTouchesProductsInfoSaving persistentInstance);	
+	public AdminRegistryFinishingTouchesProductsInfoSaving findById(long id);	
+	public List<AdminRegistryFinishingTouchesProductsInfoSaving> findByExample(AdminRegistryFinishingTouchesProductsInfoSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public AdminRegistryFinishingTouchesProductsInfoSaving merge(AdminRegistryFinishingTouchesProductsInfoSaving detachedInstance);	
+	public void attachDirty(AdminRegistryFinishingTouchesProductsInfoSaving instance);	
+	public void attachClean(AdminRegistryFinishingTouchesProductsInfoSaving instance);
+}

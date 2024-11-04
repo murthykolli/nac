@@ -1,0 +1,45 @@
+package com.nookandcove.dao;
+
+import java.sql.Timestamp;
+import java.util.List;
+
+import com.nookandcove.model.RegistrantFinishingTouchesIndividualPaymentSaving;
+
+@SuppressWarnings("rawtypes")
+public interface RegistrantFinishingTouchesIndividualPaymentSavingDAO {
+	
+	public void save(RegistrantFinishingTouchesIndividualPaymentSaving transientInstance);
+	
+	public List registryFinishingTouchesIndividualPriceCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryFinishingTouchesIndividualPaymentStatusCheck(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantFinishingTouchesIndividualPaymentSaving registryFinishingTouchesIndividualPriceTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantFinishingTouchesIndividualPaymentSaving registryFinishingTouchesIndividualPaymentStatusValue(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryFinishingTouchesIndividualPaymentStatusCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantFinishingTouchesIndividualPaymentSaving registryFinishingTouchesIndividualPaymentStatusTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryFinishingTouchesIndividualTotalCartCount(long registrantUserId);
+	public RegistrantFinishingTouchesIndividualPaymentSaving regFinishingTouchesIndividualCartCountFromDB(long registrantUserId);
+	public List registryFTIndividualAddCartPaymentDataCheckInDB(long registrantUserId, long regFTIndividualPaymentSavingId);
+	public RegistrantFinishingTouchesIndividualPaymentSaving registryFTIndividualAddCartPaymentDataTakeFromDB(long registrantUserId, long regFTIndividualPaymentSavingId);
+	public int regFinishingTouchesIndividualPaymentInfoUpdateInDB(long registrantUserId, long regPaymentInfoSavingId, String returnType, Timestamp currentDate);
+	public List regFinishingTouchesIndividualMyAccountDataDisplay(long registrantUserId);
+	public List registrantStoreCreditFTIndividualRemoveDuplicateRows(long registrantUserId);
+	public List registrantStoreCreditFTIndividualAmountCheckingInDB(long registrantUserId, long regSelectedProdsId);
+	
+	public List registryFTMyAccountIndividualPaymentDataCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantFinishingTouchesIndividualPaymentSaving registryFTMyAccountIndividualPaymentDataTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	
+	public List registryAdminFTIndividualGiftReceivedDataTakeFromDB(String individualStatusRef);
+	public RegistrantFinishingTouchesIndividualPaymentSaving registryFTGiftReceivedIndividualPaymentDataTakeFromDB(long cbIndividualProductSavingId);
+	
+	public List registryAdminFTIndividualNoActionGiftReceivedData();
+	public List registryAdminFTIndividualConvertedToCreditGiftReceivedData();
+	
+	public void delete(RegistrantFinishingTouchesIndividualPaymentSaving persistentInstance);	
+	public RegistrantFinishingTouchesIndividualPaymentSaving findById(long id);	
+	public List<RegistrantFinishingTouchesIndividualPaymentSaving> findByExample(RegistrantFinishingTouchesIndividualPaymentSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public RegistrantFinishingTouchesIndividualPaymentSaving merge(RegistrantFinishingTouchesIndividualPaymentSaving detachedInstance);	
+	public void attachDirty(RegistrantFinishingTouchesIndividualPaymentSaving instance);	
+	public void attachClean(RegistrantFinishingTouchesIndividualPaymentSaving instance);
+}

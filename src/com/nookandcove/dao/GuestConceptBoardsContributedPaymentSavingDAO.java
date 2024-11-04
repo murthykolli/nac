@@ -1,0 +1,44 @@
+package com.nookandcove.dao;
+
+import java.sql.Timestamp;
+import java.util.List;
+
+import com.nookandcove.model.GuestConceptBoardsContributedPaymentSaving;
+
+@SuppressWarnings("rawtypes")
+public interface GuestConceptBoardsContributedPaymentSavingDAO {
+	
+	public void save(GuestConceptBoardsContributedPaymentSaving transientInstance);
+	
+	public List registryConceptBoardsContributedPriceCheckInDB(long registrantUserId, long cbContributedProductSavingId);
+	public GuestConceptBoardsContributedPaymentSaving registryConceptBoardsContributedPriceTakeFromDB(long registrantUserId, long cbContributedProductSavingId);
+	public List registryConceptBoardsContributedPaymentStatusCheckInDB(long registrantUserId, long cbContributedProductSavingId);
+	public GuestConceptBoardsContributedPaymentSaving registryConceptBoardsContributedPaymentStatusTakeFromDB(long registrantUserId, long cbContributedProductSavingId);
+	public List registryConceptBoardsPaymentDataCheckInDB(long registrantUserId, long cbContributedProductSavingId);
+	public GuestConceptBoardsContributedPaymentSaving registryConceptBoardsPaymentDataTakeFromDB(long registrantUserId, long cbContributedProductSavingId);
+	public List registryConceptBoardsContributedTotalCartCount(long registrantUserId);
+	
+	public List registryCBContributedAddCartPaymentDataCheckInDB(long registrantUserId, long cbContributedPaymentSavingId);
+	public GuestConceptBoardsContributedPaymentSaving registryCBContributedAddCartPaymentDataTakeFromDB(long registrantUserId, long cbContributedPaymentSavingId);
+	public int regConceptBoardsContributedPaymentInfoUpdateInDB(long registrantUserId, long regPaymentInfoSavingId, String returnType, Timestamp currentDate);
+	public List regConceptBoardsContributedMyAccountDataDisplay(long registrantUserId);
+	public List guestStoreCreditCBContributeRemoveDuplicateRows(long registrantUserId);
+	public List guestStoreCreditCBContributeAmountCheckingInDB(long registrantUserId, long regSelectedProdsId);
+	public List guestGiftReceivedCBContributeRemoveDuplicateRows(long registrantUserId);
+	public List guestGiftReceivedCBContributeAmountCheckingInDB(long registrantUserId, long regSelectedProdsId);
+	public GuestConceptBoardsContributedPaymentSaving guestCBContributeGiftReceivedStatusFromDB(long registrantUserId, long regSelectedProdsId);
+	public List guestCBGiftReceivedContributedPaymentInfoList(long regSelectedProdsId);
+	public GuestConceptBoardsContributedPaymentSaving guestCBGiftReceivedContributedPaymentDataTakeFromDB(long regSelectedProdsId);
+	public List guestCBContributedGRConToCreditDataList(long registrantUserId, long regSelectedProdsId, String contributedStatusRef);
+	public List guestMyAccountCBPaymentContributedPriceFromDB(long registrantUserId, long regSelectedProdsId);
+	public List guestMyAccountCBPaymentContributedInBOTDPriceFromDB(long registrantUserId, long regSelectedProdsId);
+	
+	public void delete(GuestConceptBoardsContributedPaymentSaving persistentInstance);	
+	public GuestConceptBoardsContributedPaymentSaving findById(long id);	
+	public List<GuestConceptBoardsContributedPaymentSaving> findByExample(GuestConceptBoardsContributedPaymentSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public GuestConceptBoardsContributedPaymentSaving merge(GuestConceptBoardsContributedPaymentSaving detachedInstance);	
+	public void attachDirty(GuestConceptBoardsContributedPaymentSaving instance);	
+	public void attachClean(GuestConceptBoardsContributedPaymentSaving instance);
+}

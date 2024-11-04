@@ -1,0 +1,32 @@
+package com.nookandcove.dao;
+
+import java.util.List;
+
+import com.nookandcove.model.RegistrantFinishingTouchesIndividualProductsInfoSaving;
+
+@SuppressWarnings("rawtypes")
+public interface RegistrantFinishingTouchesIndividualProductsInfoSavingDAO {
+	
+	public void save(RegistrantFinishingTouchesIndividualProductsInfoSaving transientInstance);
+	
+	public List registryFinishingTouchesIndividualDataCheckInDB(long registrantUserId, long adminRegFTFSpecsSavingId);
+	public RegistrantFinishingTouchesIndividualProductsInfoSaving registryFinishingTouchesIndividualDataTakeFromDB(long registrantUserId, long adminRegFTFSpecsSavingId);
+	public List registryFinishingTouchesIndividualTotalDataTakeFromDB(long registrantUserId);
+	public RegistrantFinishingTouchesIndividualProductsInfoSaving registryFinishingTouchesIndividualDataEditInDB(long registrantUserId, long regiFTIndividualProductSavingId);
+	public List regFinishingTouchesIndividualLandingDeleteDataCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryMyAccountFTIndividualDataDisplay(long registrantUserId);
+	
+	public RegistrantFinishingTouchesIndividualProductsInfoSaving registryFinishingTouchesIndividualDataForAdminGiftReceived(long regiFTIndividualProductSavingId);
+	public List adminFTIndividualPricesListFromInDB(long productInfoSavingId, String productsPrice);
+	public RegistrantFinishingTouchesIndividualProductsInfoSaving adminFTIndividualPricesUpdatedInDB(long productInfoSavingId, String productsPrice);
+	
+	
+	public void delete(RegistrantFinishingTouchesIndividualProductsInfoSaving persistentInstance);	
+	public RegistrantFinishingTouchesIndividualProductsInfoSaving findById(long id);	
+	public List<RegistrantFinishingTouchesIndividualProductsInfoSaving> findByExample(RegistrantFinishingTouchesIndividualProductsInfoSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public RegistrantFinishingTouchesIndividualProductsInfoSaving merge(RegistrantFinishingTouchesIndividualProductsInfoSaving detachedInstance);	
+	public void attachDirty(RegistrantFinishingTouchesIndividualProductsInfoSaving instance);	
+	public void attachClean(RegistrantFinishingTouchesIndividualProductsInfoSaving instance);
+}

@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+<!--Home Page Before Login Tiles-->
+	<definition name="homeTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/home_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="homeRedirectionBL" extends="homeTilesBL">
+		<put-attribute name="title" value="Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/home.jsp" />
+	</definition>
+	
+	<definition name="desnRegistryInfoRedBL" extends="homeTilesBL">
+		<put-attribute name="title" value="Registry Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/01_design_registry_info.jsp" />
+	</definition>
+	
+	<definition name="frequentlyAskedQuestionsRedBL" extends="homeTilesBL">
+		<put-attribute name="title" value="Frequently Asked Questions - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/02_frequently_asked_questions.jsp" />
+	</definition>
+	
+	<definition name="termsRedirectionBL" extends="homeTilesBL">
+		<put-attribute name="title" value="Terms - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/03_terms.jsp" />
+	</definition>
+	
+	<definition name="privacyPolicyRedirectionBL" extends="homeTilesBL">
+		<put-attribute name="title" value="Privacy Policy - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/04_privacy_policy.jsp" />
+	</definition>
+	
+<!--Home Page After Login Tiles-->
+	<definition name="homeTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/home_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="homeRedirectionAL" extends="homeTilesAL">
+		<put-attribute name="title" value="Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/home.jsp" />
+	</definition>
+	
+	<definition name="desnRegistryInfoRedAL" extends="homeTilesAL">
+		<put-attribute name="title" value="Registry Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/01_design_registry_info.jsp" />
+	</definition>
+	
+	<definition name="frequentlyAskedQuestionsRedAL" extends="homeTilesAL">
+		<put-attribute name="title" value="Frequently Asked Questions - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/02_frequently_asked_questions.jsp" />
+	</definition>
+	
+	<definition name="termsRedirectionAL" extends="homeTilesAL">
+		<put-attribute name="title" value="Terms - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/03_terms.jsp" />
+	</definition>
+	
+	<definition name="privacyPolicyRedirectionAL" extends="homeTilesAL">
+		<put-attribute name="title" value="Privacy Policy - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/home/04_privacy_policy.jsp" />
+	</definition>
+	
+<!--Log In Tiles-->
+	<definition name="logInTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/login_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="logInRedirection" extends="logInTilesBL">
+		<put-attribute name="title" value="Log In - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/logininfo/login.jsp" />
+	</definition>
+	
+	<definition name="forgotPasswordRedirection" extends="logInTilesBL">
+		<put-attribute name="title" value="Forgot Password - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/logininfo/forgot_password.jsp" />
+	</definition>
+	
+	<definition name="securityPinRedirection" extends="logInTilesBL">
+		<put-attribute name="title" value="Security PIN - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/logininfo/security_pin_for_forgot_password.jsp" />
+	</definition>	
+	
+<!--How It Works Before Login Tiles-->
+	<definition name="howItWorksTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/how_it_works_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="howItWorksRedirectionBL" extends="howItWorksTilesBL">
+		<put-attribute name="title" value="How It Works - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/how_it_works/how_it_works.jsp" />
+	</definition>	
+		
+<!--How It Works Before Login Tiles-->
+	<definition name="howItWorksTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/how_it_works_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="howItWorksRedirectionAL" extends="howItWorksTilesAL">
+		<put-attribute name="title" value="How It Works - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/how_it_works/how_it_works.jsp" />
+	</definition>	
+		
+<!--Price Before Login Tiles-->
+	<definition name="priceTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/price_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="priceRedirectionBL" extends="priceTilesBL">
+		<put-attribute name="title" value="Price - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/price/01_price_home_page.jsp" />
+	</definition>
+		
+<!--Price After Login Tiles-->
+	<definition name="priceTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/price_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="priceRedirectionAL" extends="priceTilesAL">
+		<put-attribute name="title" value="Price - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/price/01_price_home_page.jsp" />
+	</definition>	
+				
+<!--Portfolio Before Login Tiles-->
+	<definition name="portfolioTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/portfolio_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="portfolioRedirectionBL" extends="portfolioTilesBL">
+		<put-attribute name="title" value="Gallery - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gallery/01_gallery_home.jsp" />
+	</definition>
+		
+<!--Portfolio After Login Tiles-->
+	<definition name="portfolioTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/portfolio_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="portfolioRedirectionAL" extends="portfolioTilesAL">
+		<put-attribute name="title" value="Gallery - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gallery/01_gallery_home.jsp" />
+	</definition>	
+	
+<!--Gift Before Login Tiles-->
+	<definition name="giftTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/gift_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="giftCardRedirectionBL" extends="giftTilesBL">
+		<put-attribute name="title" value="Gift Card Creation - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/01_gift_card_creation.jsp" />
+	</definition>
+	
+	<definition name="giftCardPaymentRedirectionBL" extends="giftTilesBL">
+		<put-attribute name="title" value="Gift Card Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/02_gift_card_payment.jsp" />
+	</definition>
+	
+	<definition name="giftInfoDisplayBL" extends="giftTilesBL">
+		<put-attribute name="title" value="Gift Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/03_gift_card_payment_approved.jsp" />
+	</definition>
+	
+	<definition name="promoCodePaymentRedirectionBL" extends="giftTilesBL">
+		<put-attribute name="title" value="Gift Card Promo Code Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/04_zero_gift_card_payment.jsp" />
+	</definition>
+		
+<!--Gift After Login Tiles-->
+	<definition name="giftTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/gift_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="giftCardRedirectionAL" extends="giftTilesAL">
+		<put-attribute name="title" value="Gift Card Creation - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/01_gift_card_creation.jsp" />
+	</definition>
+	
+	<definition name="giftCardPaymentRedirectionAL" extends="giftTilesAL">
+		<put-attribute name="title" value="Gift Card Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/02_gift_card_payment.jsp" />
+	</definition>	
+	
+	<definition name="giftInfoDisplayAL" extends="giftTilesAL">
+		<put-attribute name="title" value="Gift Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/03_gift_card_payment_approved.jsp" />
+	</definition>
+	
+	<definition name="promoCodePaymentRedirectionAL" extends="giftTilesAL">
+		<put-attribute name="title" value="Gift Card Promo Code Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/gift/04_gift_card_promocode_payment.jsp" />
+	</definition>	
+		
+<!--Room Information Before Login Tiles-->	
+	<definition name="roomInfoTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/room_information_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="typeOfRoomDisplayBL" extends="roomInfoTilesBL">
+		<put-attribute name="title" value="Space Selection - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/1_selected_room.jsp" />
+	</definition>
+	
+	<definition name="selectedBySpaceBL" extends="roomInfoTilesBL">
+		<put-attribute name="title" value="Selected Style - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/2_selected_style.jsp" />
+	</definition>
+	
+	<definition name="selectedByStyleBL" extends="roomInfoTilesBL">
+		<put-attribute name="title" value="Allocate Budget - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/3_selected_design_package.jsp" />
+	</definition>
+	
+	<definition name="registrationRedirection" extends="roomInfoTilesBL">
+		<put-attribute name="title" value="Registration - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/logininfo/registration.jsp" />
+	</definition>
+	
+<!--Room Information After Login Tiles-->	
+	<definition name="roomInfoTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/room_information_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/user/footer.jsp" />
+	</definition>
+
+	<definition name="loginDetailsVerification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Selected Space - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/1_selected_room.jsp" />
+	</definition>
+	
+	<definition name="typeOfRoomDisplayAL" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Space Selection - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/1_selected_room.jsp" />
+	</definition>
+			
+	<definition name="selectedBySpaceAL" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Selected Style - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/2_selected_style.jsp" />
+	</definition>
+	
+	<definition name="selectedByStyleAL" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Allocate Budget - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/3_selected_design_package.jsp" />
+	</definition>
+	
+	<definition name="quesPaymentRedirection" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/4_0_questionnaire_payment.jsp" />
+	</definition>
+	
+	<definition name="zeroQuesPaymentRedirection" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Zero Payment Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/4_2_zero_questionnaire_payment.jsp" />
+	</definition>
+	
+	<definition name="quesPaymentSuccessRedirection" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Payment Success - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/4_1_questionnaire_payment_success.jsp" />
+	</definition>
+	
+	<definition name="allocateForBudgetAL" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Budget For Space - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/5_allocate_budget.jsp" />
+	</definition>	
+	
+	<definition name="dimensionsRedirection" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Room Dimensions - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/6_room_dimensions.jsp" />
+	</definition>
+	
+	<definition name="feelAboutColorRedirection" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Feel About Color - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/7_selected_color.jsp" />
+	</definition>	
+		
+	<definition name="needItemsForSpaceRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Selected Items For Space - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/8_selected_furniture.jsp" />
+	</definition>
+	
+	<definition name="typeOfArtAppealsRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Type Of Art Appeals - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/9_0_selected_art.jsp" />
+	</definition>
+	
+	<definition name="moreAboutSpaceUploadImages" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="More About Space - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/9_1_selected_my_room.jsp" />
+	</definition>
+	
+	<definition name="shareInspirationUploadImages" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Share Inspiration Images - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/9_2_selected_inspiration.jsp" />
+	</definition>
+	
+	<definition name="justAboutFinishedQuestionnaireRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Done With The Questionnaire - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/9_3_just_about_finished_the_questionnaire.jsp" />
+	</definition>
+	
+	<definition name="doneWithQuestionnaireRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Just About Finished Questionnaire - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/select_questionnaire/9_4_done_with_the_questionnaire.jsp" />
+	</definition>
+		
+	<definition name="myShoppingCartDisplay" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Payment Cart Information Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/0_my_shopping_cart_information.jsp" />
+	</definition>
+	
+	<definition name="shippingInfoDisplay" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Shipping Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/1_shipping_information.jsp" />
+	</definition>
+	
+	<definition name="billingInfoDisplay" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Billing Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/2_billing_information.jsp" />
+	</definition>
+	
+	<definition name="reviewAndPlaceOrder" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Review And Place Order - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/3_review_and_place_order.jsp" />
+	</definition>
+	
+	<definition name="changeShippingInfo" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Change Shipping Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/4_change_shipping_information.jsp" />
+	</definition>
+	
+	<definition name="changeBillingInfo" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Change Billing Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/5_change_billing_information.jsp" />
+	</definition>
+	
+	<definition name="cartPaymentInfoForYesDisplay" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Cart Payment Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/6_0_cart_payment_info_for_yes_selection.jsp" />
+	</definition>
+	
+	<definition name="zeroCartPaymentInfoForYesDisplay" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Zero Cart Payment Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/6_1_zero_cart_payment_info_for_yes_selection.jsp" />
+	</definition>
+	
+	<definition name="cartPaymentInfoForNoDisplay" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Cart Payment Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/7_cart_payment_info_for_no_selection.jsp" />
+	</definition>
+	
+	<definition name="finishedReviewPlaceOrder" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Finished Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/payment_info/8_finished_review_place_order_payment.jsp" />
+	</definition>
+		
+<!--Room Information Modification Tiles-->	
+	<definition name="roomModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Room Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/1_room_modification.jsp" />
+	</definition>
+	
+	<definition name="styleModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Style Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/2_style_modification.jsp" />
+	</definition>
+	
+	<definition name="budgetModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Budget Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/3_budget_modification.jsp" />
+	</definition>
+	
+	<definition name="dimensionsModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Dimensions Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/4_dimensions_modification.jsp" />
+	</definition>
+	
+	<definition name="colorModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Color Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/5_color_modification.jsp" />
+	</definition>
+	
+	<definition name="furnitureModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Furniture Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/6_furniture_modification.jsp" />
+	</definition>
+	
+	<definition name="artModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Art Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/7_art_modification.jsp" />
+	</definition>
+	
+	<definition name="myRoomModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="My Room Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/8_my_room_modification.jsp" />
+	</definition>
+	
+	<definition name="inspirationModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Inspiration Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/9_inspiration_modification.jsp" />
+	</definition>	
+	
+<!--Room Information Management Tiles-->
+	<definition name="roomsInformationModification" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="My Rooms Information Modification - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/1_room_management.jsp" />
+	</definition>
+	
+	<definition name="roomManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Room Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/1_room_management.jsp" />
+	</definition>
+	
+	<definition name="styleManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Style Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/2_style_management.jsp" />
+	</definition>
+	
+	<definition name="budgetManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Budget Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/3_budget_management.jsp" />
+	</definition>
+	
+	<definition name="dimensionsManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Dimensions Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/4_dimensions_management.jsp" />
+	</definition>
+	
+	<definition name="colorManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Color Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/5_color_management.jsp" />
+	</definition>
+	
+	<definition name="furnitureManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Furniture Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/6_furniture_management.jsp" />
+	</definition>
+	
+	<definition name="artManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Art Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/7_art_management.jsp" />
+	</definition>
+	
+	<definition name="myRoomManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="My Room Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/8_my_room_management.jsp" />
+	</definition>
+	
+	<definition name="inspirationManagement" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Inspiration Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/room_modifications/9_inspiration_management.jsp" />
+	</definition>
+		
+<!--Accessories Package Concepts Tiles-->
+	<definition name="accDesnPackConceptsTextRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Accessories Package Concepts Text - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/1_acc_desn_pack_concepts_text.jsp" />
+	</definition>
+	
+	<definition name="accDesnPackConceptsRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Accessories Package Concepts - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/2_acc_desn_pack_concepts.jsp" />
+	</definition>
+	
+	<definition name="reverseConceptsRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Accessories Package Reverse Concepts - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/3_acc_desn_pack_concepts_notification.jsp" />
+	</definition>
+	
+	<definition name="accDesnPackFinalConceptsTextRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Accessories Package Final Concepts Text - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/4_acc_desn_pack_final_concepts_text.jsp" />
+	</definition>
+	
+	<definition name="accDesnPackFinalConceptsRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Accessories Package Final Concepts - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/5_acc_desn_pack_final_concepts.jsp" />
+	</definition>
+	
+	<definition name="accDesnPackShopTheLookTextRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Accessories Package Shop The Look Text - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/6_acc_desn_pack_shop_the_look_text.jsp" />
+	</definition>
+	
+	<definition name="concept1ViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Concept1 View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/9_1_concept1_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="concept2ViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Concept2 View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/9_2_concept2_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="finalConceptViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Final Concept View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/9_3_final_concept_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="finalViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/acc_pack_concepts/9_4_view_shop_products.jsp" />
+	</definition>
+			
+<!--Full Room Design Package Concepts Tiles-->
+	<definition name="fullRoomDesnPackConceptsTextRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Concepts Text - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/1_full_rm_desn_pack_concepts_text.jsp" />
+	</definition>
+	
+	<definition name="fullRoomPackConceptsRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Concepts - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/2_full_rm_desn_pack_concepts.jsp" />
+	</definition>
+	
+	<definition name="fullRoomRenderingPleaseRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Rendering Please - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/3_full_rm_desn_rendering_concepts.jsp" />
+	</definition>
+	
+	<definition name="fullRoomSecRenderingTextRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package 2nd Rendering Text - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/4_1_full_rm_desn_second_rendering_text.jsp" />
+	</definition>
+	
+	<definition name="fullRoomSecRenderingPaymentRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package 2nd Rendering Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/4_2_full_rm_desn_second_rendering_payment.jsp" />
+	</definition>
+	
+	<definition name="zeroFullRoomSecRenderingPaymentRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Zero Full Room Design Package 2nd Rendering Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/4_2_1_zero_full_rm_desn_second_rendering_payment.jsp" />
+	</definition>
+	
+	<definition name="fullRoomSecRenderingPaymentSuccessRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package 2nd Rendering Payment Success - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/4_3_full_rm_desn_second_rendering_payment_success.jsp" />
+	</definition>
+	
+	<definition name="fullRmDesnSingleSecondRenderingConcepts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Single 2nd Rendering Concepts - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/4_4_full_rm_desn_single_second_rendering_concepts.jsp" />
+	</definition>
+	
+	<definition name="fullRmDesnDoubleSecondRenderingConcepts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Double 2nd Rendering Concepts - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/4_5_full_rm_desn_double_second_rendering_concepts.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesPackRenderingTextRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Rendering Text - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/5_full_rm_desn_rendering_text.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesPackSingleRenderingInfoRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Single Rendering Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/6_1_full_rm_desn_single_rendering_info.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesPackDoubleRenderingInfoRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Double Rendering Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/6_2_full_rm_desn_double_rendering_info.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesPackSingleRenderingInfoDisplayRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Single Rendering Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/6_3_full_rm_desn_single_rendering_info_display.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesPackDoubleRenderingInfoDisplayRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Double Rendering Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/6_4_full_rm_desn_double_rendering_info_display.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesPackSingleRenderingReqRevisionRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Single Rendering Request Revision - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/7_1_full_rm_desn_single_revision_rendering_info.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesPackDoubleRenderingReqRevisionRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Design Package Double Rendering Request Revision - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/7_2_full_rm_desn_double_revision_rendering_info.jsp" />
+	</definition>
+	
+	<definition name="fullRoomConcept1ViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Concept1 View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_1_full_rm_concept1_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="fullRoomConcept2ViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Concept2 View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_2_full_rm_concept2_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="fullRoomRenderingViewProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Rendering View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_3_1_full_rm_rendering_view_products.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDoubleRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Double Rendering View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_3_2_full_rm_double_rendering_view_shop_products.jsp" />
+	</definition>
+		
+	<definition name="fullRmDesnPackShopTheLookTextRed" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Accessories Package Shop The Look Text - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/8_full_rm_desn_pack_shop_the_look_text.jsp" />
+	</definition>
+		
+	<definition name="fullRoomConceptViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_4_1_full_rm_view_concept_shop_products.jsp" />
+	</definition>
+		
+	<definition name="fullRoomRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_4_2_full_rm_view_room_rendering_shop_products.jsp" />
+	</definition>
+		
+	<definition name="fullRoomReviseRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_4_3_full_rm_view_revised_rendering_shop_products.jsp" />
+	</definition>
+		
+	<definition name="fullRoom2ndRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_4_4_full_rm_view_2nd_rendering_shop_products.jsp" />
+	</definition>
+	
+	<definition name="fullRoomSingleRevisedRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Double Rendering View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_5_1_full_rm_single_revised_rendering_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDoubleRevisedRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Double Rendering View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_5_2_full_rm_double_revised_rendering_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="fullRoomSingle2ndRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Double Rendering View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_6_1_full_rm_single_2nd_rendering_view_shop_products.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDouble2ndRenderingViewShopProducts" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Full Room Double Rendering View Shop Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/full_room_desn_pack_concepts/9_6_2_full_rm_double_2nd_rendering_view_shop_products.jsp" />
+	</definition>
+	
+<!--My Room INformation Tiles-->	
+	<definition name="clientManagementDisplay" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Clients Information Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/my_room_info/client_management_display.jsp" />
+	</definition>
+		
+	<definition name="messageMyDesigner" extends="roomInfoTilesAL">
+		<put-attribute name="title" value="Message My Designer - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/my_room_info/message_my_designer.jsp" />
+	</definition>
+			
+<!--Client My Account Tiles-->
+	<definition name="clMyAccTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/user/client_my_account_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+		
+	<definition name="clientContactInfoEdit" extends="clMyAccTilesAL">
+		<put-attribute name="title" value="Client Contact Info Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/my_account/1_client_contact_info_edit.jsp" />
+	</definition>
+		
+	<definition name="clientPasswordEdit" extends="clMyAccTilesAL">
+		<put-attribute name="title" value="Client Password Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/user_module/room_info/my_account/2_client_password_edit.jsp" />
+	</definition>
+					
+<!--Registry Pop up Display Pages Tiles-->
+	<definition name="regTilesPopUp" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/00_registry_popup_display_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<definition name="shopTermsPopupDisplayDisplay" extends="regTilesPopUp">
+		<put-attribute name="title" value="Registry Terms" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/5_registry_terms.jsp" />
+	</definition>
+	
+	<definition name="shopPrivacyPolicyPopupDisplay" extends="regTilesPopUp">
+		<put-attribute name="title" value="Registry Privacy Policy" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/6_registry_privacy_policy.jsp" />
+	</definition>
+			
+<!--Registry Home Tiles-->
+	<definition name="registryHomeTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/01_registry_home_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+		
+	<definition name="registryHomeRedirection" extends="registryHomeTilesBL">
+		<put-attribute name="title" value="Registry Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/1_registry_home.jsp" />
+	</definition>
+	
+	<definition name="registryTermsRedBL" extends="registryHomeTilesBL">
+		<put-attribute name="title" value="Registry Terms - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/5_registry_terms.jsp" />
+	</definition>
+		
+	<definition name="registryPrivacyPolicyRedBL" extends="registryHomeTilesBL">
+		<put-attribute name="title" value="Registry Privacy Policy - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/6_registry_privacy_policy.jsp" />
+	</definition>
+		
+	
+	<definition name="registryHomeTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/011_registry_home_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_al_footer.jsp" />
+	</definition>
+		
+	<definition name="registryHomeALRedirection" extends="registryHomeTilesAL">
+		<put-attribute name="title" value="Registry Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/1_registry_home.jsp" />
+	</definition>
+	
+	<definition name="registryTermsRedAL" extends="registryHomeTilesAL">
+		<put-attribute name="title" value="Registry Terms - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/5_registry_terms.jsp" />
+	</definition>
+		
+	<definition name="registryPrivacyPolicyRedAL" extends="registryHomeTilesAL">
+		<put-attribute name="title" value="Registry Privacy Policy - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/6_registry_privacy_policy.jsp" />
+	</definition>
+	
+			
+<!--Registry Shop Tiles-->
+	<definition name="registryShopTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/09_registry_shop_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+		
+	<definition name="registryShopHome" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Registry Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/1_home_shop_concepts_boards.jsp" />
+	</definition>
+		
+	<definition name="shopSelectedConceptBoards" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Selected Concept Boards Rooms - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/2_selected_shop_concept_boards.jsp" />
+	</definition>
+		
+	<definition name="viewShopAllDesignConceptsDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop View All Design Concepts - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/3_shop_view_all_designs_concept.jsp" />
+	</definition>
+		
+	<definition name="shopShoppingCartInfoDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Shopping Cart Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/4_shop_shopping_cart_info_display.jsp" />
+	</definition>
+		
+	<definition name="shopCheckoutBillShippInfoDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Checkout Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/5_shop_checkout_billing_and_shipping_info_display.jsp" />
+	</definition>
+		
+	<definition name="shopReviewAndPlaceOrderDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Review And Place Order Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/6_shop_review_and_place_order_display.jsp" />
+	</definition>
+		
+	<definition name="shopCheckoutPaymentInfoDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Checkout Payment Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/7_shop_checkout_payment_info_display.jsp" />
+	</definition>
+		
+	<definition name="shopPaymentWithCouponInfoDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Checkout Payment With Coupon Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/8_1_shop_coupon_checkout_payment_info_display.jsp" />
+	</definition>
+		
+	<definition name="shopPaymentWithZeroCouponInfoDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Checkout Zero Payment Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/8_2_shop_coupon_zero_payment_info_display.jsp" />
+	</definition>
+		
+	<definition name="shopPaymentSuccessDisplay" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Checkout Payment Success Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/9_shop_checkout_payment_success.jsp" />
+	</definition>
+	
+	<definition name="shopSelectedFinishingTouches" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop Selected Finishing Touches - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/finishing_touches/1_shop_selected_finishing_touches.jsp" />
+	</definition>
+	
+	<definition name="shopViewSelectedFinTouchesProducts" extends="registryShopTilesBL">
+		<put-attribute name="title" value="Shop View Selected Finishing Touches - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/shop_module/finishing_touches/2_shop_view_selected_finishing_touches_products.jsp" />
+	</definition>
+						
+<!--Registry SignUp Tiles-->
+	<definition name="regSignupTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/02_registry_signup_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/signup_footer.jsp" />
+	</definition>
+	
+	<definition name="createRegistryRedirection" extends="regSignupTilesBL">
+		<put-attribute name="title" value="Create Registry - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/1_registry_creation/01_create_registry_info_page.jsp" />
+	</definition>
+						
+<!--Registry SignIn Tiles-->
+	<definition name="regSigninTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/03_registry_signin_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+	
+	<definition name="registryLoginRedirection" extends="regSigninTilesBL">
+		<put-attribute name="title" value="Login - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/3_registry_login_info/01_registry_login.jsp" />
+	</definition>
+	
+	<definition name="registryRedirection" extends="regSigninTilesBL">
+		<put-attribute name="title" value="Registry Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/1_registry_home.jsp" />
+	</definition>	
+		
+	<definition name="regForgotPasswordRedirection" extends="regSigninTilesBL">
+		<put-attribute name="title" value="Forgot Password - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/3_registry_login_info/02_registry_forgot_password.jsp" />
+	</definition>
+	
+	<definition name="regSecurityPinRedirection" extends="regSigninTilesBL">
+		<put-attribute name="title" value="Security Pin - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/3_registry_login_info/03_registry_security_pin_for_fp.jsp" />
+	</definition>
+							
+<!--Registry Find Registry Tiles-->
+	<definition name="findRegTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/04_find_registry_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+		
+	<definition name="findRegistryRedirection" extends="findRegTilesBL">
+		<put-attribute name="title" value="Find Registry - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/0_find_registry.jsp" />
+	</definition>
+							
+<!--Registry Learn More Tiles-->
+	<definition name="regLearnMoreTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/05_registry_learn_more_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+	
+	<definition name="registryHowItWorksBLRedirection" extends="regLearnMoreTilesBL">
+		<put-attribute name="title" value="Registry How It Works - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/3_home_how_it_works.jsp" />
+	</definition>
+		
+	<definition name="registryBenefitsBLRedirection" extends="regLearnMoreTilesBL">
+		<put-attribute name="title" value="Registry Benefits - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/4_home_registry_benefits.jsp" />
+	</definition>
+		
+	<definition name="lmDesignServiceBLRedirection" extends="regLearnMoreTilesBL">
+		<put-attribute name="title" value="Learn More Design Service - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/2_learn_more_design_service.jsp" />
+	</definition>
+		
+	<definition name="regLearnMoreTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/051_registry_learn_more_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_al_footer.jsp" />
+	</definition>
+	
+	<definition name="registryHowItWorksALRedirection" extends="regLearnMoreTilesAL">
+		<put-attribute name="title" value="Registry How It Works - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/3_home_how_it_works.jsp" />
+	</definition>
+		
+	<definition name="registryBenefitsALRedirection" extends="regLearnMoreTilesAL">
+		<put-attribute name="title" value="Registry Benefits - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/4_home_registry_benefits.jsp" />
+	</definition>
+		
+	<definition name="lmDesignServiceALRedirection" extends="regLearnMoreTilesAL">
+		<put-attribute name="title" value="Learn More Design Service - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/1_home/2_learn_more_design_service.jsp" />
+	</definition>
+		
+<!--Registry Page After Login Tiles-->	
+	<definition name="registryAcTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/021_registry_account_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_al_footer.jsp" />
+	</definition>
+	
+	<definition name="registryOverviewRedirection" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry Overview - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/2_registry_landings/1_registry_landing_home_page.jsp" />
+	</definition>
+	
+	<definition name="regEditBackgroundImgForGuestRed" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry Edit Background Image for Guest - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/2_registry_landings/2_registry_edit_background_for_guest.jsp" />
+	</definition>
+		
+	<definition name="previewGuestRegistryRed" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry preview for Guest - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/2_registry_landings/3_registry_preview_for_guests_landing.jsp" />
+	</definition>
+	
+	<definition name="createdRoomAndCashFundsRedirection" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Create Room And Cash Funds - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/3_registry_room_funds/01_registry_room_funds_home_page.jsp" />
+	</definition>
+			
+	<definition name="registryRoomFundsInfoDisplay" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry Room Funds Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/3_registry_room_funds/02_registry_room_funds_info_display.jsp" />
+	</definition>
+		
+<!--Registry Cash FUnds Tiles Code-->	
+	<definition name="createdCashFundRedirection" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Cash Funds Home Page - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/4_registry_cash_funds/0_registry_cash_and_custom_fund_home.jsp" />
+	</definition>
+			
+	<definition name="registryCashFundsCreation" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Create Cash Funds - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/4_registry_cash_funds/1_create_top_registry_cash_fund.jsp" />
+	</definition>
+			
+	<definition name="registryCashFundsUpdation" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Update Cash Funds - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/4_registry_cash_funds/2_update_top_registry_cash_fund.jsp" />
+	</definition>
+	
+	<definition name="registryCustomFundsCreation" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Create A Custom Funds - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/4_registry_cash_funds/3_create_custom_registry_cash_fund.jsp" />
+	</definition>
+			
+	<definition name="registryCustomFundsUpdation" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Update A Custom Funds - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/4_registry_cash_funds/4_update_custom_registry_cash_fund.jsp" />
+	</definition>
+			
+	<definition name="registryCustomFundsEditing" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Edit A Custom Funds - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/4_registry_cash_funds/5_landing_edit_custom_registry_cash_fund.jsp" />
+	</definition>
+		
+	<definition name="designCuratedConceptsBoardsRed" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Design Curated Concepts Boards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/5_designer_concepts/1_registry_concepts_boards_home.jsp" />
+	</definition>
+	
+	<definition name="registrySelectedConceptBoards" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry Selected Curated Concept Boards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/5_designer_concepts/2_registry_selected_concept_boards.jsp" />
+	</definition>
+	
+	<definition name="registryViewAllDesignsConcepts" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry View All Designs - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/5_designer_concepts/3_registry_view_all_designs.jsp" />
+	</definition>
+	
+	<definition name="regConceptBoardsContributedInfoDisplay" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry Concept Boards Contribute Add to Cart - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/5_designer_concepts/4_landing_registry_contributed_cb_add_to_cart.jsp" />
+	</definition>
+	
+	<definition name="regConceptBoardsContributedProductEdit" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry Concept Boards Contributed Product Info Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/5_designer_concepts/5_landing_registry_concept_boards_info_edit.jsp" />
+	</definition>
+	
+<!--Registry Finishing Touches Tiles-->
+	<definition name="registrySelectedFinishingTouches" extends="registryAcTilesAL">
+		<put-attribute name="title" value="registry Selected Finishing Touches - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/6_finishing_touches/1_registry_selected_finishing_touches.jsp" />
+	</definition>
+	
+	<definition name="regViewSelectedFinTouchesProducts" extends="registryAcTilesAL">
+		<put-attribute name="title" value="registry Selected Finishing Touches - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/6_finishing_touches/2_registry_view_selected_finishing_touches_products.jsp" />
+	</definition>
+	
+	<definition name="finishingTouchesContributedProductAddToCart" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Finishing Touches Contributed Product Add To Cart - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/6_finishing_touches/3_finishing_touches_contributed_product_add_to_cart.jsp" />
+	</definition>
+	
+	<definition name="editFinishingTouchesSelectedProducts" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Edit Finishing Touches Selected Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/2_registry_concepts_and_funds/6_finishing_touches/4_edit_finishing_touches_selected_products.jsp" />
+	</definition>
+	
+<!--Registry Payment Tiles-->	
+	<definition name="registrantAddCartInfoDisplay" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registry Add Cart Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/6_registry_payment/1_registry_shopping_cart_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantFundsCheckOutContactRed" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registrant Funds Checkout Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/6_registry_payment/2_registry_checkout_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantReviewAndPlaceOrderRed" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registrant Review And Place Order Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/6_registry_payment/3_registry_review_and_place_order_display.jsp" />
+	</definition>
+	
+	<definition name="registrantPaymentInfoRedi" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registrant Payment Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/6_registry_payment/4_registry_cart_payment_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantGiftCardPaymentInfoRedi" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registrant Gift Card Payment Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/6_registry_payment/5_registry_gift_card_payment_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantGiftCardZeroPaymentInfoRedi" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registrant Gift Card Zero Payment Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/6_registry_payment/6_registry_gift_card_zero_payment_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantPaymentSuccessRed" extends="registryAcTilesAL">
+		<put-attribute name="title" value="Registrant Payment Success - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/6_registry_payment/7_registry_user_payment_success.jsp" />
+	</definition>
+			
+<!--Registry My Accounts After Login Tiles-->	
+	<definition name="registryMyAccTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/06_registry_my_account_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_al_footer.jsp" />
+	</definition>
+	
+	<definition name="registryContactInfoRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registry Contact Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/1_registry_contact_info_edit.jsp" />
+	</definition>
+	
+	<definition name="registryPasswordChangeRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registry Password Change - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/2_registry_change_password_edit.jsp" />
+	</definition>
+	
+	<definition name="registryEventInfoChangeRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registry Event Info Change - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/3_registry_event_info_edit.jsp" />
+	</definition>
+	
+	<definition name="registryURLInfoChangeRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registry URL Info Change - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/4_registry_url_info_edit.jsp" />
+	</definition>
+	
+	<definition name="registryPrivacyInfoChangeRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registry Privacy Info Change - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/5_registry_privacy_info_edit.jsp" />
+	</definition>
+	
+	<definition name="registrantShippingInfoDisplayRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registrant Shipping Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/6_registry_shipping_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantMyOrderDisplayRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registrant My Order Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/7_registry_my_orders_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantGiftsReceivedDisplayRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registrant Gifts Received Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/8_registry_gifts_received_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantRoomFundsDisplayRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registrant Room Funds Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/9_0_registry_room_funds_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantCashFundsDisplayRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registrant Cash Funds Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/9_1_registry_cash_funds_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantCashFundsBankAccountsRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registrant Cash Funds Bank Accounts Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/9_2_registry_cash_bank_accounts_info_display.jsp" />
+	</definition>
+	
+	<definition name="registrantStoreCreditDisplayRed" extends="registryMyAccTilesAL">
+		<put-attribute name="title" value="Registrant Store Credit Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/5_my_account/9_3_registry_store_credit_info_display.jsp" />
+	</definition>	
+		
+<!--Registry No Guest search Page Tiles-->	
+	<definition name="regNoGuestTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/08_2_reg_no_guest_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/guest_footer.jsp" />
+	</definition>
+	
+	<definition name="searchNoRecordsForGuestRed" extends="regNoGuestTilesBL">
+		<put-attribute name="title" value="Search No Records For Guest - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/1_landing_page/2_no_records_found_from_registry.jsp" />
+	</definition>
+		
+<!--Registry Page After Login Tiles-->	
+	<definition name="regGuestTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/registry/08_1_reg_guest_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/guest_footer.jsp" />
+	</definition>
+	
+	<definition name="searchRegistryInfoForGuestRed" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Search Registry Info For Guest - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/1_landing_page/1_guest_registry_landing_home.jsp" />
+	</definition>
+	
+	<definition name="spaceContributeInfoDisplay" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Space Contribute Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/2_room_funds/1_room_fund_contribute_info_display.jsp" />
+	</definition>
+			
+	<definition name="guestCashFundContributeInfoDisplay" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Guest Custom Fund Contribute Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/3_cash_fund/1_guest_cash_fund_contribute_info_display.jsp" />
+	</definition>
+	
+	<definition name="guestCustomFundContributeInfoDisplay" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Guest Custom Fund Contribute Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/3_cash_fund/2_guest_custom_fund_contribute_info_display.jsp" />
+	</definition>
+	
+	<definition name="guestConceptBoardsContributeInfoDisplay" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Concept Boards Contribute Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/4_concept_boards/1_concept_boards_contribute_info_display.jsp" />
+	</definition>
+	
+	<definition name="guestFinishingTouchesContributeInfoDisplay" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Finishing Touches Contribute Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/4_concept_boards/2_finishing_touches_contribute_info_display.jsp" />
+	</definition>
+	
+	<definition name="regGuestAddCartInfoDisplay" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Guest Add Cart Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/6_guest_payment/1_guest_shopping_cart_info_display.jsp" />
+	</definition>
+	
+	<definition name="guestFundsCheckOutNowRed" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Guest Funds Checkout Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/6_guest_payment/2_guest_checkout_info_display.jsp" />
+	</definition>
+	
+	<definition name="guestReviewAndPlaceOrderRed" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Review And Place Order Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/6_guest_payment/3_guest_review_and_place_order_display.jsp" />
+	</definition>
+	
+	<definition name="guestRegistryPaymentInfoRed" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Guest Registry Payment Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/6_guest_payment/4_guest_registry_payment_info_display.jsp" />
+	</definition>
+	
+	<definition name="guestPaymentSuccessRed" extends="regGuestTilesBL">
+		<put-attribute name="title" value="Guest Payment Success - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/registry_module/4_guest_registry/6_guest_payment/5_guest_user_payment_success.jsp" />
+	</definition>
+	
+<!--Designer Account Tiles-->
+	<definition name="desAccntTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/designer/designer_account_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/designer/footer.jsp" />
+	</definition>
+
+	<definition name="designerDetailsVerification" extends="desAccntTiles">
+		<put-attribute name="title" value="Designer Account - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/designer_account_profile.jsp" />
+	</definition>
+	
+<!--Designer Clients Tiles-->
+	<definition name="desClintTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/designer/my_clients_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/designer/footer.jsp" />
+	</definition>
+
+	<definition name="designerClientsRedirection" extends="desClintTiles">
+		<put-attribute name="title" value="Designer Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/designer_clients_management.jsp" />
+	</definition>
+	
+	<definition name="designerClientsArchiveRed" extends="desClintTiles">
+		<put-attribute name="title" value="Designer Archive Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/designer_archive_clients_management.jsp" />
+	</definition>
+	
+	<definition name="deisgnerFirstTimeClientRequest" extends="desClintTiles">
+		<put-attribute name="title" value="Designer Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/deisgner_first_time_client_request.jsp" />
+	</definition>
+	
+	<definition name="uploadAccPackConceptsAndRenderings" extends="desClintTiles">
+		<put-attribute name="title" value="Designer Upload Accessories Package Concepts And Renderings - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/1_acc_pack_uploaded_concepts_and_renderings.jsp" />
+	</definition>
+	
+	<definition name="uploadFullRoomPackConceptsAndRenderings" extends="desClintTiles">
+		<put-attribute name="title" value="Designer Upload Full Room Package Concepts And Renderings - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/2_full_room_pack_uploaded_concepts_and_renderings.jsp" />
+	</definition>	
+	
+<!-- Designer Side Modification Tiles --> <!-- Designer Side Accessories ManagementTiles -->
+	<definition name="accStyleManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories Style Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/1_acc_style_management.jsp" />
+	</definition>
+	
+	<definition name="accBudgetManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories Budget Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/2_acc_budget_management.jsp" />
+	</definition>
+	
+	<definition name="accDimensionsManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories Dimensions Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/3_acc_dimensions_management.jsp" />
+	</definition>
+	
+	<definition name="accColorManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories Color Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/4_acc_color_management.jsp" />
+	</definition>
+	
+	<definition name="accFurnitureManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories Furniture Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/5_acc_furniture_management.jsp" />
+	</definition>
+	
+	<definition name="accArtManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories Art Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/6_acc_art_management.jsp" />
+	</definition>
+	
+	<definition name="accMyRoomManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories My Room Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/7_acc_my_room_management.jsp" />
+	</definition>
+	
+	<definition name="accInspirationManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Accessories Inspiration Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/acc_pack/8_acc_inspiration_management.jsp" />
+	</definition>
+	
+<!-- Designer Side Full Room ManagementTiles -->
+	<definition name="fullStyleManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Style Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/1_full_style_management.jsp" />
+	</definition>
+	
+	<definition name="fullBudgetManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Budget Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/2_full_budget_management.jsp" />
+	</definition>
+	
+	<definition name="fullDimensionsManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Dimensions Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/3_full_dimensions_management.jsp" />
+	</definition>
+	
+	<definition name="fullColorManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Color Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/4_full_color_management.jsp" />
+	</definition>
+	
+	<definition name="fullFurnitureManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Furniture Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/5_full_furniture_management.jsp" />
+	</definition>
+	
+	<definition name="fullArtManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Art Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/6_full_art_management.jsp" />
+	</definition>
+	
+	<definition name="fullMyRoomManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room My Room Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/7_full_my_room_management.jsp" />
+	</definition>
+	
+	<definition name="fullInspirationManagement" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Inspiration Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/designer_management/full_pack/8_full_inspiration_management.jsp" />
+	</definition>
+	
+	<definition name="viewClientMessageInfo" extends="desClintTiles">
+		<put-attribute name="title" value="View Client Message - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/message_for_client.jsp" />
+	</definition>
+	
+	<definition name="designerNotesDisplayRed" extends="desClintTiles">
+		<put-attribute name="title" value="Designer Notes Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/deisgner_notes_display.jsp" />
+	</definition>
+	
+	<definition name="fullRoomDesignerNotesDisplayRed" extends="desClintTiles">
+		<put-attribute name="title" value="Full Room Designer Notes Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/full_room_deisgner_notes_display.jsp" />
+	</definition>
+	
+	<definition name="desnEditableCalendarForClients" extends="desClintTiles">
+		<put-attribute name="title" value="Create Calendar Info For Client - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_editable_calendar/1_create_calendar_info_for_client.jsp" />
+	</definition>
+	
+	<definition name="desnEditableCalendarDataDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Designer Calendar Data Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_editable_calendar/2_clients_calenders_info_display.jsp" />
+	</definition>	
+
+<!-- FULL ROOM PACKAGE Tiles --> <!-- Concept #1 Full Room All flow Tiles -->	
+	<definition name="furnitureSpecsConcepts1FRProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts1 Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/1_furniture_specs_concepts1_fr_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts1FRProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts1 Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/1_furniture_specs_concepts1_fr_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts1FRProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts1 Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/1_furniture_specs_concepts1_fr_products_edit.jsp" />
+	</definition>	
+		
+<!-- Concept #2 Full Room All flow Tiles -->	
+	<definition name="furnitureSpecsConcepts2FRProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts2 Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/2_furniture_specs_concepts2_fr_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts2FRProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts2 Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/2_furniture_specs_concepts2_fr_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts2FRProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts2 Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/2_furniture_specs_concepts2_fr_products_edit.jsp" />
+	</definition>	
+		
+<!-- Room Rendering Full Room All flow Tiles -->	
+	<definition name="furnitureSpecsRoomRenderingFRProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Room Rendering Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/3_furniture_specs_room_rendering_fr_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsRoomRenderingFRProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Room Rendering Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/3_furniture_specs_room_rendering_fr_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsRoomRenderingFRProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Room Rendering Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/3_furniture_specs_room_rendering_fr_products_edit.jsp" />
+	</definition>	
+		
+<!-- 2nd Rendering Full Room All flow Tiles -->
+	<definition name="furnitureSpecs2ndRenderingFRProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs 2nd Rendering Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/4_furniture_specs_2nd_rendering_fr_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecs2ndRenderingFRProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs 2nd Rendering Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/4_furniture_specs_2nd_rendering_fr_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecs2ndRenderingFRProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs 2nd Rendering Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/4_furniture_specs_2nd_rendering_fr_products_edit.jsp" />
+	</definition>	
+		
+<!-- Revised Rendering Full Room All flow Tiles -->	
+	<definition name="furnitureSpecsRevisedRenderingFRProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Revised Rendering Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/5_furniture_specs_Revised_rendering_fr_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsRevisedRenderingFRProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Revised Rendering Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/5_furniture_specs_Revised_rendering_fr_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsRevisedRenderingFRProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Revised Rendering Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/full_room/5_furniture_specs_Revised_rendering_fr_products_edit.jsp" />
+	</definition>
+		
+<!-- ACCESSORIES PACKAGE Tiles --> <!-- Concept #1 Accessories Pack All flow Tiles -->	
+	<definition name="furnitureSpecsConcepts1AccPackProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts1 Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/1_furniture_specs_concepts1_ap_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts1AccPackProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts1 Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/1_furniture_specs_concepts1_ap_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts1AccPackProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts1 Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/1_furniture_specs_concepts1_ap_products_edit.jsp" />
+	</definition>	
+		
+<!-- Concept #2 Accessories Pack All flow Tiles -->	
+	<definition name="furnitureSpecsConcepts2AccPackProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts2 Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/2_furniture_specs_concepts2_ap_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts2AccPackProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts2 Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/2_furniture_specs_concepts2_ap_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsConcepts2AccPackProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Concepts2 Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/2_furniture_specs_concepts2_ap_products_edit.jsp" />
+	</definition>	
+		
+<!-- Final Concept Accessories Pack All flow Tiles -->	
+	<definition name="furnitureSpecsFinalConceptAccPackProductsUpload" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Final Concept Products Upload - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/3_furniture_specs_final_concept_ap_products_upload.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsFinalConceptAccPackProductsDisplay" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Final Concept Products Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/3_furniture_specs_final_concept_ap_products_display.jsp" />
+	</definition>
+	
+	<definition name="furnitureSpecsFinalConceptAccPackProductsEdit" extends="desClintTiles">
+		<put-attribute name="title" value="Furniture Specs Final Concept Products Edit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/products_upload/acc_pack/3_furniture_specs_final_concept_ap_products_edit.jsp" />
+	</definition>
+		
+<!--Designer Module Registry Concept Boards Tiles-->
+	<definition name="desnRegCBTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/designer/designer_registry_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/designer/footer.jsp"/>
+	</definition>
+	
+	<definition name="designerRegistryConceptBoardsRed" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Concept Boards - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/0_designer_registry_concept_boards_home.jsp" />
+	</definition>
+	
+	<definition name="designerRegistryAddNewBoardsRed" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Add New Boards - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/1_designer_registry_add_new_boards.jsp" />
+	</definition>
+	
+	<definition name="designerRegConceptBoardsManagementDisplay" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Concept Boards Management Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/2_0_designer_reg_concept_board_management_display.jsp" />
+	</definition>
+	
+	<definition name="designerRegistryAddNewRoomRedirect" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Add New Room - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/2_1_designer_registry_add_new_room.jsp" />
+	</definition>
+	
+	<definition name="designerRegistryModifyRoomRedirect" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Modify Room - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/2_2_designer_registry_modify_room.jsp" />
+	</definition>
+	
+	<definition name="designerConFurnitureSpectsDisplay" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Concept Furniture Spects Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/3_designer_concepts_furniture_specs_display.jsp" />
+	</definition>
+	
+	<definition name="designerConFurnitureSpectsUpload" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Concept Furniture Spects Upload - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/4_designer_concepts_furniture_specs_upload.jsp" />
+	</definition>
+	
+	<definition name="designerConFurnitureSpectsEdit" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Concept Furniture Spects Edit - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/concept_boards/5_designer_concepts_furniture_specs_edit.jsp" />
+	</definition>	
+	
+	<!--Admin Module Finishing Touches -->	
+	<definition name="designerRegistryFinishingTouchesHome" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Finishing Touches Home - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/finishing_touches/1_designer_registry_finishing_touches_home.jsp" />
+	</definition>
+	
+	<definition name="designerRegistryFinishingTouchesDisplay" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Finishing Touches Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/finishing_touches/2_designer_registry_finishing_touches_display.jsp" />
+	</definition>
+	
+	<definition name="designerRegistryFinishingTouchesUpload" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Finishing Touches Upload - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/finishing_touches/3_designer_registry_finishing_touches_upload.jsp" />
+	</definition>
+	
+	<definition name="designerRegistryFinishingTouchesEdit" extends="desnRegCBTiles">
+		<put-attribute name="title" value="Designer Registry Finishing Touches Edit - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/registry/finishing_touches/4_designer_registry_finishing_touches_edit.jsp" />
+	</definition>
+		
+<!--Message for Admin Tiles-->
+	<definition name="mesAdmnTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/designer/message_admin_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/designer/footer.jsp" />
+	</definition>
+
+	<definition name="messageAdminRedirection" extends="mesAdmnTiles">
+		<put-attribute name="title" value="Message Admin - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/designer_module/desn_client_info/message_for_admin.jsp" />
+	</definition>
+		
+<!--Admin Module New Clients Tiles-->
+	<definition name="admNCTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_new_clients_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="adminClientRedirection" extends="admNCTiles">
+		<put-attribute name="title" value="New Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/new_clients/01_admin_new_clients.jsp" />
+	</definition>
+	
+<!--Admin Module Gift Card Info Tiles-->
+	<definition name="admGCTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_gift_card_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="newGiftCardsManagement" extends="admGCTiles">
+		<put-attribute name="title" value="New Gift Cards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/gift_cards/01_new_gift_card_management_for_admin.jsp" />
+	</definition>
+	
+	<definition name="sentGiftCardsManagement" extends="admGCTiles">
+		<put-attribute name="title" value="Sent Gift Cards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/gift_cards/02_sent_gift_card_management_for_admin.jsp" />
+	</definition>
+	
+	<definition name="viewGiftCardInfoRedirection" extends="admGCTiles">
+		<put-attribute name="title" value="View Gift Card - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/gift_cards/03_view_new_gift_card_info.jsp" />
+	</definition>
+	
+	<definition name="createGiftCardsForAdmin" extends="admGCTiles">
+		<put-attribute name="title" value="Create Gift Cards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/gift_cards/04_create_gift_card_for_admin.jsp" />
+	</definition>
+	
+	<definition name="manageGiftCardsForAdmin" extends="admGCTiles">
+		<put-attribute name="title" value="Manage Gift Cards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/gift_cards/05_manage_gift_card_for_admin.jsp" />
+	</definition>
+	
+	<definition name="createSendGiftCardForClient" extends="admGCTiles">
+		<put-attribute name="title" value="Create Send Gift Card For Client - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/gift_cards/06_create_send_gift_card_for_client.jsp" />
+	</definition>
+	
+<!--Admin Module Purchases Info Tiles-->
+	<definition name="admPITiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_purchases_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="purchasesInfoRedirection" extends="admPITiles">
+		<put-attribute name="title" value="Purchases Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/purchases/01_client_purchases_info.jsp" />
+	</definition>
+	
+	<definition name="purchasesViewOrderInfo" extends="admPITiles">
+		<put-attribute name="title" value="Purchases Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/purchases/02_purchases_view_order_info.jsp" />
+	</definition>
+	
+	<definition name="purchasesViewClientInfo" extends="admPITiles">
+		<put-attribute name="title" value="Purchases Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/purchases/03_purchases_view_client_info.jsp" />
+	</definition>
+	
+	<definition name="clientPurchasedArchiveInfo" extends="admPITiles">
+		<put-attribute name="title" value="Client Purchased Archive Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/purchases/04_client_purchased_archive_info.jsp" />
+	</definition>
+	
+<!--Admin Module Registry Concept Boards Tiles-->
+	<definition name="admRegCBTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/registry/admin_concept_boards_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp"/>
+	</definition>
+	
+	<definition name="adminRegistryConceptBoardsRed" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Concept Boards - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/0_admin_registry_concept_boards_home.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryAddNewBoardsRed" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Add New Boards - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/1_admin_registry_add_new_boards.jsp" />
+	</definition>
+	
+	<definition name="adminRegConceptBoardsManagementDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Concept Boards Management Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/2_0_admin_reg_concept_board_management_display.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryAddNewRoomRedirect" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Add New Room - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/2_1_admin_registry_add_new_room.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryModifyRoomRedirect" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Modify Room - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/2_2_admin_registry_modify_room.jsp" />
+	</definition>
+	
+	<definition name="adminConFurnitureSpectsDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Concept Furniture Spects Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/3_admin_concepts_furniture_specs_display.jsp" />
+	</definition>
+	
+	<definition name="adminConFurnitureSpectsUpload" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Concept Furniture Spects Upload - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/4_admin_concepts_furniture_specs_upload.jsp" />
+	</definition>
+	
+	<definition name="adminConFurnitureSpectsEdit" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Concept Furniture Spects Edit - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/concept_boards/5_admin_concepts_furniture_specs_edit.jsp" />
+	</definition>
+	
+	<!--Admin Module Finishing Touches -->	
+	<definition name="adminRegistryFinishingTouchesHome" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Finishing Touches Home - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/finishing_touches/1_admin_registry_finishing_touches_home.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryFinishingTouchesDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Finishing Touches Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/finishing_touches/2_admin_registry_finishing_touches_display.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryFinishingTouchesUpload" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Finishing Touches Upload - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/finishing_touches/3_admin_registry_finishing_touches_upload.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryFinishingTouchesEdit" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Finishing Touches Edit - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_admin/finishing_touches/4_admin_registry_finishing_touches_edit.jsp" />
+	</definition>
+			
+<!--Admin Designer Module Registry Concept Boards Tiles-->	
+	<definition name="adminDesignerRegistryConceptBoardsRed" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Registry Concept Boards - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/concept_boards/0_admin_designer_registry_concept_boards_home.jsp" />
+	</definition>	
+	
+	<definition name="adminDesignerRegConceptBoardsManagementDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Registry Concept Boards Management Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/concept_boards/2_0_admin_designer_reg_concept_board_management_display.jsp" />
+	</definition>
+	
+	<definition name="adminDesignerRegistryModifyRoomRedirect" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Registry Modify Room - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/concept_boards/2_2_admin_designer_registry_modify_room.jsp" />
+	</definition>
+	
+	<definition name="adminDesignerConFurnitureSpectsDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Concept Furniture Spects Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/concept_boards/3_admin_designer_concepts_furniture_specs_display.jsp" />
+	</definition>
+	
+	<definition name="adminDesignerConFurnitureSpectsUpload" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Concept Furniture Spects Upload - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/concept_boards/4_admin_designer_concepts_furniture_specs_upload.jsp" />
+	</definition>
+	
+	<definition name="adminDesignerConFurnitureSpectsEdit" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Concept Furniture Spects Edit - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/concept_boards/5_admin_designer_concepts_furniture_specs_edit.jsp" />
+	</definition>
+		
+	<!--Admin Module Finishing Touches -->	
+	<definition name="adminDesignerRegistryFinishingTouchesHome" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Registry Finishing Touches Home - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/finishing_touches/1_admin_designer_registry_finishing_touches_home.jsp" />
+	</definition>
+	
+	<definition name="adminDesignerRegistryFinishingTouchesDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Registry Finishing Touches Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/finishing_touches/2_admin_designer_registry_finishing_touches_display.jsp" />
+	</definition>
+	
+	<definition name="adminDesignerRegistryFinishingTouchesEdit" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Designer Registry Finishing Touches Edit - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_for_designer/finishing_touches/4_admin_designer_registry_finishing_touches_edit.jsp" />
+	</definition>
+			
+	<definition name="adminRegStockCheckAvailableConcepts" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Available Stock Check Concepts - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_stock_check/1_admin_registry_sc_available_concepts.jsp" />
+	</definition>
+		
+	<definition name="adminRoomFundsDataDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Room Funds Data Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_room_funds/01_admin_room_funds_data_display.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryPendingCashFunds" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Pending Cash Funds - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_cash_fund/1_admin_registry_pending_cash_funds.jsp" />
+	</definition>
+		
+	<definition name="adminRegistryClearedNotRequestedCashFunds" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Cleared Not Requested Cash Funds - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_cash_fund/2_admin_registry_cleared_not_requested_cash_funds.jsp" />
+	</definition>
+		
+	<definition name="adminRegistryTransferRequestedCashFunds" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Transfer Requested Cash Funds - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_cash_fund/3_admin_registry_transfer_requested_cash_funds.jsp" />
+	</definition>
+		
+	<definition name="adminCashFundsBankAccountsRed" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Transfer Cash Funds Bank Accounts - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_cash_fund/4_admin_transfer_cash_fund_bank_accounts_info_display.jsp" />
+	</definition>
+		
+	<definition name="adminRegistryTransferCompletedCashFunds" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Transfer Completed Cash Funds - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_cash_fund/5_admin_registry_transfer_completed_cash_funds.jsp" />
+	</definition>
+	
+<!--Admin Module Gift Received Tiles-->		
+	<definition name="adminRegistryGiftReceivedNoAction" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received No Action - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/01_admin_registry_gift_received_no_action.jsp" />
+	</definition>
+		
+	<definition name="adminRegistryGiftReceivedConvertedToCredit" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Converted To Credit - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/02_admin_registry_gift_received_converted_to_credit.jsp" />
+	</definition>
+		
+	<definition name="adminRegistryGiftReceivedShipNow" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Ship Now - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/03_admin_registry_gift_received_ship_now.jsp" />
+	</definition>
+		
+	<definition name="adminRegGiftRecPlaceOrderDataDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Place Order Data Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/04_admin_gift_received_place_order_data_display.jsp" />
+	</definition>
+		
+	<definition name="adminRegGiftReceivedOrderedDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Ordered Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/05_admin_registry_gift_received_ordered_data_display.jsp" />
+	</definition>
+		
+	<definition name="adminGiftReceivedTrackingDataDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Tracking Data Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/06_admin_registry_gift_received_tracking_link_info.jsp" />
+	</definition>
+		
+	<definition name="adminGiftsReceivedTrackingDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Tracking Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/07_admin_registry_gift_received_tracking_data_display.jsp" />
+	</definition>
+		
+	<definition name="adminRegGiftReceivedDeliveredDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Delivered Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/08_admin_registry_gift_received_delivered_data_display.jsp" />
+	</definition>
+		
+	<definition name="adminGRBackOrderedDateDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Gift Received Back Ordered Date Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/09_admin_gift_received_back_ordered_date_info.jsp" />
+	</definition>
+		
+	<definition name="adminRegGiftReceivedBackOrderedDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Back Ordered Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/10_admin_registry_gift_received_back_ordered_data_display.jsp" />
+	</definition>
+		
+	<definition name="adminGiftReceivedBackOrderViewDetails" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Back Ordered View Details - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/11_admin_gift_received_back_order_view_details.jsp" />
+	</definition>
+		
+	<definition name="adminRegGiftReceivedOutOfStockDisplay" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Out of Stock Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/12_admin_registry_gift_received_out_of_stock_data_display.jsp" />
+	</definition>
+		
+	<definition name="adminGiftReceivedOutOfStockViewDetails" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Out of Stock View Details - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/13_admin_gift_received_out_of_stock_view_details.jsp" />
+	</definition>
+		
+	<definition name="adminGiftReceivedBackOrdModifyDate" extends="admRegCBTiles">
+		<put-attribute name="title" value="Admin Registry Gift Received Back Order Date Modify - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/registry_gift_received/14_admin_gift_received_back_ordered_date_modification.jsp" />
+	</definition>	
+	
+<!--Admin Module Shop Concept Boards Tiles-->
+	<definition name="admShopCBTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/shop/shop_concept_boards_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp"/>
+	</definition>
+	
+	<definition name="adminShopPurchasesRed" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Purchases - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/1_admin_shop_purchases.jsp" />
+	</definition>
+	
+	<definition name="adminShopPlaceOrderRed" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Place Order - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/2_admin_shop_place_order_data_display.jsp" />
+	</definition>
+	
+	<definition name="adminShopOrderedRed" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Ordered - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/3_admin_shop_ordered.jsp" />
+	</definition>
+	
+	<definition name="adminShopTrackingLinkUpdate" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Tracking Link Update - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/4_admin_shop_tracking_link_update.jsp" />
+	</definition>
+	
+	<definition name="adminShopTrackingRed" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Tracking - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/5_admin_shop_tracking.jsp" />
+	</definition>
+	
+	<definition name="adminShopDeliveredRed" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Delivered - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/6_admin_shop_delivered.jsp" />
+	</definition>
+	
+	<definition name="adminShopBackOrderedDateDisplay" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Back Ordered Date Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/7_admin_shop_back_ordered_date_display.jsp" />
+	</definition>
+	
+	<definition name="adminShopBackOrderedRed" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Back Ordered - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/8_0_admin_shop_back_ordered.jsp" />
+	</definition>
+	
+	<definition name="adminShopBackOrderedViewDetails" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Back Ordered View Details - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/8_1_admin_shop_back_ordered_view_details.jsp" />
+	</definition>
+	
+	<definition name="adminShopBackOrderedModifyDate" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Back Ordered Modified Date - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/8_2_admin_shop_back_ordered_modified_date.jsp" />
+	</definition>
+	
+	<definition name="adminShopOutOfStockRed" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Concept Boards Out of Stock - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/9_0_admin_shop_out_of_stock.jsp" />
+	</definition>
+	
+	<definition name="adminShopOutOfStockViewDisplay" extends="admShopCBTiles">
+		<put-attribute name="title" value="Admin Shop Out Of Stock View Display - NookCove"/>
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/shop_for_admin/9_1_admin_shop_out_of_stock_view_display.jsp" />
+	</definition>	
+	
+<!--Admin Module Home Page Info Tiles-->
+	<definition name="admHomeTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_home_page_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="adminDesignAndRegistryRed" extends="admHomeTiles">
+		<put-attribute name="title" value="Design And Registry Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/00_design_and_registry_home.jsp" />
+	</definition>
+	
+	<definition name="adminPackageRedirection" extends="admHomeTiles">
+		<put-attribute name="title" value="Package Login Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/01_package_login_info_display.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryRedirection" extends="admHomeTiles">
+		<put-attribute name="title" value="Registry Login Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/02_registry_login_info_display.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryUserPaymentRed" extends="admHomeTiles">
+		<put-attribute name="title" value="Registry User Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/03_0_registry_user_payment_display.jsp" />
+	</definition>
+	
+	<definition name="adminRegistryUserViewPayment" extends="admHomeTiles">
+		<put-attribute name="title" value="Registry User View Payment Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/03_1_registry_user_view_payment_info.jsp" />
+	</definition>
+	
+	<definition name="adminGuestUserPaymentRed" extends="admHomeTiles">
+		<put-attribute name="title" value="Guest User Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/04_0_guest_user_payment_display.jsp" />
+	</definition>
+	
+	<definition name="adminGuestUserViewPayment" extends="admHomeTiles">
+		<put-attribute name="title" value="Guest User View Payment Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/04_1_guest_user_view_payment_info.jsp" />
+	</definition>
+		
+<!--Admin Module Both Two Flows Tiles-->
+	<definition name="admBTFTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_both_two_flows_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="designProcessAndRegistryRed" extends="admBTFTiles">
+		<put-attribute name="title" value="Design And Registry Flow - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/0_design_process_and_registry_flow.jsp" />
+	</definition>
+	
+	<definition name="registryLiveStatusRed" extends="admBTFTiles">
+		<put-attribute name="title" value="Registry Live Status Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/2_registry_live_status_display.jsp" />
+	</definition>
+	
+	<definition name="registryArchiveStatusRed" extends="admBTFTiles">
+		<put-attribute name="title" value="Registry Archive Status Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/admin_home/3_registry_archive_status_display.jsp" />
+	</definition>
+	
+<!--Admin Module Client Directory Tiles-->
+	<definition name="admCDTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_client_directory_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="clientDirectoryRedirection" extends="admCDTiles">
+		<put-attribute name="title" value="Client Directory - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/client_directory/01_admin_client_directory.jsp" />
+	</definition>
+	
+	<definition name="viewClientInfoDisplay" extends="admCDTiles">
+		<put-attribute name="title" value="Client Directory - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/client_directory/02_adm_viw_client_information.jsp" />
+	</definition>
+	
+	<definition name="newDesignerClientsRedirection" extends="admCDTiles">
+		<put-attribute name="title" value="New Designer Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/client_directory/03_assigned_new_designer_for_clients.jsp" />
+	</definition>
+	
+<!--Admin Module Designer Directory Tiles-->
+	<definition name="admDDTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_designer_directory_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="designerDirectoryRedirection" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Directory - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/02_0_designer_directory_management.jsp" />
+	</definition>
+	
+	<definition name="inactiveDesignersRedirection" extends="admDDTiles">
+		<put-attribute name="title" value="Inactive Designers - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/02_1_admin_inactive_designers_management.jsp" />
+	</definition>
+	
+	<definition name="inactiveDesignersProfileRed" extends="admDDTiles">
+		<put-attribute name="title" value="Inactive Designers Profile - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/02_2_admin_inactive_designers_profile.jsp" />
+	</definition>
+	
+	<definition name="adminClientAndDesignerMess" extends="admDDTiles">
+		<put-attribute name="title" value="View Client and Designer Message - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/06_view_message_for_designer_and_client.jsp" />
+	</definition>
+	
+	<definition name="designerDirectoryForClientsRe" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Directory For Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/03_view_designer_directory_for_clients_management.jsp" />
+	</definition>
+	
+	<definition name="viewDesignerAdminMessageInfo" extends="admDDTiles">
+		<put-attribute name="title" value="Admin Message for Designer - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/04_admin_message_for_designer.jsp" />
+	</definition>
+	
+	<definition name="editDesignerProfileInfo" extends="admDDTiles">
+		<put-attribute name="title" value="Edit Designer Profile - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/05_edit_designer_profile.jsp" />
+	</definition>
+	
+	<definition name="viewUploadAccPackConceptsAndFinalCon" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Directory For Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/08_acc_pack_concept_and_final_con_for_admin.jsp" />
+	</definition>
+	
+	<definition name="viewUploadFullRoomConceptsAndRenderings" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Directory For Clients - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/09_full_room_concept_and_rendering_for_admin.jsp" />
+	</definition>
+	
+	<definition name="designerUploadedAccConcept1ViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded Concept1 View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/06_acc_pack_desn_uploaded_concept1_view_products.jsp" />
+	</definition>
+	
+	<definition name="designerUploadedAccConcept2ViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded Concept2 View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/07_acc_pack_desn_uploaded_concept2_view_products.jsp" />
+	</definition>
+	
+	<definition name="designerUploadedFinalConceptsViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded Final Concepts View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/08_acc_pack_desn_uploaded_final_concepts_view_products.jsp" />
+	</definition>	
+	
+	<definition name="designerUploadedConcept1ViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded Concept1 View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/01_full_rm_desn_uploaded_concept1_view_products.jsp" />
+	</definition>
+	
+	<definition name="designerUploadedConcept2ViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded Concept2 View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/02_full_rm_desn_uploaded_concept2_view_products.jsp" />
+	</definition>
+	
+	<definition name="designerUploadedRoomRenderingViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded Room Rendering View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/03_full_rm_desn_uploaded_room_Rendering_view_products.jsp" />
+	</definition>
+	
+	<definition name="designerUploadedRevRenderingViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded Revised Rendering View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/04_full_rm_desn_uploaded_rev_Rendering_view_products.jsp" />
+	</definition>
+	
+	<definition name="designerUploaded2ndRenderingViewProducts" extends="admDDTiles">
+		<put-attribute name="title" value="Designer Uploaded 2nd Rendering View Products - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/uploaded_view_products/05_full_rm_desn_uploaded_2nd_Rendering_view_products.jsp" />
+	</definition>
+	
+	<definition name="clientRoomInformation" extends="admDDTiles">
+		<put-attribute name="title" value="Client Room Information - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/07_client_questionairre_for_admin.jsp" />
+	</definition>
+	
+	<definition name="addNewDesignerRedirection" extends="admDDTiles">
+		<put-attribute name="title" value="New Designer - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/designer_directory/01_add_new_designer.jsp" />
+	</definition>
+	
+<!--Admin Module Accounts Info Tiles-->
+	<definition name="admAccTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_accounts_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="accountsInfoRedirection" extends="admAccTiles">
+		<put-attribute name="title" value="Accounts Home - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/0_accounts_home.jsp" />
+	</definition>
+	
+	<definition name="newGiftCardsManagementForAccounts" extends="admAccTiles">
+		<put-attribute name="title" value="New Gift Cards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/01_new_gift_card_management_for_accounts.jsp" />
+	</definition>
+	
+	<definition name="sentGiftCardsManagementForAccounts" extends="admAccTiles">
+		<put-attribute name="title" value="Sent Gift Cards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/02_sent_gift_card_management_for_accounts.jsp" />
+	</definition>
+	
+	<definition name="viewGiftCardInfoForAccounts" extends="admAccTiles">
+		<put-attribute name="title" value="View Gift Card - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/03_view_new_gift_card_info_for_accounts.jsp" />
+	</definition>
+	
+	<definition name="packagePaymentForAccounts" extends="admAccTiles">
+		<put-attribute name="title" value="Package Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/04_package_payment_for_accounts.jsp" />
+	</definition>
+	
+	<definition name="secRenderingPaymentForAccounts" extends="admAccTiles">
+		<put-attribute name="title" value="Second Rendering Payment - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/05_sec_rendering_payment_for_accounts.jsp" />
+	</definition>
+	
+	<definition name="purchasesInfoRedForAccounts" extends="admAccTiles">
+		<put-attribute name="title" value="Purchases Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/06_client_purchases_info_for_accounts.jsp" />
+	</definition>
+	
+	<definition name="adminChangePasswordRedirection" extends="admAccTiles">
+		<put-attribute name="title" value="Admin Change Password - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/07_admin_change_password.jsp" />
+	</definition>
+	
+	<definition name="createSubAdminRedirection" extends="admAccTiles">
+		<put-attribute name="title" value="Create Sub Admin - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/08_sub_admin_creation.jsp" />
+	</definition>
+	
+	<definition name="subAdminsListDisplay" extends="admAccTiles">
+		<put-attribute name="title" value="Sub Admins List Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/09_sub_admins_list_display.jsp" />
+	</definition>
+	
+	<definition name="createNewSubAdminRedirection" extends="admAccTiles">
+		<put-attribute name="title" value="Create Sub Admin - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/10_new_sub_admin_creation.jsp" />
+	</definition>
+	
+	<definition name="adminGiftCardDailyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Gift Card Info Daily Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/giftcard/0_admin_giftcard_info_daily_reports.jsp" />
+	</definition>
+	
+	<definition name="adminGiftCardWeeklyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Gift Card Info Weekly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/giftcard/1_admin_giftcard_info_weekly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminGiftCardMonthlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Gift Card Info Monthly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/giftcard/2_admin_giftcard_info_monthly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminGiftCardQuarterlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Gift Card Info Quarterly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/giftcard/3_admin_giftcard_info_quarterly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminGiftCardYearlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Gift Card Info Yearly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/giftcard/4_admin_giftcard_info_yearly_reports.jsp" />
+	</definition>
+	
+	
+	<definition name="adminPackageDailyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Package Info Daily Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/package/0_admin_package_info_daily_reports.jsp" />
+	</definition>
+	
+	<definition name="adminPackageWeeklyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Package Info Weekly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/package/1_admin_package_info_weekly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminPackageMonthlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Package Info Monthly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/package/2_admin_package_info_monthly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminPackageQuarterlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Package Info Quarterly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/package/3_admin_package_info_quarterly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminPackageYearlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Package Info Yearly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/package/4_admin_package_info_yearly_reports.jsp" />
+	</definition>
+	
+	
+	<definition name="adminRenderingDailyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Rendering Info Daily Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/rendering/0_admin_rendering_info_daily_reports.jsp" />
+	</definition>
+	
+	<definition name="adminRenderingWeeklyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Rendering Info Weekly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/rendering/1_admin_rendering_info_weekly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminRenderingMonthlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Rendering Info Monthly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/rendering/2_admin_rendering_info_monthly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminRenderingQuarterlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Rendering Info Quarterly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/rendering/3_admin_rendering_info_quarterly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminRenderingYearlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Rendering Info Yearly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/rendering/4_admin_rendering_info_yearly_reports.jsp" />
+	</definition>	
+	
+	<definition name="adminShoppingCartDailyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Shopping Cart Info Daily Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/shoppingcart/0_admin_shoppingcart_info_daily_reports.jsp" />
+	</definition>
+	
+	<definition name="adminShoppingCartWeeklyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Shopping Cart Info Weekly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/shoppingcart/1_admin_shoppingcart_info_weekly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminShoppingCartMonthlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Shopping Cart Info Monthly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/shoppingcart/2_admin_shoppingcart_info_monthly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminShoppingCartQuarterlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Shopping Cart Info Quarterly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/shoppingcart/3_admin_shoppingcart_info_quarterly_reports.jsp" />
+	</definition>
+	
+	<definition name="adminShoppingCartYearlyReport" extends="admAccTiles">
+		<put-attribute name="title" value="Shopping Cart Info Yearly Reports - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/accounts/shoppingcart/4_admin_shoppingcart_info_yearly_reports.jsp" />
+	</definition>
+	
+<!--Promo code Info Tiles-->
+	<definition name="admProCodeTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_promocode_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp" />
+	</definition>
+
+	<definition name="promocodeRedirection" extends="admProCodeTiles">
+		<put-attribute name="title" value="Promo Code Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/promo_codes/01_new_promocode_creation.jsp" />
+	</definition>
+	
+	<definition name="promocodeManagement" extends="admProCodeTiles">
+		<put-attribute name="title" value="Promo Code Management - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/promo_codes/02_list_of_promo_code_display.jsp" />
+	</definition>			
+			
+<!--Referral Program Before Login Tiles-->
+	<definition name="referralProTilesBL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/referral/1_referral_user_bl_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+		
+	<definition name="referralUserLoginRed" extends="referralProTilesBL">
+		<put-attribute name="title" value="Referral User Login - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/login/1_referral_user_login.jsp" />
+	</definition>
+		
+	<definition name="referralLearnMoreRed" extends="referralProTilesBL">
+		<put-attribute name="title" value="Referral Learn More - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/login/2_referral_learn_more.jsp" />
+	</definition>
+		
+	<definition name="referralFormCreation" extends="referralProTilesBL">
+		<put-attribute name="title" value="Referral Form Creation - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/login/3_referral_form_creation.jsp" />
+	</definition>
+		
+	<definition name="referralFormSuccess" extends="referralProTilesBL">
+		<put-attribute name="title" value="Referral Form Success - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/login/4_referral_form_success.jsp" />
+	</definition>
+		
+	<definition name="refferalForgotPassword" extends="referralProTilesBL">
+		<put-attribute name="title" value="Refferal Forgot Password - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/login/5_referral_forgot_password.jsp" />
+	</definition>
+		
+	<definition name="refferalSecurityPinRed" extends="referralProTilesBL">
+		<put-attribute name="title" value="Refferal Security Pin - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/login/6_referral_security_pin.jsp" />
+	</definition>
+			
+<!--Referral Program Before Login Tiles-->
+	<definition name="referralProTilesAL" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/referral/2_referral_user_al_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/registry/reg_footer.jsp" />
+	</definition>
+		
+	<definition name="referralMyAccountRed" extends="referralProTilesAL">
+		<put-attribute name="title" value="Referral Contact and Business Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/my_account/1_0_contact_and_business_info.jsp" />
+	</definition>
+		
+	<definition name="referralShippingInfoRed" extends="referralProTilesAL">
+		<put-attribute name="title" value="Referral Shipping Info - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/my_account/1_1_referral_shipping_info.jsp" />
+	</definition>
+		
+	<definition name="referralPasswordInfoRed" extends="referralProTilesAL">
+		<put-attribute name="title" value="Referral Password Change - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/my_account/2_change_password_info.jsp" />
+	</definition>
+		
+	<definition name="myReferralCodeInfoRed" extends="referralProTilesAL">
+		<put-attribute name="title" value="My Referral Code - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/my_account/3_my_referral_code_info.jsp" />
+	</definition>
+		
+	<definition name="activeReferralsInfoRed" extends="referralProTilesAL">
+		<put-attribute name="title" value="Active Referrals - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/my_account/4_active_referrals_info.jsp" />
+	</definition>
+		
+	<definition name="referralNookAndCoveStoreCreditRed" extends="referralProTilesAL">
+		<put-attribute name="title" value="Referral Nook And Cove Store Credit - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/my_account/5_referral_nook_and_cove_store_credit.jsp" />
+	</definition>
+		
+	<definition name="referralVisaGiftCardsRed" extends="referralProTilesAL">
+		<put-attribute name="title" value="Referral Visa Gift Cards - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/referral_module/my_account/6_referral_visa_gift_cards.jsp" />
+	</definition>	
+			
+<!--Admin Referral Program Tiles-->	
+	<definition name="adminRefProTiles" template="/WEB-INF/view/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/layouts/admin/admin_referral/1_referral_program_header.jsp" />		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/layouts/admin/footer.jsp"/>
+	</definition>
+		
+	<definition name="adminNewApplicantsDataDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin New Applicants Data Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/1_0_admin_new_applicants_display.jsp" />
+	</definition>
+			
+	<definition name="adminViewNewApplicantsInfoDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin View New Applicants Data Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/1_1_admin_view_new_applicants_display.jsp" />
+	</definition>
+		
+	<definition name="adminNoteInfoPageDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin Note Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/1_2_admin_donot_approved_note_page.jsp" />
+	</definition>
+		
+	<definition name="adminViewNoteInfoDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin View Note Info Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/1_3_admin_viw_note_info_display.jsp" />
+	</definition>
+		
+	<definition name="adminCurrentVendorsDataDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin Current Vendors Data Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/2_0_admin_current_vendors_display.jsp" />
+	</definition>
+			
+	<definition name="adminViewVendorDetailsDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin View Vendor Details Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/2_1_admin_view_vendor_details_display.jsp" />
+	</definition>
+			
+	<definition name="adminViewVendorClientsDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin View Vendor Clients Details Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/2_2_admin_view_vendor_clients_display.jsp" />
+	</definition>
+			
+	<definition name="adminVisaGiftCardsDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin Visa Gift Cards Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/2_3_admin_visa_gift_cards_display.jsp" />
+	</definition>
+			
+	<definition name="adminIssuedVisaGiftCardsDisplay" extends="adminRefProTiles">
+		<put-attribute name="title" value="Admin Issued Visa Gift Cards Display - NookCove" />
+		<put-attribute name="body" value="/WEB-INF/view/admin_module/referral_programs/2_4_admin_issued_visa_gift_cards_display.jsp" />
+	</definition>	
+
+</tiles-definitions>

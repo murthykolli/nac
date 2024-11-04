@@ -1,0 +1,127 @@
+.big_image_disply_proper_cl { width: 100%; height: auto; max-height: 100vh; object-fit: scale-down; position: relative; object-position: 50% 50%; object-position: 0 0; overflow: auto; overflow-y: hidden; overflow-x: hidden; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
+	.big_image_disply_proper_cl:hover { box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.35); cursor: pointer; }	
+	.reg_dsn_curated_cb_rigtext_dspl { font: 0.9em/1.25em Georgia; color: black; display: block; letter-spacing: 2px; margin-left: 0px; text-transform: uppercase; }	
+		
+	.view_show_image_disply_cl { width: 746px; object-fit: scale-down; position: relative; object-position: 50% 50%; object-position: 0 0; overflow: auto; overflow-y: hidden; overflow-x: hidden; }
+	
+	.view_product_for_dccb_cl { font: 0.95em/1.25em Georgia; letter-spacing: 1px; color: black; text-transform: uppercase; text-decoration: none; outline: none; }
+	.view_product_for_dccb_cl:hover { color: #36669b; text-decoration: none; outline: none; }
+	
+	.reg_con_cur_bod_submit_Btn { font: 500 0.9em/1.5em Georgia; display: block; margin: 0px auto; vertical-align: middle; background-color: #e7e6e6; color: black; display: inline-block; text-transform: uppercase; padding: 3px 20px; outline: none; border: none; letter-spacing: 2px; cursor: pointer; box-shadow: -2px -2px 3px #bbbbbb; white-space: nowrap; }
+	.reg_con_cur_bod_submit_Btn:hover { background-color: #ff3b3b; color: white; cursor: pointer; }
+	.reg_con_cur_bod_submit_Btn_flt { font: 500 1.3em/1.5em Georgia; }
+	
+	.fur_spc_image_frame_dsp { border: 2px solid #595959; width: 270px; height: 200px; }
+	.con_images_display_in_middle { width: 270px; height: 200px; display: table-cell; vertical-align: middle; }
+	.fur_spc_image_proper_cl { height: 149px; object-fit: scale-down; position: relative; object-position: 50% 50%; }
+	.fur_spc_text_frame_dsp { border: 2px solid #595959; width: 270px; height: 170px; margin-top: -2px; }
+	
+	.fur_spec_prod_name_dspl { font: 500 1.2em/1.4em Georgia; letter-spacing: 0px; color: black; margin-top: -10px }
+	.fur_spec_store_name_dspl { font: 500 1em/1.5em Georgia; letter-spacing: 1px; color: black; padding-bottom: 10px; }
+	.fur_spec_prod_price_dspl { font: bold 1.15em/2.0em Georgia; letter-spacing: 1px; color: black; }
+	
+	.reg_fur_spec_submit_Btn { font: 500 0.9em/1.5em Georgia; display: block; margin: 0px auto; vertical-align: middle; background-color: #385a7f; color: white; display: inline-block; text-transform: uppercase; width: 190px; height: 32px; outline: none; border: none; letter-spacing: 2px; cursor: pointer; box-shadow: 2px 2px #bbbbbb; }
+	.reg_fur_spec_submit_Btn:hover { background-color: #595959; cursor: pointer; }
+	.image_mouse_over_dsp { position: relative; cursor: pointer; }
+	.image_mouse_over_dsp:hover { opacity: 0.4; cursor: pointer; outline: none; }
+	
+	.reg_mid_ita_text_frame_dspl { min-height: 30px; margin-top: 5px;}
+	.reg_bott_small_ita_text_dspl { font: italic 1em/1.25em Georgia; color: black; letter-spacing: 1px; vertical-align: middle; padding: 2px 0px; }
+	
+	.reg_con_bord_top_radio_but_box { background: #e7e6e6; border: 1px solid #e7e6e6; padding: 2px 5px; width: auto; }
+	.reg_con_bord_top_txt_fl { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: black; }
+	.reg_con_bord_top_txt_ll { font: 1.05em/1.25em Georgia; letter-spacing: 1px; color: black; }
+	.reg_dsn_curated_cb_title_text h4 { font: bold 1em/1.25em Georgia; color: black; display: block; border-bottom: 1px solid #ff3b3b; padding-bottom: 5px; letter-spacing: 2px; max-width: 360px; white-space: nowrap; }
+	.reg_dsn_curated_cb_title_fl { font: bold 1.7em/1.25em Georgia; }
+	.reg_dsn_curated_cb_title_ll { font: bold 1.3em/1.25em Georgia; }
+	.smlImgClickCl1 { object-fit: scale-down; display: table-cell; vertical-align: middle; height: 120px; margin-left: -5px; cursor: pointer; }
+	#mask { position:absolute; left:0; top:0; background-color:#000; display:none; } 
+	#boxes .window { position:absolute; z-index:9999; }
+	#boxes #dialog { height:auto; padding:10px; background-color:#ffffff; font-size: 15pt; }
+	#popupfoot{ text-align: right; }
+	#popupfoot a{ text-decoration: underline; font-family: sans-serif; font-size: 11pt; outline:none; color:black; }
+	#popupImage1Id { border-bottom: 1px solid white; padding-bottom: 0px; }
+	#popupImage2Id { border-bottom: 1px solid white; padding-bottom: 0px; }
+	#popupImage3Id { border-bottom: 1px solid white; padding-bottom: 0px; }
+	#popupImage4Id { border-bottom: 1px solid white; padding-bottom: 0px; }
+	
+	.mytooltip .mytext { visibility: hidden; width: 320px; background-color: #3c3c3c; color: #fff; z-index: 1; top: -37px; left: 170%; border-radius: 6px; padding: 15px; position: absolute; font: normal 1.15em/1.5em Georgia; text-align: left; letter-spacing: 1px; text-transform: capitalize; box-shadow: 4px 4px #bababa; }
+    .mytooltip { position: relative; display: inline-block; margin-left: 50px; } 
+    .mytooltip .mytext:after { content: ""; position: absolute; top: 50%; right: 100%; margin-top: -5px; border-width: 6px; border-style: solid; border-color: transparent #3c3c3c transparent transparent; }
+    .mytooltip:hover .mytext { visibility: visible; }
+    .reg_popup_pro_sub_left_frame_dsp { height: 510px; margin-top: -10px; vertical-align: middle; margin-bottom: 30px; margin-left: 0px; }
+    .reg_popup_pro_big_image_disl { height: 510px; object-fit: scale-down; position: relative; object-position: 50% 50%; overflow: auto; overflow-y: hidden; overflow-x: hidden; width: 100%; }
+    
+    a.reg_cb_learn_more { font: italic 0.85em/1.5em Georgia; letter-spacing: 0px; color: #324f70; white-space: nowrap; text-decoration: underline; }
+    a.reg_cb_learn_more:hover { color: red; }    
+    
+    .reg_con_bor_txt_flsc_mltp_cl { font: bold 0.85em/1.37em Georgia; letter-spacing: 0px; color: black; top: -100px; position: relative; }
+    .reg_con_bor_txt_lft_cl { margin-top: 15px; font: bold 0.85em/1.37em Georgia; letter-spacing: 0px; color: #ce3a3a; top: -90px; position: relative; }
+    a.reg_cb_bor_learn_more { font: italic 0.96em/1.5em Georgia; letter-spacing: 0px; color: black; white-space: nowrap; text-decoration: underline; position: relative; top: -85px; }
+    a.reg_cb_bor_learn_more:hover { color: red; }
+    
+    .reg_con_brd_top_frame_mtb_cl { margin-top: 100px; margin-bottom: 60px; }
+	.reg_con_brd_lftc_adj_cl { display: table-cell;  text-align: center; vertical-align: middle; height: 815px; }
+	.reg_con_brd_lftc_mltp_cl { margin-left: 0px; margin-top: -180px; position: relative; }
+	.reg_con_brd_flsc_mltp_cl { font: bold 0.85em/1.37em Georgia; letter-spacing: 0px; color: black; }	
+	.reg_con_brd_lft_wtsp_cl { white-space: nowrap; }
+	.reg_con_brd_lft_txtf_cl { margin-top: 15px; font: 0.85em/1.37em Georgia; letter-spacing: 0px; color: black; }
+	
+	.rcb_rt_htadj_cl { display: table-cell;  text-align: center; vertical-align: middle; height: 815px; }
+	.rcb_rt_img_adj_cl { position: absolute; margin-top: -180px; margin-left: -20px; cursor: pointer; }
+	.rcb_mtop_ht_adj_cl { margin-top: -205px; }
+	.rft_mtop_ht_adj_cl { margin-top: -100px; }
+	.rcb_midfrm_mbot_adj_cl { margin-bottom: 30px; }
+	.rcb_midfrm_cur_pot_adj_cl { cursor: pointer; }
+	.rcb_midfrm_mbottp_adj_cl { margin-bottom: 30px; margin-top: 10px; }
+	.rcb_popup_wt_htd_cl { width: 1478px; height: 602px; display: none; opacity: 0.1; z-index: 10001; }
+	.rcb_popup_cls_adj_cl { cursor: pointer; top: -10px; left: 0px;  position: relative; }
+	.rcb_popup_mtppdn_cl { margin-top: -20px; padding: 30px; }
+	.rcb_popup_bgbrd_frame_cl { background: #bfbfbf; border: 1px solid #bfbfbf; width: 60px; height: 19px; border-radius: 25px; box-shadow: inset 6px 6px 6px -6px black; }
+	.rcb_popup_bgrds_dsp { height: 16px; width: 16px; background-color: #fff; border-radius: 50%; display: inline-block; margin-left: 5px; margin-top: 1px; }
+	.rcb_popup_sec_bgbrd_frame { background: #00b050; border: 1px solid #00b050; width: 60px; height: 19px; border-radius: 25px; box-shadow: inset 6px 6px 6px -6px black; }
+	.rcb_popup_sec_bgrds_dsp { height: 16px; width: 16px; background-color: #fff; border-radius: 50%; display: inline-block; margin-left: 35px; margin-top: 1px; }
+		
+	.cb_vimage_mouse_over_dsp { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 0.25); position: relative; }
+	.cb_vimage_mouse_over_dsp:hover { box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.35); cursor: pointer; }
+	.cb_vimage_mouse_over_dsp:hover .middle { opacity: 1; }
+	.image { opacity: 1; width: 100%; height: auto; transition: .5s ease; backface-visibility: hidden; }
+	.middle { transition: .5s ease; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); text-align: center; }
+	.text { background-color: #36669b; font: 500 0.95em/0.25em Georgia; letter-spacing: 1px; color: white; padding: 14px 24px; cursor: pointer; }
+	.reg_vcon_bod_submit_Btn { font: 500 0.9em/1.5em Georgia; display: block; margin: 0px auto; vertical-align: middle; background-color: #e7e6e6; color: black; display: inline-block; text-transform: uppercase; padding: 3px 25px; outline: none; border: none; letter-spacing: 2px; cursor: pointer; box-shadow: -2px -2px 3px #bbbbbb; white-space: nowrap; }
+	.reg_vcon_bod_submit_Btn:hover { background-color: #ff3b3b; color: white; cursor: pointer; }
+	.reg_vcon_bod_submit_Btn_flt { font: 500 1.3em/1.5em Georgia; }
+	.reg_vconbord_top_radio_but_box { background: #e7e6e6; border: 1px solid #e7e6e6; padding: 5px 8px; width: auto; }
+	.image_disply_proper_cl { width: 100%; height: auto; max-height: 47vh; object-fit: scale-down; position: relative; object-position: 50% 50%; object-position: 0 0; overflow: auto; overflow-y: hidden; overflow-x: hidden; }
+	.first_letter_dsp { font-size: 18px; }
+	.cb_room_selection_text { font: 0.95em/1.6em Georgia; color: black; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; text-decoration: none; outline: none; }
+	.cb_room_selection_text:hover { font: 0.95em/1.6em Georgia; color: red; letter-spacing: 1px; text-transform: uppercase; text-decoration: underline; outline: none; }
+	.cb_room_selection_text_fl { font: 1.16em/1.6em Georgia; }
+	.cb_view_top_frame_dsp { margin-top: 100px; margin-bottom: 60px; }
+	.ft_view_top_frame_dsp { margin-top: 30px; margin-bottom: 60px; }
+	.cb_view_top_pdng_dsp { padding: 5px; }
+	.cb_view_top_mgtp_mgrt_cl { margin-top: 5px; margin-right: 20px; }
+	.cb_view_top_pdnl_mgtp_cl { padding-left: 8px; margin-top: 15px; }
+	.ft_view_top_mgtp_mgrt_cl { margin-top: 5px; margin-right: 10px; }
+	
+	.reg_ft_popup_pro_big_image { margin-top: 0px; vertical-align: middle; margin-bottom: 10px; margin-left: 0px; }
+	.reg_ft_popup_pro_big_image_disl { object-fit: scale-down; position: relative; object-position: 50% 50%; overflow: auto; overflow-y: hidden; overflow-x: hidden; width: 510px; margin-top: 40px; }
+		
+	.regcb_popup_wt_htd_cl { width: 100%; height: 100%; display: none; opacity: 0.1; z-index: 10001; }
+	.regicb_popup_mtppdn { padding: 1.0% 3.5%; }
+	.regi_sc_enbl_gg_text_dsp { font: 0.82em/1.6em Georgia; text-align: left; margin-bottom: 15px; }
+	.smlImgClickCl { object-fit: scale-down; display: table-cell; vertical-align: middle; width: 100%; cursor: pointer; overflow-y: hidden; overflow-x: hidden; border: 0;}
+	.popup_bigimage_dsp { max-height: 100%; max-height: 68vh; object-fit: scale-down; position: relative; object-position: 50% 50%; margin-bottom: 25px; }
+	.popup_sml_img_frame { position: relative; bottom: 0; }
+	
+	.mytooltip1 .mytext1 { visibility: hidden; width: 320px; background-color: #3c3c3c; color: #fff; z-index: 1; top: -37px; left: 170%; border-radius: 6px; padding: 15px; position: absolute; font: normal 0.95em/1.5em Georgia; text-align: left; letter-spacing: 1px; text-transform: capitalize; box-shadow: 4px 4px #bababa; }
+    .mytooltip1 { position: relative; display: inline-block; margin-left: 50px; } 
+    .mytooltip1 .mytext1:after { content: ""; position: absolute; top: 50%; right: 100%; margin-top: -5px; border-width: 6px; border-style: solid; border-color: transparent #3c3c3c transparent transparent; }
+    .mytooltip1:hover .mytext1 { visibility: visible; }
+    .regi_popup_prdt_sub_frame { border-top: 1px solid black; border-bottom: 1px solid black; min-height: 200px; margin-top: 0px; padding: 20px 0px 15px 0px; }
+	
+	
+	
+	
+	
+	

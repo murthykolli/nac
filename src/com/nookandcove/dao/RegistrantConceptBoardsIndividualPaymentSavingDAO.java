@@ -1,0 +1,45 @@
+package com.nookandcove.dao;
+
+import java.sql.Timestamp;
+import java.util.List;
+
+import com.nookandcove.model.RegistrantConceptBoardsIndividualPaymentSaving;
+
+@SuppressWarnings("rawtypes")
+public interface RegistrantConceptBoardsIndividualPaymentSavingDAO {
+	
+	public void save(RegistrantConceptBoardsIndividualPaymentSaving transientInstance);
+	
+	public List registryConceptBoardsIndividualPriceCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryConceptBoardsIndividualPaymentStatusCheck(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantConceptBoardsIndividualPaymentSaving registryConceptBoardsIndividualPriceTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantConceptBoardsIndividualPaymentSaving registryConceptBoardsIndividualPaymentStatusValue(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryConceptBoardsIndividualPaymentStatusCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantConceptBoardsIndividualPaymentSaving registryConceptBoardsIndividualPaymentStatusTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	public List registryConceptBoardsIndividualTotalCartCount(long registrantUserId);
+	public RegistrantConceptBoardsIndividualPaymentSaving regConceptBoardsIndividualCartCountFromDB(long registrantUserId);
+	public List registryCBIndividualAddCartPaymentDataCheckInDB(long registrantUserId, long regCBIndividualPaymentSavingId);
+	public RegistrantConceptBoardsIndividualPaymentSaving registryCBIndividualAddCartPaymentDataTakeFromDB(long registrantUserId, long regCBIndividualPaymentSavingId);
+	public int regConceptBoardsIndividualPaymentInfoUpdateInDB(long registrantUserId, long regPaymentInfoSavingId, String returnType, Timestamp currentDate);
+	public List regConceptBoardsIndividualMyAccountDataDisplay(long registrantUserId);
+	public List registrantStoreCreditCBIndividualRemoveDuplicateRows(long registrantUserId);
+	public List registrantStoreCreditCBIndividualAmountCheckingInDB(long registrantUserId, long regSelectedProdsId);
+	
+	public List registryCBMyAccountIndividualPaymentDataCheckInDB(long registrantUserId, long cbIndividualProductSavingId);
+	public RegistrantConceptBoardsIndividualPaymentSaving registryCBMyAccountIndividualPaymentDataTakeFromDB(long registrantUserId, long cbIndividualProductSavingId);
+	
+	public List registryAdminCBIndividualGiftReceivedDataTakeFromDB(String individualStatusRef);
+	public RegistrantConceptBoardsIndividualPaymentSaving registryCBGiftReceivedIndividualPaymentDataTakeFromDB(long cbIndividualProductSavingId);
+	
+	public List registryAdminCBIndividualNoActionGiftReceivedData();
+	public List registryAdminCBIndividualConvertedToCreditGiftReceivedData();
+	
+	public void delete(RegistrantConceptBoardsIndividualPaymentSaving persistentInstance);	
+	public RegistrantConceptBoardsIndividualPaymentSaving findById(long id);	
+	public List<RegistrantConceptBoardsIndividualPaymentSaving> findByExample(RegistrantConceptBoardsIndividualPaymentSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public RegistrantConceptBoardsIndividualPaymentSaving merge(RegistrantConceptBoardsIndividualPaymentSaving detachedInstance);	
+	public void attachDirty(RegistrantConceptBoardsIndividualPaymentSaving instance);	
+	public void attachClean(RegistrantConceptBoardsIndividualPaymentSaving instance);
+}

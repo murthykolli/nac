@@ -1,0 +1,42 @@
+package com.nookandcove.dao;
+
+import java.util.List;
+import com.nookandcove.model.FurnitureSpecsProductsAccPackSaving;
+
+@SuppressWarnings("rawtypes")
+public interface FurnitureSpecsProductsAccPackSavingDAO {
+	
+	public void save(FurnitureSpecsProductsAccPackSaving transientInstance);
+	public void delete(FurnitureSpecsProductsAccPackSaving persistentInstance);
+	
+	public List furnitureSpecsConcept1AccPackRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsAccPackSaving furnitureSpecsConcept1AccPackRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecsConcept1AccPackRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsAccPackSaving furnitureSpecsConcept1AccPackRowDeleteFromDB(long furSpecsProdSavingId);
+	
+	public List furnitureSpecsConcept2AccPackRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsAccPackSaving furnitureSpecsConcept2AccPackRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecsConcept2AccPackRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsAccPackSaving furnitureSpecsConcept2AccPackRowDeleteFromDB(long furSpecsProdSavingId);
+	
+	public List furnitureSpecsFinalConceptAccPackRowVerificationInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsAccPackSaving furnitureSpecsFinalConceptAccPackRowDisplayInJSP(long clientInfoSavingId, long designerInfoSavingId);
+	public List furnitureSpecsFinalConceptAccPackRowVerUsingIdInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsAccPackSaving furnitureSpecsFinalConceptAccPackRowDeleteFromDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsAccPackSaving adminPurchasesAccPackProductListDisplay(long furSpecsProdSavingId);
+	public int updateAdminAccAssignedNewDesignerInfoInDB(long clientInfoSavingId, long designerInfoSavingId);
+	public FurnitureSpecsProductsAccPackSaving findById(long id);
+	public List<FurnitureSpecsProductsAccPackSaving> findByExample(FurnitureSpecsProductsAccPackSaving instance);
+	public List findByProperty(String propertyName, Object value);
+	public List findAll();
+	public FurnitureSpecsProductsAccPackSaving merge(FurnitureSpecsProductsAccPackSaving detachedInstance);
+	public void attachDirty(FurnitureSpecsProductsAccPackSaving instance);
+	public void attachClean(FurnitureSpecsProductsAccPackSaving instance);
+	
+	public List addProductToCartRowVerificationInDB(long furSpecsProdSavingId);
+	public FurnitureSpecsProductsAccPackSaving addProductToCartRowUpdateInDB(long furSpecsProdSavingId);
+	public List adminFurnitureSpecsAccOrderStatusRowVerInDB(long furSpecsProdSavingId);
+	public List adminFurnitureSpecsAccDeliveryStatusRowVerInDB(long furSpecsProdSavingId);
+	public int furnitureSpecsFinalConceptAccPackProdRowDeleteFromDB(long furSpecsProdSavingId);
+	
+}

@@ -1,0 +1,36 @@
+.adm_reg_stock_check_frame_dsp { padding: 15px 5px; border: 2px solid #999999; }
+	.adm_reg_stock_check_hd_txt_dsp { font: bold 1.3em/1.25em Georgia; color: black; letter-spacing: 1px; }
+	.adm_reg_stock_check_image_dsp { outline: none; width: 250px; height: 100%; object-fit: scale-down; position: relative; object-position: 50% 50%; }
+	.adm_reg_stock_check_products_frame_dsp { padding: 15px 5px; border: 1px solid #41719c; }
+	.adm_reg_stock_check_link_txt_dsp a { font: bold 1.3em/1.25em Georgia; text-align: left; color: black; letter-spacing: 1px; cursor: pointer; width: 390px; display: table-caption; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.adm_reg_stock_check_link_txt_dsp a:hover { text-decoration: underline; color: #0563c1; }
+	.adm_reg_stock_check_status_txt_dsp { font: normal 1.4em/1.7em Georgia; text-align: left; color: black; letter-spacing: 1px; }
+	.available_submit_btn { display: block; margin: 0px auto; vertical-align: middle; background-color: white; color: #009643; display: inline-block; outline: none; border: none; font: 500 1.5em/1.7em Georgia; letter-spacing: 1px; }
+	.available_submit_btn:hover { background-color: white; color: blue; }	
+	.back_soon_submit_btn { display: block; margin: 0px auto; vertical-align: middle; background-color: white; color: #006fbc; display: inline-block; outline: none; border: none; font: 500 1.5em/1.7em Georgia; letter-spacing: 1px; }
+	.back_soon_submit_btn:hover { background-color: white; color: blue; }	
+	.replace_submit_btn { display: block; margin: 0px auto; vertical-align: middle; background-color: white; color: red; display: inline-block; outline: none; border: none; font: 500 1.5em/1.7em Georgia; letter-spacing: 1px; }
+	.replace_submit_btn:hover { background-color: white; color: blue; }	
+	.three_common_sub_button { display: block; margin: 0px auto; vertical-align: middle; background-color: white; color: #2c2c2c; display: inline-block; outline: none; border: none; font: 500 1.5em/1.7em Georgia; letter-spacing: 1px; }
+	.three_common_sub_button:hover { background-color: white; color: blue; }
+	.pro_price_save_btn { display: block; margin: 0px auto; vertical-align: middle; background-color: white; color: black; display: inline-block; outline: none; border-left: none; border-right: none; border-top: none; border-bottom: 1px solid black; font: 500 1.25em/1.2em Georgia; letter-spacing: 2px; margin-left: 10px; }
+	.pro_price_save_btn:hover { background-color: white; color: red; border-left: none; border-right: none; border-top: none; border-bottom: 1px solid red; }
+	
+	.st_check_dollor_frame { border: 1px solid #006fbc; font: 500 1.3em/1.25em Georgia; letter-spacing: 1px; width: 30px; text-align: center; border-left: 1px solid #006fbc; border-right: none; border-top: 1px solid #006fbc; border-bottom: 1px solid #006fbc; margin-bottom: 5px;}
+	.st_check_price_frame { border: 1px solid #006fbc; font: 500 1.3em/1.25em Georgia; letter-spacing: 1px; padding: 4px; width: 95px; margin-left: -3px; margin-bottom: 0px; }
+	.sc_dollar_sym_dsp { padding: 6px; background: #006fbc; color: white; font: bold 1.3em/1.25em Georgia; letter-spacing: 1px; }
+	.price_table_adj_cl { margin-top: 15px; }
+	.save_burron_adj_cl { margin-top: 26px; }
+	.url_text_frame_mid_adj { position: relative; float: left; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+	.url_text_frame_text_mid_adj { height: 200px; }
+	 
+	.url_hd_text_frame_mid_adj { position: relative; float: left; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+	.url_hd_text_frame_text_mid_adj { height: 46px; }
+	 
+	.adm_stock_check_cbname_dsp { font: bold 1.3em/1.25em Georgia; color: black; letter-spacing: 1px; }
+	.adm_stock_check_cbimage_dsp { font: 1.2em/1.25em Georgia; color: black; letter-spacing: 1px; text-decoration: underline; cursor: pointer; }
+	.adm_stock_check_cbimage_dsp:hover { color: red; }
+	 
+	.admin_cb_big_image_dsp { height: 130px; object-fit: scale-down; position: relative; object-position: 50% 50%; overflow: auto; overflow-y: hidden; overflow-x: hidden; width: 100%; margin-top: 30px; }
+	.room_sc_con_submit_btn { background-color: #006fbc; color: white; padding: 5px 15px; outline: none; border: none; font: 500 1.4em/1.7em Georgia; letter-spacing: 0px; }
+	.room_sc_con_submit_btn:hover { background-color: red; color: white; }

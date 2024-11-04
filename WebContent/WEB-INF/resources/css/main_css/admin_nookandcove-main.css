@@ -1,0 +1,437 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+body { font: 13px/23px Georgia; -webkit-font-smoothing: antialiased; word-wrap: break-word; color: black; }
+a { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+input::-moz-focus-inner { border: 0; }
+a:hover, a:active, a:focus { text-decoration: none; outline: none; }
+h1, h2, h3, h4, h5, h6 { font-family: Georgia; color: black; }
+.top-header .right-header ul.social-icons, .main-header .menu ul { padding: 0; margin: 0; list-style: none; }
+#services, #portfolio, #about, #contact, #mainframe, #howitworksframe { padding-top: 120px; }
+.top-header { color: white; padding: 10px 0; margin-top: -20px; }
+.top-header .left-header span { display: inline-block; margin: 8px 30px 0 0; }
+.top-header .left-header span i { margin-right: 10px; }
+.top-header .right-header ul.social-icons li { display: inline-block; }
+.top-header .right-header ul.social-icons li a { color: white; width: 32px; height: 32px; text-align: center; line-height: 30px; border: 1px solid white; -webkit-border-radius: 16px; border-radius: 16px; margin: 0 5px; }
+.top-header .right-header ul.social-icons li a:hover { background-color: white; color: red; }
+.main-header { position: fixed; width: 100%; z-index: 9999; padding: 10px 0; background: white; -webkit-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ; -moz-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ; box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.main-header .logo { margin-top: 2px; padding-bottom: 5px; }
+.main-header .logo h1 { font-size: 28px; font-weight: 700; text-transform: uppercase; }
+.main-header .logo h1 a { color: #444444; }
+.main-header .menu { margin-top:  8px; }
+.main-header .menu ul li { display: inline-block; margin-left: 5px; }
+.main-header .menu ul li a { text-transform: uppercase; color: black; font: 0.95em/1.5em Georgia; letter-spacing: 2px; padding: 5px 4px; }
+.after_login_header_adj { margin-left: 0px; }
+.main-header .menu ul li.current > a, .main-header .menu ul li a:hover { color: red; }
+.main-header-shrink { padding-top: 10px 0; top: 0; }
+.responsive-menu { position: relative; top: -20px; }
+.responsive-menu .toggle-menu { font-size: 24px; color: red; }
+.responsive-menu .menu { display: none; position: absolute; top: 52px; width: 100%; background-color: #000; }
+.responsive-menu .menu ul li { display: block; text-align: left; border-bottom: 1px solid #FFF; margin: 0; }
+.responsive-menu .menu ul li:last-child { border-bottom: 0; }
+.responsive-menu .menu ul li a { color: white; padding: 15px 20px; display: block; -webkit-border-radius: 0; border-radius: 0; }
+.responsive-menu .menu ul li a.current { background-color: #444444; }
+.sub-header .menu ul li { display: inline-block; }
+.sub-header .menu ul li a { text-transform: uppercase; color: black; font-size: 14px; padding: 8px 15px; -webkit-border-radius: 3px; border-radius: 3px; }
+.sub-header .menu ul li.current > a, .sub-header .menu ul li a:hover { color: red; }
+.title-section { margin-bottom: 80px; }
+.title-section h2 { font-size: 24px; font-weight: normal; text-transform: uppercase; display: block; margin-bottom: 20px; color: #292929; }
+.title-section h3 { font-size: 20px; font-weight: normal; text-transform: uppercase; display: block; margin-bottom: 20px; color: #292929; }
+.title-section h4 { font-size: 18px; font-weight: normal; text-transform: uppercase; display: block; margin-bottom: 20px; color: #191919; }
+.title-section span { display: block; width: 70px; height: 4px; margin: 0 auto; }
+.widget-title { font-size: 18px; font-weight: 600; margin-bottom: 30px; }
+.mainBtn { background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 10px 15px; font-weight: 600; font-size: 14px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.mainBtn:hover { background-color: #444444; }
+/*----------------Main Frame Styles---------------------*/
+#mainframe { margin-top: 10px; padding-bottom: 80px; }
+#howitworksframe { margin-top: 10px; padding-bottom: 0px; }
+.home-imgs-display { margin-top: 80px; }
+.home-imgs-display1 { margin-top: 50px;	}
+.home-imgs-display2 { margin-top: 30px;	}
+/*--------------------Services Styles-------------------*/
+#services .service-item .service-header { padding-bottom: 20px; clear: both; }
+#services .service-item .service-header i { color: red; font-size: 24px; float: left; margin-right: 25px; }
+#services .service-item .service-header h3 { font-size: 18px; text-transform: uppercase; font-weight: 600; }
+/*--------------------------Portfolio Styles------------*/
+#portfolio { padding-bottom: 80px; margin-top: 100px; background: #3d3f3f; }
+#portfolio .title-section h2 { color: white; }
+#portfolio .portfolio-thumb { overflow: hidden; position: relative; margin-bottom: 30px; }
+#portfolio .portfolio-thumb img { width: 100%; height: auto; }
+#portfolio .portfolio-thumb .overlay { opacity: 0; visibility: visible; background: rgba(227, 114, 46, 0.9); position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+#portfolio .portfolio-thumb .overlay .inner { position: absolute; padding: 20px; width: 100%; bottom: 0; left: 0; text-align: center; }
+#portfolio .portfolio-thumb .overlay .inner h4 { font-size: 18px; margin-bottom: 10px; }
+#portfolio .portfolio-thumb .overlay .inner h4 a { color: white; }
+#portfolio .portfolio-thumb .overlay .inner span { font-weight: 300; color: white; }
+#portfolio .portfolio-thumb:hover .overlay { opacity: 1; visibility: visible; }
+/*----------------About Styles--------------------------*/
+#about .progess-bars li .progress { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; border-radius: 0; background: #e6e6e6; height: 30px; margin-bottom: 15px; }
+#about .progess-bars li .progress-bar { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; line-height: 30px; background: red; text-transform: uppercase; }
+#about .our-team { margin-top: 80px; }
+#about .our-team .team-member { overflow: hidden; }
+#about .our-team .team-member .member-img { width: 100%; position: relative; }
+#about .our-team .team-member .member-img img { width: 100%; height: auto; }
+#about .our-team .team-member .member-img .overlay { top: 0; left: 0; position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); opacity: 0; visibility: hidden; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+#about .our-team .team-member .member-img .overlay .social { position: absolute; top: 0; left: 0; }
+#about .our-team .team-member .member-img .overlay .social li { display: inline-block; float: left; margin-right: 1px; }
+#about .our-team .team-member .member-img .overlay .social li a { display: block; color: white; background-color: rgba(255, 255, 255, 0.2); width: 40px; height: 40px; text-align: center; line-height: 40px; }
+#about .our-team .team-member .member-img .overlay .social li a:hover { background-color: rgba(255, 255, 255, 0.4); }
+#about .our-team .team-member .member-img:hover .overlay { opacity: 1; visibility: visible; }
+#about .our-team .team-member .inner-content { background: whitesmoke; border: 1px solid #d6d6d6; border-top: 0; padding: 20px; }
+#about .our-team .team-member .inner-content h5 { font-size: 18px; font-weight: 600; color: red; margin-bottom: 10px; }
+#about .our-team .team-member .inner-content span { color: #9d9d9d; margin-bottom: 15px; display: block; }
+/*-----------Contact Styles-----------------------------*/
+#contact .contact-form .full-row { width: 100%; margin-bottom: 20px; }
+#contact .contact-form input, #contact .contact-form textarea { outline: 0; display: block; border: 1px solid #cccccc; width: 100%; max-width: 100%; padding: 8px 10px; color: #777777; }
+#contact .contact-form label { display: block; margin-bottom: 5px; }
+#contact .contact-form input.mainBtn { display: inline-block; width: auto; border: 0; padding: 10px 15px; color: white; }
+#contact .map-holder { padding: 5px; background-color: white; border: 1px solid #d6d6d6; }
+#contact .contact-info { margin-top: 30px; }
+#contact .contact-info span { margin-top: 20px; display: block; font-size: 14px; }
+#contact .contact-info span i { color: red; font-size: 16px; margin-right: 12px; }
+.flexslider { margin-top: 0px; width: 100%; max-width: 100%; min-width: 100%; overflow: hidden; }
+.flexslider-top { margin-top: 80px; }
+.flexslider-top-more { margin-top: 100px; }
+.flexslider-sub-top { margin-top: 50px; }
+.flex-direction-nav a { color: #444444; width: 40px; height: 40px; background-color: white; -webkit-border-radius: 3px; border-radius: 3px; margin: -20px 0 0 0; text-align: center; line-height: 40px; }
+.flex-caption { position: absolute; top: 30%; width: 100%; text-align: center; z-index: 999; color: white; background: rgb(204, 204, 204); background: rgba(204, 204, 204, 0.5); padding-top: 10px; padding-bottom: 10px; text-transform: uppercase; }
+.flex-caption h2 { font-size: 26px; text-transform: uppercase; font-weight: 700; color: black; margin-bottom: 45px; }
+.flex-caption p { font-size: 16px; font-family: 'Droid Serif', serif; line-height: 25px; color: black; }
+.flex-caption span { background: url(/nookandcove/resources/images/slider-dec.png) no-repeat; width: 60px; height: 9px; display: block; margin: 30px auto; }
+.flex-caption-butt { position: absolute; top: 86%; width: 100%; text-align: center; z-index: 999; color: white; left: 10%; }
+.flex-caption-butt1 { position: absolute; top: 75%; width: 100%; text-align: left; z-index: 999; color: white; left: 13.8%; }
+.home-Submit-Btn { font-family: "Georgia"; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500;	line-height: 26.4px; letter-spacing: 8px; border: none; outline: none; background-color: red; color: white; display: inline-block; padding-left: 3.3%; padding-right: 3.3%; padding-top: 1.5%; padding-bottom: 1.5%; text-transform: uppercase; margin-top: 0%; margin-bottom: 5%; }
+.home-Submit-Btn:hover { background-color: #2c2c2c; }
+.home-Submit-Btn1 { font-family: "Georgia"; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500;	line-height: 26.4px; letter-spacing: 8px; border: none; outline: none; background-color: red; color: white; display: inline-block; padding-left: 3.3%; padding-right: 3.3%; padding-top: 1%; padding-bottom: 1%; text-transform: uppercase; margin-top: 0.5%; margin-bottom: 5%; }
+.home-Submit-Btn1:hover { background-color: #2c2c2c; }
+/*-------------Footer Styles---------------------------*/
+.site-footer { background-color: white; color: black; padding-top: 50px; font: normal 0.95em/1.5em Georgia; padding-bottom: 100px; }
+.contact-footer { margin-top: 14px; }
+.footer-links ul li p { text-transform: uppercase; color: black; padding: 0px 12px; font: normal 0.95em/1.5em Georgia; text-align: left; letter-spacing: 3px; line-height: 26.4px; }
+.footer-links ul li a { text-transform: uppercase; color: black; padding: 0px 12px; font: normal 0.95em/1.5em Georgia; text-align: left; line-height: 26.4px; letter-spacing: 3px; cursor: pointer; outline: none; }
+.footer-links ul li.current > a, .footer-links ul li a:hover { color: red; }
+.footer-box-adj{ border-left: 1px solid red; min-height: 100px; }
+.nc-footer-imgs td{ padding-left: 10px; padding-top: 5px; cursor: pointer; outline: none; }
+.footerSubmitBtn { font-family: Georgia; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: 4px; border: 1px solid #595959; outline: none; background-color: white; color: black; display: inline-block; text-transform: uppercase; margin-bottom: 15px; width: 200px; height: 35px; }
+.footerSubmitBtn:hover { background-color: red; border: 1px solid red; color: white; }
+.floating-label-form-group { position: relative;   margin-bottom: 0;   padding-bottom: .5em;   border-bottom: 1px solid gray;   box-shadow: 0px 2px 3px gray;   margin-bottom: 20px; }
+.ft_logo_adj { margin-top: 25px; }
+.ft_logo_adj:hover { opacity: 0.3; }
+#footer-icon-img:hover { background-image: url('/nookandcove/resources/images/footer-imgs/nc-contact.png'); }
+/********************************
+IPAD LANDSCAPE (1024x768) IPAD PORTRAIT (768x1024)
+********************************/
+@media only screen and (max-width: 960px) { .flexslider { margin-top: 0px; }
+  .main-header { padding: 10px 0; }
+  .main-header .logo { margin-top: 20px; }
+  img .logo-adj{ margin-top: -20px; padding-bottom: 2px; }
+  .service-item, .team-member { margin-bottom: 50px; }
+  .our-skills { margin-top: 60px; }
+  .flex-caption { top: 20%; }
+  .flex-caption-butt { .top: 50% }
+  .flex-caption-butt1 { .top: 50% }
+  .flex-caption h2 { font-size: 24px;   margin-bottom: 20px; }
+  .flex-caption p { font-size: 14px;   width: 70%;   margin: 0 auto; }
+  .left-header, .right-header { text-align: center; }
+}
+/********************************
+IPHONE 4-4S-5 LANDSCAPE (568x320)
+********************************/
+@media only screen and (max-width: 760px) { .flex-caption { display: none !important; }
+  .contact-form { margin-bottom: 60px; }
+  .main-header { height: 60px; }
+  .main-header .logo { margin: 0; }
+  .flexslider { margin-top: 0px; }
+  .responsive-menu .menu { top: 32px; }
+}
+/********************************
+IPHONE 4-4S-5 PORTRAIT (320x568)
+********************************/
+/*------- Top adjustment Styles -------------------------*/
+.top_adjustment_5 { margin-top: 5px; } .top_adjustment_10 { margin-top: 10px; } .top_adjustment_15 { margin-top: 15px; } .top_adjustment_20 { margin-top: 20px; } .top_adjustment_25 { margin-top: 25px; } .top_adjustment_30 { margin-top: 30px; } .top_adjustment_35 { margin-top: 35px; } .top_adjustment_40 { margin-top: 40px; } .top_adjustment_45 { margin-top: 45px; } .top_adjustment_50 { margin-top: 50px; } .top_adjustment_60 { margin-top: 60px; } .top_adjustment_70 { margin-top: 70px; } .top_adjustment_80 { margin-top: 80px; } .top_adjustment_90 { margin-top: 90px; } .top_adjustment_100 { margin-top: 100px; } .top_adjustment_110 { margin-top: 110px; } .top_adjustment_120 { margin-top: 120px; } .top_adjustment_130 { margin-top: 130px; } .top_adjustment_140 { margin-top: 140px; } .top_adjustment_150 { margin-top: 150px; } .top_adjustment_155 { margin-top: 155px; } .top_adjustment_160 { margin-top: 160px; } .top_adjustment_170 { margin-top: 170px; } .top_adjustment_180 { margin-top: 180px; } .top_adjustment_190 { margin-top: 190px; } .top_adjustment_200 { margin-top: 200px; }
+/*------- My Clients Info display -------------------------*/
+#welcomeDisolay { color: #2b81ee; text-transform: uppercase; font-size: 14px; font-weight: bold; }
+#nameDisplay { text-transform: uppercase; color: black; font: bold 0.95em/1.25em Georgia; letter-spacing: 2px; }
+/*------- Pop Up Images Display CSS -------------------------*/
+.popup_backgrond_img_display_cl { background: #393939; opacity: 1;padding-bottom: 45px; padding-left: 55px; position: fixed; overflow-y: hidden;top: 0; right: 0; bottom: 0; left: 0; }
+.popup_close_butt_dsp { cursor: pointer; padding: 5px; opacity: 1; }
+.popup_only_image_display_cl { display: none; height: 530px; object-fit: scale-down; position: relative; object-position: 50% 50%; object-position: 0 0; overflow: auto; overflow-y: hidden; overflow-x: hidden; }
+.popup_big_backgrond_display_cl { width: auto; color:white; display: none; opacity: 0.8; z-index: 1000; }
+#popUpBigMaskWindowId { position:absolute; left:0; top:0; display:none; background: #000000; }	
+#popupTotalWindowBoxId .window { position:absolute; z-index:9999; }	
+#popupTotalWindowBoxId #imageBackgroundDspId { width: 100%; height: 100%; background-size: 140%; background-position: center; background-repeat: no-repeat; }
+/* -----------------------------------------------  Admin MOdule Display ----------------------------------------------*/		
+.adm_new_cl_head_txt_dsp { font: bold 1.25em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: left; text-transform: uppercase; }
+.adm_new_cl_sub_txt_dsp { font: 500 1em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: right; text-transform: uppercase; }
+.new_clients_no_dsp { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: red; }
+.admn_new_clients_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 3px 14px; outline: none; border: none; font: 500 1.05em/1.5em Georgia; letter-spacing: 2px; }
+.admn_new_clients_submit_Btn:hover { background-color: #2c2c2c; }
+.adm_reg_paym_txt_dsp { font: 500 1em/1.7em Georgia; letter-spacing: 2px; color: black; text-transform: uppercase; }
+.adm_reg_paym_hd_txt_dsp { font: bold 1em/2em Georgia; letter-spacing: 2px; color: black; text-transform: uppercase; }
+.shop_cart_rn_text_dsp { font: 0.85em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: center; text-transform: uppercase; vertical-align: middle; margin-top: 10px; }
+.red_my_cart_for_guest_reg_amt_dsp { font: bold 1.1em/1.25em Georgia; letter-spacing: 2px; color: black; }
+.red_my_cart_for_guest_suht_dsp { font: bold 0.85em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: center; text-transform: uppercase; }
+.red_my_cart_for_guest_div_bar { border-bottom: 2px solid #999; }
+.red_cart_guest_sub_div_bar { border-bottom: 1px solid #999; padding: 25px 5px; }
+/* Admin Client Directory */
+.admin_gift_card_current_management { border-bottom: 29px solid #595959; border-left: 15px solid transparent; border-right: 15px solid transparent; float:left; margin-left: 0px; margin-top: 0px;}
+.admin_gift_card_current_management a {	text-decoration: none; outline: none;}
+.pendGiftCardCurrentTab { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: white; position: relative; top: 26px;}
+.pendGiftCardCurrentTab:hover { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: red; position: relative; top: 26px;}
+.admin_gift_card_management { border-bottom: 29px solid #cdcdcd; border-left: 15px solid transparent; border-right: 15px solid transparent; float: left; }
+.admin_gift_card_management a{text-decoration: none; outline: none;}
+.pendGiftCardCurrentTab { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: white; position: relative; top: 26px;}
+.admin_cl_dir_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: #767171; color: white; display: inline-block; text-transform: uppercase; padding: 8px 45px; outline: none; border: none; 	font: 500 1.2em/1.5em Georgia; letter-spacing: 3px; }
+.admin_cl_dir_submit_Btn:hover { background-color: red; }
+.admn_view_nrm_text_dsp { font: 1.2em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; }
+.admn_view_qrnrm_text_dsp { font: 1.2em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; margin-bottom: 10px; }
+.admn_view_bold_text_dsp { font: bold 1.05em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; }
+.admn_view_qrbold_text_dsp { font: bold 1.05em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; margin-bottom: 10px; }
+.av_color_inputbox_disp { border: 1px solid #494949; width: 330px; height: 40px; font: 1em/1.25em Georgia; color: black; margin-top: 5px; }
+.aqr_color_tabox_disp { border: 1px solid #494949; width: 400px; height: 80px; padding: 10px; font: 1em/1.25em Georgia; color: black; margin-top: 25px; }
+.inspiredImgs { width: 150px; height: 120px; border: 1px solid gray; margin-bottom: 10px; }
+.adminViewImgDsp { cursor: pointer; }
+.admin_archive_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: #767171; color: white; display: inline-block; text-transform: uppercase; padding: 8px 30px; outline: none; border: none; 	font: 500 1.2em/1.5em Georgia; letter-spacing: 3px; }
+.admin_archive_submit_Btn:hover { background-color: red; }
+.admin_arch_clients_cl { font: 1em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: right; text-transform: uppercase; text-decoration: none; }
+.admin_arch_clients_cl:hover { color: red; text-decoration: none; }
+/* --------------------------------------- PROMO CODES DISPLAY ---------------------------------------- */
+.subtitle-section h2 { font: bold 1.28em/1.25em Georgia; text-align: center; letter-spacing: 3px; color: #2c2c2c; text-transform: uppercase; }
+.txt_field_disp{ font: 1em/1.25em Georgia; text-align: left; letter-spacing: 2px; color: black; text-transform: uppercase; padding-top: 15px; padding-left: 7px; }
+.input_box_disp { border: 2px solid #696969; width: 350px; height: 36px; margin-top: 7px; letter-spacing: 2px; color: black; font: 1.15em/1.25em Georgia; }
+.continue_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 8px 40px; outline: none; border: none; 	font: 500 1.25em/1.5em Georgia; letter-spacing: 7px; }
+.continue_submit_Btn:hover { background-color: #2c2c2c; }
+.promo_code_butt_adj { text-align: center; padding-top: 35px; }
+/* ------------------------------------------- Admin Gift Card Display ------------------------------------*/
+.admn_gc_view_nrm_text_dsp { font: 1.15em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; }
+.admn_gc_view_bold_text_dsp { font: bold 1em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; }
+.admn_gc_view_bold_hd_text_dsp { font: bold 1.1em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; }
+/* ---------------------------------------------- Purchases Display ---------------------------------------*/
+.purchases_clients_info_frame_dsp { border: 2px solid black; padding: 25px; }
+.admn_pur_cl_nrm_text_dsp { font: 1.15em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; margin-bottom: 6px; }
+.admn_pur_cl_bold_text_dsp { font: bold 1.05em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; margin-bottom: 6px; }
+.admn_pur_cl_bold_hd_text_dsp { font: bold 1.05em/1.5em Georgia; vertical-align: middle; letter-spacing: 1px; color: black; text-align: left; }
+/* ------------------------------------- Designer Directory Display ---------------------------------------*/
+.dd_input_box_disply { border: 2px solid #696969; width: 350px; height: 36px; margin-top: 7px; letter-spacing: 1px; color: black; font: 1.05em/1.25em Georgia; }
+.dd_txt_field_disply{ font: 1em/1.25em Georgia; text-align: left; letter-spacing: 2px; color: black; text-transform: uppercase; padding-top: 15px; padding-left: 7px; }
+.add_text_fields_names_disply{ font: bold 0.98em/1.25em Georgia; text-align: left; letter-spacing: 1px; color: black; text-transform: uppercase; padding-top: 15px; padding-left: 7px; }
+.add_text_fields_data_disply{ font: bold 0.98em/1.25em Georgia; text-align: left; letter-spacing: 1px; color: black; text-transform: uppercase; padding-top: 15px; padding-left: 7px; }
+.dd_textarea_box_dsplay { border: 2px solid #696969; width: 350px; height: 80px; margin-top: 7px; letter-spacing: 1px; color: black; font: 1.05em/1.25em Georgia; outline: 0; display: block; }
+.dd_reg_butt_adj { text-align: center; padding-top: 40px; padding-left: 40px; }
+.admin_add_new_dsn_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 7px 30px; outline: none; border: none; 	font: 500 1.2em/1.5em Georgia; letter-spacing: 3px; }
+.admin_add_new_dsn_submit_Btn:hover { background-color: #767171; }
+.desn_profile_frame_dsp { border: 2px solid black; padding-bottom: 40px; padding-top: 10px; }
+.dd_profile_butt_adj { text-align: center; padding-top: 40px; }
+.desn_mess_disp_txt { font: 1.2em/1.25em Georgia; color: red; padding-bottom: 5px; width: 570px; padding-right: 285px; margin-top: 20px; margin-left: 18px; }
+.desn_mess_opp_disp_txt { font: 1.2em/1.25em Georgia; color: black; padding-bottom: 5px; width: 570px; padding-left: 300px; margin-top: 20px; }
+.desn_mess_date_disp_txt { font: 1.2em/1.25em Georgia; color: gray; padding-bottom: 5px; width: 570px; margin-left: 18px; }
+.desn_mess_opp_date_disp_txt { font: 1.2em/1.25em Georgia; color: gray; padding-bottom: 5px; width: 570px; }
+.messages{ border: 1px solid #292929; height: 336px; overflow-x: hidden;  overflow-y: scroll; margin-left: 25px; width: 603px; }
+.entry{ border: 1px solid white; height: 45px; padding: 5px; margin-top: 0px; font: 1em/1.25em Georgia; width: 550px; }
+.message_frame_adj { margin-top: -427px; position: absolute; margin-left: 25px; }
+.messages_display_frame_cl { margin-top: -493px; position: absolute; margin-left: 25px; }
+.message_type_display_box_cl { margin-top: -142px; position: absolute; margin-left: 25px; }
+.message_send_butt_display_cl { top: 40px; position: relative; left: 2px; }
+.mess_head_tx_dspl { font: 1.7em/1.25em Georgia; color: white; text-align: left; letter-spacing: 2px; text-transform: uppercase; position: relative; left: 38px; top: 65px; }
+.message_type_box_adj { margin-top: -77px; position: absolute; margin-left: 25px; }
+.send_but_for_msg_sd { top: 10px; position: relative; left: 2px; }
+.send_but_for_msg_sd:hover { opacity: 0.5; }
+.admin_messages{ border: 1px solid #292929; height: 397px; overflow-x: hidden;  overflow-y: scroll; margin-left: 25px; width: 603px; }
+.adm_cl_mess_head_tx_dspl { font: 1.7em/1.25em Georgia; color: white; text-align: left; letter-spacing: 2px; text-transform: uppercase; position: relative; left: 38px; top: 65px; }
+.ad_desn_cl_mess_disp_txt { font: 1.2em/1.25em Georgia; color: #00a9f1; padding-bottom: 5px; width: 570px; padding-right: 285px; margin-top: 20px; margin-left: 18px; }
+.ad_desn_cl_mess_opp_disp_txt { font: 1.2em/1.25em Georgia; color: red; padding-bottom: 5px; width: 570px; padding-left: 300px; margin-top: 20px; }
+.adm_cl_desn_mess_head_tx_dspl { font: 1.5em/1.25em Georgia; color: white; text-align: left; letter-spacing: 2px; text-transform: uppercase; position: relative; left: 38px; top: 65px; }
+/* ------------------------------------- Designer Directory Uploaded CSS Display ---------------------------------------*/
+.package_info_disp_for_Dsn { font: bold 1.05em/1.25em Georgia; letter-spacing: 3px; color: black; text-align: left; text-transform: uppercase; }
+.desn_full_upload_cons_only_frame { border: 2px solid black; min-height: 300px; height: auto; width: 340px; padding-top: 30px; padding-bottom: 40px; }
+.full_frame_con1_dsp { margin-left: 3px; }
+.dsn_ful_uplod_pos_adj1 { margin-left: 15px; }
+.full_desn_concept_head_text { font: 1.05em/1.25em Georgia; letter-spacing: 1px; color: black; text-transform: uppercase; margin-top: 20px; padding-bottom: 0px; }
+.full_upload_img_desn_disp_frame { width: 130px; height: 100px; border: 1px dashed black; background: #d9d9d9; margin-top: 8px; }
+.full_upload_db_img_desn_disp_frame { width: 130px; height: 100px; margin-top: 8px; }
+.full_rm_image_upload_files_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 3px 15px; outline: none; border: none; 	font: 500 1.1em/1.5em Georgia; letter-spacing: 3px; }
+.full_rm_image_upload_files_submit_Btn:hover { background-color: #2c2c2c; }
+.view_img_for_desn { font: 1em/1.25em Georgia; letter-spacing: 2px; color: black; text-transform: uppercase; text-decoration: underline; }
+.view_img_for_desn:hover { color: red; text-decoration: underline; }
+.dsn_furn_spec_txt_dsp { font: 1em/1.25em Georgia; letter-spacing: 1px; color: black; text-transform: uppercase; }
+.dsn_furn_spec_num_dsp { font: 1.7em/1.25em Georgia; letter-spacing: 1px; color: black; text-transform: uppercase; padding-top: 7px; padding-bottom: 7px; }
+.upload_files_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 3px 15px; outline: none; border: none; 	font: 500 1.1em/1.5em Georgia; letter-spacing: 3px; }
+.upload_files_submit_Btn:hover { background-color: #2c2c2c; }
+.desn_full_upload_rends_only_frame { border: 2px solid black; min-height: 300px; height: auto; width: 520px; padding-top: 30px; padding-bottom: 40px; margin-left: -40px; }
+.sec_rn_dsn_uplod_pos_adj1 { margin-left: 15px; }
+.desn_concept_head_text { font: 1.05em/1.25em Georgia; letter-spacing: 1px; color: black; text-transform: uppercase; margin-top: 20px; }
+.upload_full_rend_img_desn_disp_frame { width: 100px; height: 100px; border: 1px dashed black; background: #d9d9d9; margin-top: 8px; }
+.dsn_sm_full_uplod_pos_adj1 { margin-left: 19px; }
+.upload_db__full_rend_img_desn_disp_frame { width: 100px; height: 100px; margin-top: 8px; }
+.dsn_full_uplod_pos_adj1 { margin-left: 10px; }
+.dsn_full_uplod_view_pos_adj1 { margin-right: 15px; }
+.dsn_uplod_pos_adj1 { margin-left: 15px; }
+.dsn_uplod_pos_adj2 { margin-right: 15px; }
+.dsn_full_uplod_pos_adj2 { margin-right: 15px; }
+.dsn_full_uplod_view_pos_adj2 { margin-left: 29px; }
+.desn_full_upload_sec_rend_only_frame { border: 2px solid black; min-height: 300px; height: auto;padding-top: 30px; padding-bottom: 40px; margin-left: -95px; }
+.sec_rn_dsn_uplod_pos_adj1 { margin-left: 15px; }
+.sec_rn_dsn_uplod_pos_adj2 { margin-left: 5px; }
+.full_dd_tick_mark_img_adj { position: absolute; margin-top: -22px; margin-left: 61px; }
+/*------- Admin side DD Client Products list Display CSS -------------------------*/
+.shop_your_room_txt_dsp { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: left; text-transform: uppercase; }
+.con_img_mou { margin-top: -2px; }
+.consepts_back_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; display: inline-block; outline: none; border: none; margin-left: 0px; margin-top: 4px; }
+.all_shop_adj_dsp_cls { white-space: nowrap; text-align: right; }
+.price_tot_dsp { font: bold 1.25em/1.05em Georgia; color: black; text-align: right; text-transform: uppercase; margin-right: 6px; }
+.total_product_price_dsp { font: bold 1.45em/1.05em Georgia; color: red; text-align: right; text-transform: uppercase; margin-right: 6px; }
+div.shopViewProductsClass { text-decoration: none; cursor: pointer; border: 2px solid white; margin-left: 0px; }
+.prod_price_box { border: 2px solid white; width: 170px; min-height: 61px; height: auto; margin-left: 0px; margin-top: 5px; }
+.content_dsp_table { width: 160px; margin: 5px; }
+.con_prod_name_dsp { font: 0.95em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; text-transform: uppercase; width: 160px; height: 10px; }
+.con_prod_qnty_dsp { font: 0.95em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; text-transform: uppercase; width: 160px; height: 10px; }
+.rec_qnt_dsp { font: 0.95em/1.25em Georgia; letter-spacing: 1px; color: gray; text-align: left; text-transform: uppercase; width: 160px; height: 10px; }
+.con_prod_prices_dsp { font: 1em/1.25em Georgia; letter-spacing: 1px; color: red; text-align: left; text-transform: uppercase; width: 160px; height: 10px; }
+.con_prod_add_cart_dsp { font: 0.95em/1.25em Georgia; letter-spacing: 1px; color: black; cursor:pointer; text-align: left; text-transform: uppercase; width: 160px; text-decoration: underline; outline: none; padding-bottom: 3px; }
+.view_popup_frame_bottom_adj { margin-left: 15px; margin-top: 20px; margin-bottom: 60px; }
+.popup_frame_bck_adj { border: none; }
+.prod_con_pop_text { font: bold 0.90em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: left; margin-top: 20px; text-transform: uppercase; min-height: 80px; height: auto; }
+.qty_con_pop_text { font: 0.80em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: left; margin-top: 15px; margin-bottom: 10px; text-transform: uppercase; min-height: 20px; height: auto; }
+.price_con_pop_text { font: 0.9em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: left; margin-top: 0px; text-transform: uppercase; }
+.descr_con_pop_text { font: 0.8em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; margin-top: 15px; text-transform: uppercase; min-height: 100px; height: auto; }
+.ass_req_st_con_pop_text { font: 0.8em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; margin-top: 5px; text-transform: uppercase; padding-bottom: 15px; white-space: nowrap; }
+.table_con_pop_text { font: 0.8em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; margin-top: 3px; }
+.dsn_rs_pack_info_tx_disp_for_Dsn { font: bold 1.05em/1.25em Georgia; letter-spacing: 3px; color: red; text-align: right; text-transform: uppercase; }
+.desn_acc_upload_con_rend_frame1 { border: 2px solid black; min-height: 300px; height: auto; width: 520px; padding-top: 30px; padding-bottom: 40px; }
+.upload_img_desn_disp_frame { width: 220px; height: 100px; border: 1px dashed black; background: #d9d9d9; margin-top: 8px; }
+.upload_db_img_desn_disp_frame { width: 220px; height: 100px; margin-top: 8px; }
+.image_upload_files_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 3px 15px; outline: none; border: none; 	font: 500 1.1em/1.5em Georgia; letter-spacing: 3px; }
+.image_upload_files_submit_Btn:hover { background-color: #2c2c2c; }
+.desn_acc_upload_con_rend_frame2 { border: 2px solid black; min-height: 300px; height: auto; width: 260px; margin-left: -55px; padding-top: 30px; padding-bottom: 40px; }
+.admin_profile_dsp { font: 1em/1.25em Georgia; letter-spacing: 2px; color: black; text-transform: uppercase; text-decoration: none; }
+.admin_profile_dsp:hover { color: red; text-decoration: none; }
+.sub_admins_count_dsp { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: red; text-transform: uppercase; text-decoration: none; }
+a.admin_all_giftCard_info_dsp { font: 1em/1.25em Georgia; letter-spacing: 2px; color: black; text-transform: uppercase; text-decoration: none; }
+a.admin_all_giftCard_info_dsp:hover { color: red; text-decoration: none; }
+.no_giftcards_text_dsp { font: bold 1.85em/1.25em Georgia; letter-spacing: 2px; color: red; text-transform: uppercase; text-decoration: none; padding: 80px; }
+a.admin_all_giftCard_links_dsp { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: black; text-transform: uppercase; text-decoration: none; }
+a.admin_all_giftCard_links_dsp:hover { color: red; text-decoration: none; }
+a.selected_type_giftCard__dsp { font: bold 1em/1.25em Georgia; letter-spacing: 2px; color: red; text-transform: uppercase; text-decoration: none; }
+a.selected_type_giftCard__dsp:hover { color: black; text-decoration: none; }
+.gift-marc-crd-hed{ border : 1px solid red; padding: 15px 5px; width: 350px; }
+.gift-marc-crd-subhed{ border : 1px solid red; padding: 15px 5px; width: 280px; }
+.type-of-gift-card-hd { border : 1px solid red; padding: 1em; margin-left: 40px; margin-right: 40px; margin-bottom: 48px; }
+.type-of-gift-card-hd h2 { font-family: Georgia; font-weight: normal; font-size: 15px; text-align: center; letter-spacing: 4px; color: black; }
+.sp-but-height { margin-top: 50px; }
+.gift-box-font { font: bold 1.3em/1.5em Georgia; text-align: left; letter-spacing: 1px; color: black; }
+.gift-mer-select-box { background-color: white; border: 1px solid black; width: 120px; height: 32px; font: 500 1.2em/1.5em Georgia; text-align: left; letter-spacing: 1px; color: black; padding: 0.5em; }
+.gift .row .delivery-item { margin: 0 2%; }
+.typeOfGC { cursor: pointer; }
+.del-text-display { font: 500 1.1em/1.5em Georgia; letter-spacing: 1px; color: black; margin-top: 6px; }
+.inputbox-display { font: 500 1.1em/1.5em Georgia; text-align: left; letter-spacing: 1px; color: black; margin-top: 15px; height: 30px; width: 100%; background: white; border-left: none; border-top: none; border-right: none; border-bottom: 1px solid black; }
+.no-border { border-bottom: 2px solid #444444; width: 80%; margin: 64px auto; }
+
+.regoverview_title_sel h4 { font: 1.3em/1.25em Georgia; color: black; display: block; border-bottom: 1px solid red; padding-bottom: 8px; letter-spacing: 3px; margin-left: 10px; margin-right: 10px; max-width: 180px; margin: 0 auto; text-transform: uppercase; }
+.reg_fst_tit_lt_bigft { font: 500 1.4em/1.5em Georgia; }
+.selcted_reg_overview_sbut { padding: 15px 25px; font: 500 1.2em/1.5em Georgia; letter-spacing: 3px; display: inline-block; text-transform: uppercase; cursor: pointer; outline: none; color: #fff; background-color: #36669b; border: none; border-radius: 15px; box-shadow: 0 9px #999; display: block; margin: 0px auto; vertical-align: middle; width: 300px; height: 110px; }
+.selcted_reg_overview_sbut:hover { background-color: #2a445f; color: white; }
+.selcted_reg_overview_sbut:active { background-color: #2a445f; box-shadow: 0 5px #666; transform: translateY(4px); }
+.reg_fst_lt_bigft { font: 500 1.23em/1.5em Georgia; }
+.reg_and_or_txt { font: normal 1.05em/1.5em Georgia; height: 110px; vertical-align: middle; letter-spacing: 2px; }
+.reg_dsn_cur_con_bord_top_frame { border: 2px solid #bababa; min-height: 200px; height: auto; box-shadow: -6px 0px 2px 0px #a5a5a5; }
+.reg_dsn_cur_con_bord_midd_frame { border: 2px solid #bababa; min-height: 100px; height: auto; box-shadow: -6px 0px 2px 0px #a5a5a5; }
+.reg_dsn_cur_con_bord_bot_bar { border-bottom: 1px solid #cdcdcd; padding-bottom: 3px; width: auto; padding-left: 10px; font: 1.3em/1.5em Georgia; letter-spacing: 2px; color: black; }
+.reg_dsn_curated_con_boards_sbut { font: 500 1em/1.25em Georgia; letter-spacing: 3px; display: inline-block; text-transform: uppercase; cursor: pointer; outline: none; color: #fff; background-color: #36669b; border: none; box-shadow: -5px 7px 0px 0px #999; display: block; margin: 0px auto; vertical-align: middle; width: 265px; height: 38px; }
+.reg_dsn_curated_con_boards_sbut:hover { background-color: #2a445f; color: white; }
+.reg_dsn_curated_con_boards_sbut:active { background-color: #2a445f; box-shadow: -5px 3px 0px 0px #666; transform: translateY(4px); }
+.reg_dsn_curated_cb_title_sel h4 { font: 500 1.25em/1.25em Georgia; color: black; display: block; border-bottom: 1px solid red; padding-bottom: 5px; letter-spacing: 2px; margin-left: 10px; margin-right: 10px; max-width: 400px; }
+.reg_dsn_curated_cb_ftl_bigft { font: 500 1.25em/1.25em Georgia; }
+.reg_dsn_curated_cb_rigtext_dspl { font: 1.02em/1.25em Georgia; color: black; display: block; letter-spacing: 2px; margin-left: 10px; text-transform: uppercase; }
+.reg_dsn_curated_cb_rs_imgs_dsp { background-color: white; box-shadow: -4px 4px 5px 0px #797979; min-height: 200px; border: 1px solid #d2d2d2; }
+.view_dsn_curated_cb_rs_imgs_dsp { background-color: white; box-shadow: -4px 4px 5px 0px #797979; min-height: 400px; height: auto; border: 1px solid #d2d2d2; }
+.adm_con_bod_text_hd_dsp{ font: 1.2em/1.25em Georgia; color: black; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase; padding-bottom: 10px; }
+.adm_reg_con_bod_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 6px 36px; outline: none; border: none; font: 500 1.0em/1.5em Georgia; letter-spacing: 3px; cursor: pointer; }
+.adm_reg_con_bod_submit_Btn:hover { background-color: #767171; cursor: pointer; }
+.reg_dsn_con_bord_and_ft_bot_bar { border-bottom: 1px solid #cdcdcd; padding-bottom: 3px; width: auto; margin-left: 25px; width: 125px; margin-top: 6px; margin-bottom: 15px;}
+.add_ft_reg_con_bod_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 6px 24px; outline: none; border: none; font: 500 1.0em/1.5em Georgia; letter-spacing: 3px; cursor: pointer; }
+.add_ft_reg_con_bod_submit_Btn:hover { background-color: #767171; cursor: pointer; }
+
+.adn_reg_add_boards_inptext_dsp{ font: 1em/1.25em Georgia; text-align: right; letter-spacing: 2px; color: black; text-transform: uppercase; padding-bottom: 10px; }
+.adn_reg_add_boards_inpfield_dsp { background-color: white; border: 2px solid gray; background: white; width: 280px; height: 32px; font: 500 1.2em/1.5em Georgia; text-align: left; letter-spacing: 1px; color: black; margin-bottom: 20px; }
+.adn_reg_add_boards_save_subt_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 9px 20px; outline: none; border: none; font: 500 1.15em/1.5em Georgia; letter-spacing: 4px; width: 160px; }
+.adn_reg_add_boards_save_subt_Btn:hover { background-color: #2c2c2c; }
+.adn_reg_add_conboard_hdtext_dsp{ font: bold 1em/1.25em Georgia; text-align: center; letter-spacing: 2px; color: black; text-transform: uppercase; padding-bottom: 10px; }
+.adn_reg_add_boards_upload_subt_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 5px 30px; outline: none; border: none; font: 500 1.05em/1.5em Georgia; letter-spacing: 1px; }
+.adn_reg_add_boards_upload_subt_Btn:hover { background-color: #2c2c2c; }
+.adn_reg_add_boards_view_text_dsp { font: 500 1.1em/1.5em Georgia; letter-spacing: 2px; color: black; text-transform: uppercase; text-decoration: underline; cursor: pointer; }
+.adn_reg_add_boards_view_text_dsp:hover { color: red; cursor: pointer; }
+.adn_reg_add_boards_furspc_text_dsp { font: 500 1.1em/1.5em Georgia; letter-spacing: 1px; color: black; text-transform: uppercase; }
+.adn_reg_add_boards_furspc_no_dsp { font: bold 1.2em/1.5em Georgia; letter-spacing: 1px; color: black; text-transform: uppercase; }
+.continue_submit_Btn_for_regy { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 6px 24px; outline: none; border: none; font: 500 1.15em/1.5em Georgia; letter-spacing: 3px; }
+.continue_submit_Btn_for_regy:hover { background-color: #2c2c2c; }
+
+.prod_uplod_disp_for_admcb { font: bold 1em/1.25em Georgia; letter-spacing: 3px; color: black; text-align: center; text-transform: uppercase; }
+.prod_uplod_fur_spec_frame_for_admcb { border: 2px solid black; min-height: 280px; height: auto; width: auto; padding-top: 30px; padding-bottom: 30px; }
+.prod_upload_back_butt_adj_for_admcb { margin-top: -6px; }
+.prod_input_fild_disp_in_admcb { border-bottom: 1px solid black; border-top: 2px solid white; border-left: 2px solid white; border-right: 2px solid white; width: 380px; height: 24px; margin-right: 32px; font: 1.1em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; margin-left: 20px; padding-left: 10px; }
+.prod_select_box_fild_disp_in_admcb { border: 1px solid black; background: white; width: 380px; height: 28px; margin-right: 32px; font: 1.1em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; margin-left: 20px; padding-left: 10px; }
+.prod_field_txt_disp_for_admcb { font: 1em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: right; white-space: nowrap; width: 320px; height: 28px; }
+.prod_file_upload_disp_for_admcb { margin-right: 32px; background: white; font: 1.1em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: left; margin-left: 5px; }
+.desn_prod_file_upload_arcb { width: 100px; min-height: 80px; object-fit: scale-down; position: relative; object-position: 50% 50%; overflow: auto; overflow-y: hidden; top: -2px; border: none; outline: none; }
+.prod_row_hight_disp_in_arcb { white-space: nowrap; width: 320px; height: 10px; }
+.admn_reg_cont_bd_submit_btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 7px 40px; outline: none; border: none; font: 500 1.15em/1.5em Georgia; letter-spacing: 2px; }
+.admn_reg_cont_bd_submit_btn:hover { background-color: #2c2c2c; }
+.admin_con_boards_submit_Bttn { display: block; margin: 0px auto; vertical-align: middle; background-color: #767171; color: white; display: inline-block; text-transform: uppercase; padding: 10px; outline: none; border: none; width: 235px; 	font: 500 1.2em/1.5em Georgia; letter-spacing: 2px; }
+.admin_con_boards_submit_Bttn:hover { background-color: red; }
+.admin_fin_touches_submit_Bttn { display: block; margin: 0px auto; vertical-align: middle; background-color: #767171; color: white; display: inline-block; text-transform: uppercase; padding: 10px; outline: none; border: none; width: 173px; 	font: 500 1.2em/1.5em Georgia; letter-spacing: 2px; }
+.admin_fin_touches_submit_Bttn:hover { background-color: red; }
+
+.prod_uplod_disp_mana_for_ardcfs { font: bold 1.2em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: center; text-transform: uppercase; padding-bottom: 6px; margin-left: 20px; margin-right: 20px; }
+.prod_product_disp_mana_for_ardcfs { font: bold 1em/1.25em Georgia; letter-spacing: 3px; color: black; text-align: left; text-transform: uppercase; }
+.price_red_color_in_ardcfs { font: bold 1.3em/1.25em Georgia; color: red; }
+.prod_uplod_fur_spec_display_frame_ardcfs { border: 2px solid black; min-height: 280px; height: auto; width: auto; padding-top: 30px; padding-bottom: 30px; }
+.totl_prodc_display_frame_ardcfs { border: 3px solid red; height: 160px; width: 170px; margin-left: 30px; margin-top: 20px; }
+.totl_prodc_text_display_in_ardcfs { font: bold 7em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: center; margin-top: 20px; }
+.produt_cont_disp_frame_ardcfs { height: 200px; overflow-y:scroll; }
+.radio_butt_adj_inprod_ardcfs { position: relative; top: 4px; }
+.prodct_text_display_in_ardcfs { font: 1em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: center; margin-top: -5px; }
+.prodc_value_text_display_in_ardcfs { font: 1em/1.25em Georgia; letter-spacing: 1px; color: black; text-align: center; border-bottom: 1px solid black; width: 300px; text-align: left; padding-left: 5px; }
+.ardcfs_con_submit_Btn { display: block; margin: 0px auto; vertical-align: middle; background-color: red; color: white; display: inline-block; text-transform: uppercase; padding: 8px 25px; outline: none; border: none; font: 500 1.25em/1.5em Georgia; letter-spacing: 4px; }
+.ardcfs_con_submit_Btn:hover { background-color: #2c2c2c; }
+.ardcfs_edit_butt_adj_in_prod { margin-left: -13px; }
+.prodc_appr_text_display_in_ardcfs { font: 0.98em/1.25em Georgia; letter-spacing: 1px; color: green; text-align: right; border-bottom: 1px solid black; text-transform: uppercase; }
+.reg_header_text_bcdsp { color: white; background: #324f70; padding: 5px 10px; box-shadow: 3px 2px #bbbbbb; }
+.adm_reg_header_black_text_dsp { font: 1.45em/1.25em Georgia; color: black; background: white; padding: 7px 24px; border: 1px solid red; text-transform: capitalize; }
+.adm_reg_header_black_text_dsp:hover { color: white; background: red; }
+.adm_reg_header_red_text_dsp { font: 1.45em/1.25em Georgia; color: white; background: red; padding: 7px 24px; border: 1px solid red; text-transform: capitalize; }
+.adm_sub_reg_header_black_text_dsp { font: 1.35em/1.25em Georgia; letter-spacing: 1px; color: black; background: white; padding: 8px 20px; border: 1px solid red; text-transform: capitalize; }
+.adm_sub_reg_header_black_text_dsp:hover { color: white; background: red; }
+.adm_sub_reg_header_red_text_dsp { font: 1.35em/1.25em Georgia; letter-spacing: 1px; color: white; background: red; padding: 8px 20px; border: 1px solid red; text-transform: capitalize; }
+.my_acc_room_cash_fund_hd_dsp { font: 1.25em/1.25em Georgia; letter-spacing: 2px; color: black; text-align: center; text-transform: uppercase; }
+.my_acc_room_fund_text_dsp { font: 1.25em/1.5em Georgia; letter-spacing: 1px; color: black; text-align: center; text-transform: uppercase; vertical-align: middle; }
+.my_acc_room_fund_bold_text_dsp { font: bold 1.35em/1.5em Georgia; letter-spacing: 1px; color: black; text-align: center; text-transform: uppercase; vertical-align: middle; }
+.my_acc_room_fund_red_text_dsp { font: bold 1.25em/1.5em Georgia; letter-spacing: 3px; color: red; text-align: center; text-transform: uppercase; vertical-align: middle; }
+.my_acc_room_fund_red_price_text_dsp { font: bold 1.35em/1.5em Georgia; letter-spacing: 2px; color: red; text-align: center; text-transform: uppercase; vertical-align: middle; }
+.my_acc_room_fund_blk_text_dsp { font: 1.35em/1.5em Georgia; letter-spacing: 3px; color: black; text-align: center; text-transform: uppercase; vertical-align: middle; }
+.my_acc_room_fund_blk_price_text_dsp { font: bold 1.35em/1.5em Georgia; letter-spacing: 2px; color: black; text-align: center; text-transform: uppercase; vertical-align: middle; }
+.adm_regi_sub_header_black_text_dsp { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: black; background: white; padding: 6px 22px; border: 1px solid #595959; text-transform: capitalize; }
+.adm_regi_sub_header_black_text_dsp:hover { color: white; background: #595959; }
+.adm_regi_reg_header_red_text_dsp { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: white; background: #595959; padding: 6px 22px; border: 1px solid #595959; text-transform: capitalize; }
+.adm_regi_sub_header_black_text_dsp1 { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: black; background: white; padding: 6px 22px; border: 1px solid #009643; text-transform: capitalize; }
+.adm_regi_sub_header_black_text_dsp1:hover { color: white; background: #009643; }
+.adm_regi_reg_header_red_text_dsp1 { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: white; background: #009643; padding: 6px 22px; border: 1px solid #009643; text-transform: capitalize; }
+.adm_regi_sub_header_black_text_dsp2 { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: black; background: white; padding: 6px 22px; border: 1px solid #006fbc; text-transform: capitalize; }
+.adm_regi_sub_header_black_text_dsp2:hover { color: white; background: #006fbc; }
+.adm_regi_reg_header_red_text_dsp2 { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: white; background: #006fbc; padding: 6px 22px; border: 1px solid #006fbc; text-transform: capitalize; }
+.adm_regi_sub_header_black_text_dsp3 { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: black; background: white; padding: 6px 22px; border: 1px solid red; text-transform: capitalize; }
+.adm_regi_sub_header_black_text_dsp3:hover { color: white; background: red; }
+.adm_regi_reg_header_red_text_dsp3 { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: white; background: red; padding: 6px 22px; border: 1px solid red; text-transform: capitalize; }
+.adm_cf_sub_header_black_text_dsp { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: black; background: white; padding: 5px 18px; border: 1px solid red; text-transform: capitalize; }
+.adm_cf_sub_header_black_text_dsp:hover { color: white; background: red; }
+.adm_cf_sub_header_red_text_dsp { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: white; background: red; padding: 5px 18px; border: 1px solid red; text-transform: capitalize; }
+.adm_gift_rec_sub_header_black_text { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: black; background: white; padding: 5px 14px; border: 1px solid red; text-transform: capitalize; }
+.adm_gift_rec_sub_header_black_text:hover { color: white; background: red; }
+.adm_gift_rec_sub_header_red_text { font: 1.3em/1.25em Georgia; letter-spacing: 1px; color: white; background: red; padding: 5px 18px; border: 1px solid red; text-transform: capitalize; }
+
+
+
+    

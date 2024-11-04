@@ -1,0 +1,145 @@
+.reg_ln_no_action_funds_sub_Butt { display: block; margin: 0px auto; vertical-align: middle; background-color: #999999; border: 1px solid #898989; color: white; display: inline-block; text-transform: uppercase; padding: 6px 24px; height: 30px; outline: none; font: normal 0.85em/1.25em Georgia; letter-spacing: 1px; cursor: default; }
+	.reg_ln_access_frame_text_dsp { font: normal 0.98em/1.25em Georgia; color: #004ca2; letter-spacing: 1px; text-decoration: none; border-bottom: 1px solid #004ca2; padding-bottom: 0px; }
+	.reg_ln_access_frame_text_dsp:hover { color: red; text-decoration: none; border-bottom: 1px solid red; padding-bottom: 0px; }
+	.reg_ln_message_edit_text_dsp { border: 1px solid white; min-width: 50px; max-width: 1100px; font: italic 0.98em/1.5em Georgia; letter-spacing: 1px; color: black; text-align: left; padding: 5px 2px; white-space: nowrap; }
+	.reg_ln_con_cur_brd_fl_dsp { font: 500 1.4em/1.5em Georgia; color: black; letter-spacing: 2px; text-transform: uppercase; }
+	.rln_top_img_dsp { position: relative; top:0px; left:0px; width: 100%; height: 350px; z-index:-1; }
+	.rln_top_frame_adj_cl { margin-top: -140px; margin-left: 200px; }
+	.rln_top_photo_text_cl { font: 1.8em/1.5em Georgia; letter-spacing: 3px; color: black; position: relative; top: 0px; text-align: center; }
+	.rln_top_edit_bg_text_cl { width: 170px; border-right: 1px solid black; padding: 2px 20px; text-align: left; }
+	.rln_top_visible_bg_text_cl { width: 260px; padding: 2px 20px; text-align: left; display: none; }
+	.rln_top_three_frames_div_cl { margin-top: -133px; margin-left: 780px; position: absolute; }
+	.rln_top_name_dsp_top_div { margin-left: 60px; margin-top: -20px; }
+	.rln_top_msg_dsp_top_div { margin-left: 240px; margin-top: 10px; }
+	.rln_top_edit_butt_div { position: relative; top: -1px; left: 10px; }
+	.rln_top_save_butt_div { position: relative; top: -1px; left: 20px; }
+	.rln_top_mesg_dspl_cl { display: none; }
+	.rln_add_gifts_top_adj { cursor: pointer; width: 170px; }
+	.rln_add_gifts_shdsp_adj { display: none; margin-top: -20px; }
+	.rln_add_gifts_shtb_cl { margin-top: 100px; padding-bottom: 25px; }
+	.rln_add_gifts_imgds_cl { position: relative; top: -10px; left: 30px; cursor: pointer; }
+	.rln_add_gifts_pdlr_cl { padding-left: 40px; padding-right: 40px; }
+	.rln_add_gifts_titmbt_cl { margin-bottom: 40px; margin-top: -10px; }
+	.rln_add_gifts_pdiadj_cl { padding: 0px 25px; }
+	.rln_add_gifts_botimg_dsp { margin-top: -110px; position: relative; }
+	.rln_roomfund_bgn_dsp { opacity: 0.5; background: none; }
+	.rln_cashfund_opml_dsp { margin-top: 0px; opacity: 0.5; }
+	
+	.rln_con_cont_opht_dsp { margin-top: 0px; opacity: 0.5; height: 30px; }
+	.rln_con_all_opat_dsp { opacity: 0.7; }
+	.rln_con_all_price_txt_cl { color: #2c2c2c; font: bold 1.05em/1.25em Georgia; top: 2px; position: relative; }
+	.rln_con_cont_ht_dsp { margin-top: 0px; height: 30px; }
+	.rln_con_all_boldtxt_dsp { font-weight: bold; }
+	.rln_con_addct_ht_dsp { margin-top: -1px; opacity: 0.5; height: 30px; }
+	.rln_con_ind_htmt_dsp { margin-top: -1px; height: 30px; }
+	.rln_con_ind_opc_dsp { opacity: 0.5; }
+	.rln_popup_frame_dsp { width: 1478px; height: 602px; display: none; opacity: 0.1; z-index: 10001; }
+	.rln_popup_sub_frame_dsp { padding: 20px; display: none;  width: 760px; z-index: 10001; overflow-y: hidden; position:fixed; left: 50%; top: 50%; -ms-transform: translate(-50%,-50%); -moz-transform:translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+	.rln_pop_cl_img_adj { cursor: pointer; top: -5px; left: 0px;  position: relative; }
+	.rln_pop_uplph_txt_cl { font: bold 1.2em/1.5em Georgia; letter-spacing: 1px; color: black; margin-top: 15px; }
+	.rln_pop_pad_adj { padding: 20px; }
+	.rln_pop_table_frm_adj { font: normal 0.82em/1.5em Georgia; letter-spacing: 0px; color: black; }
+	.rln_pop_table_bgc_cl { background-color: white; }
+	.rln_pop_tr_heights_cl { height: 15px; }
+	.rln_pop_tr_heightvs_cl { height: 10px; }
+	.rln_pop_tr_heightm_cl { height: 17px; }
+	.rln_pop_tr_heighth_cl { height: 25px; }
+	.rln_pop_mlt_txt_cl { margin-left: 30px; margin-top: -20px; }
+	
+	.reg_edit_background_frame { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 0.25); width: 355px; height: 82px; position: relative; background: white; cursor: pointer; }
+	.reg_edit_background_frame:hover { box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.35); }
+	.reg_edit_backg_image_text1_cl { font: 1.30em/1.25em Georgia; color: black; letter-spacing: 2px; }
+	.reg_edit_backg_image_text2_cl { font: 1.35em/1.25em Georgia; color: black; letter-spacing: 2px; }
+	.reg_edit_backg_self_upph1_cl { font: 500 1.6em/1.25em Georgia; text-align: center; color: black; position: relative; top: 10px; }
+	.reg_edit_backg_self_upph2_cl { font: 500 1.22em/1.25em Georgia; text-align: center; color: black; position: relative; top: 10px; }
+	.reg_edit_backg_htbg_cl { height: 80px; background-color: #f2f2f2; }
+	.reg_edit_backg_mrg_cl { margin: 5px auto; }
+	span { content: "\2191"; } 
+	
+	.rpview_top_hd_dsp { position: relative; top:0px; left:0px; width: 100%; height: 350px; z-index:-1; }
+    .rpview_mtml_top_dsp { margin-top: -140px; margin-left: 200px; }
+    .rpview_ph_text_top_dsp { font: 1.8em/1.5em Georgia; letter-spacing: 3px; color: black; position: relative; top: 0px; text-align: center; }
+    .rpview_top_mlt_dsp_cl { margin-left: 60px; margin-top: -20px; }
+    .rpview_qty_text_dsp_cl { color: #2c2c2c; font: bold 1.05em/1.25em Georgia; top: 2px; position: relative; }
+    .rpview_ht_dsp_cl { margin-top: 0px; height: 30px; }
+    .rpview_poieve_dsp_cl { pointer-events: none; }
+    .rpview_fntwegt_dsp_cl { font-weight: bold; }
+    .rpview_opct_dsp_cl { opacity: 0.7; }
+    .rpview_mrht_dsp_cl { margin-top: -1px; height: 30px; }
+    .rpview_opctsm_dsp_cl { opacity: 0.5; }
+    
+    .all_funds_padbt_cl { padding-bottom: 25px; }
+    .all_funds_padddsp_cl { padding: 18px; }
+    
+    .reg_con_cur_brd_heading_dsp h4 { font: 500 1.25em/1.25em Georgia; color: black; letter-spacing: 2px; }
+    .reg_con_cur_brd_fl_dsp { font: 500 1.4em/1.5em Georgia; color: black; letter-spacing: 2px; text-transform: uppercase; }
+    .reg_access_frame_text_dsp { font: normal 0.98em/1.25em Georgia; color: #004ca2; letter-spacing: 1px; text-decoration: none; border-bottom: 1px solid #004ca2; padding-bottom: 0px; }
+    .reg_access_frame_text_dsp:hover { color: red; text-decoration: none; border-bottom: 1px solid red; padding-bottom: 0px; }
+    .reg_message_edit_text_dsp { border: 1px solid white; min-width: 50px; max-width: 1100px; font: italic 0.98em/1.5em Georgia; letter-spacing: 1px; color: black; text-align: left; padding: 5px 2px; white-space: nowrap; }
+    
+    .cash_funds_sub_main_txt_dsp { font: 500 1.25em/1.5em Georgia; color: black; letter-spacing: 0px;}
+	.regi_cash_fund_bott_name_text_fl { font: normal 1.3em/1.5em Georgia; color: black; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap; }
+	.regi_cash_fund_bott_name_text_nl { font: normal 1.02em/1.5em Georgia; color: black; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap; margin-left: -2px; }
+	.regi_custm_fund_txt_dsp { font: bold 7em/1.5em Georgia; color: #696969; letter-spacing: 1px; text-transform: uppercase; }
+	
+	
+	.regi_cb_bott_name_text_fl_dspl { font: normal 1.2em/1.5em Georgia; color: black; letter-spacing: 2px; text-transform: uppercase; }
+	.regi_cb_bott_name_text_nl_dspl { font: normal 1.05em/1.5em Georgia; color: black; letter-spacing: 2px; text-transform: uppercase; }	
+	.regi_dsn_con_cur_sub_txt_dsp { font: 500 1.25em/1.5em Georgia; color: black; letter-spacing: 1px; }
+	
+	
+	.regi_room_funds_sub_main_txt_dsp { font: 500 1.25em/1.5em Georgia; color: black; letter-spacing: 1px;}
+	.regi_room_funds_sub_txt_dsp { font: italic 1.2em/1.5em Georgia; color: black; letter-spacing: 1px;}		
+	.regi_room_fund_bott_name_text_fl { font: normal 1.3em/1.5em Georgia; color: black; letter-spacing: 0px; text-transform: uppercase; white-space: nowrap; }
+	.regi_room_fund_bott_name_text_nl { font: normal 1em/1.5em Georgia; color: black; letter-spacing: 0px; text-transform: uppercase; white-space: nowrap; margin-left: -2px; }
+	.rf_hiw_link_dsplay { font: 500 0.95em/1.5em Georgia; color: #1a69b3; text-decoration: underline; }
+	.rf_hiw_link_dsplay:hover { color: red; text-decoration: underline; }
+	.rfuns_frame_tp_adj { margin-top: -60px; }
+	.rfuns_frame_pdntp_adj { padding-top: 80px; }
+	.rfuns_frame_mbtm_adj { margin-bottom: 5px; margin-top: 0px; }
+	.rfuns_frame_mtop_cls { margin-bottom: 20px; }
+	.rfuns_frame_htd_cls { height: 40px; }
+	.rfund_box_brdr_dsp { border-right: 1px solid red; }
+	.rfund_box_polt_dsp { position: relative; left: 8px; top: -2px; }
+	.rfund_box_polet_dsp { position: relative; left: -8px; }
+	.rfund_blpdb_pl_dsp { border-left: 1px solid red; padding-bottom: 15px; position: relative; left: -1px; }
+	.rfund_mgtpml_pl_dsp { margin-top: 15px; margin-left: 13px; }
+	.room_fund_guest_image_dsp { height: 100px; object-fit: scale-down; position: relative; object-position: 50% 50%; overflow: auto; overflow-y: hidden; overflow-x: hidden; width: 100%; }
+	.room_fund_rs_bott_box_htext_dsp { font: normal 1em/1.5em Georgia; color: black; letter-spacing: 2px; text-align: center; padding: 25px; text-transform: uppercase; }
+	.room_fund_side_hdtext_dsp { font: normal 1.0em/1.5em Georgia; color: black; letter-spacing: 2px; text-align: center; vertical-align: middle; text-transform: uppercase; }
+    .first_letter_dsp { font-size: 22px; }
+    .cf_fl_edit_img_dsp { font-size: 18px; }
+    .rfund_height_dsp_cl { min-height: 70px; }
+    .rfund_heightmore_dsp_cl { min-height: 75px; }
+    .rfund_brdrt_dsp_cl { border-right: 1px solid red; }
+    
+    .cash_fund_options_head_text_butt { display: block; margin: 0px auto; vertical-align: middle; background-color: white; color: black; display: inline-block; text-transform: uppercase; padding: 7px; outline: none; border: none; font: normal 1.3em/3em Georgia; letter-spacing: 3px; border: 1px solid #999999; width: 300px; height: 70px; text-align: center; box-shadow: 4px 4px 4px #808080; -webkit-box-shadow: 4px 4px 4px #808080; -moz-box-shadow: 4px 4px 4px #808080; }
+    .cash_fund_image_dsp { width: 180px; height: 180px; }
+    .cash_fund_hdtext_dsp { font: bold 1.2em/1.5em Georgia; color: black; letter-spacing: 3px; text-align: center; vertical-align: middle; text-transform: uppercase; }
+    .cash_fund_side_hdtext_dsp { font: normal 1.0em/1.5em Georgia; color: black; letter-spacing: 2px; text-align: center; vertical-align: middle; white-space: nowrap; text-transform: uppercase; }
+    .cash_fund_big_name { font-size: 27px; }
+    .cash_fund_sml_name { font-size: 23px; }
+    .cash_fund_rs_bott_box_htext_dsp { font: normal 1em/1.5em Georgia; color: black; letter-spacing: 2px; text-align: center; padding: 25px; text-transform: uppercase; }
+    .cash_fund_gs_bott_box_htext_dsp { font: normal 1em/1.5em Georgia; color: black; letter-spacing: 2px; text-align: center; padding: 25px; text-transform: uppercase; }
+    .cash_fund_gs_bott_box_htext_dsp::first-letter { font: normal 1.25em/1.5em Georgia; color: black; }
+    .cashfuns_mlmtop_adj { margin-left: 30px; margin-top: 30px; }
+    .cashfuns_inputtag_st { border: 1px solid black; background: #f2f2f2; font: bold 1.28em/1.25em Georgia; height: 38px; width: 60px; text-align: center; color: black; cursor: none; }
+    .cashfuns_input_txtfld_st { border: 1px solid black; font: normal 1.28em/1.25em Georgia; height: 38px; width: 160px; margin-left: -1px; }
+    .cashfuns_textarea_st { border: 1px solid black; font: normal 1.05em/1.25em Georgia; color: black; height: 100px; width: 310px; padding: 10px; letter-spacing: 0px; }
+    .cash_fund_pdng_dspl { padding: 5px 15px; }
+    .shfund_height_cl { height: 20px; }
+    
+    .cash_fund_hdtext_dsp { font: bold 1.2em/1.5em Georgia; color: black; letter-spacing: 3px; text-align: center; vertical-align: middle; }
+    .cash_fund_side_hdtext_dsp { font: normal 1.0em/1.5em Georgia; color: black; letter-spacing: 2px; text-align: center; vertical-align: middle; text-transform: uppercase; }
+    .custmfund_popup_brdmtlt { border:2px solid gray; margin-top: 30px; margin-left: 10px; margin-right: 10px; }
+    .custmfund_popup_frmlc { font:bold 1.2em/1.5em Georgia; margin-left:30px; color: black; }
+    .custmfund_popup_mlrtwcfc { margin-left: 30px; margin-right: 10px; margin-top: 15px; width: 450px; color: #2c2c2c; font: 0.8em/1.15em Georgia; color: black; }
+    .custmfund_popup_height { height: 7px; }
+    .custom_fund_image_dspl { height: 180px; object-fit: scale-down; position: relative; object-position: 50% 50%; overflow: auto; overflow-y: hidden; overflow-x: hidden; width: 100%; }
+    .custm_fund_guest_image_dspl { height: 100px; object-fit: scale-down; position: relative; object-position: 50% 50%; overflow: auto; overflow-y: hidden; overflow-x: hidden; width: 100%; }
+    
+    
+    
+    
+    
+    

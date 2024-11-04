@@ -1,0 +1,44 @@
+package com.nookandcove.dao;
+
+import java.sql.Timestamp;
+import java.util.List;
+
+import com.nookandcove.model.GuestFinishingTouchesContributedPaymentSaving;
+
+@SuppressWarnings("rawtypes")
+public interface GuestFinishingTouchesContributedPaymentSavingDAO {
+	
+	public void save(GuestFinishingTouchesContributedPaymentSaving transientInstance);
+	
+	public List registryFinishingTouchesContributedPriceCheckInDB(long registrantUserId, long cbContributedProductSavingId);
+	public GuestFinishingTouchesContributedPaymentSaving registryFinishingTouchesContributedPriceTakeFromDB(long registrantUserId, long cbContributedProductSavingId);
+	public List registryFinishingTouchesContributedPaymentStatusCheckInDB(long registrantUserId, long cbContributedProductSavingId);
+	public GuestFinishingTouchesContributedPaymentSaving registryFinishingTouchesContributedPaymentStatusTakeFromDB(long registrantUserId, long cbContributedProductSavingId);
+	public List registryFinishingTouchesPaymentDataCheckInDB(long registrantUserId, long cbContributedProductSavingId);
+	public GuestFinishingTouchesContributedPaymentSaving registryFinishingTouchesPaymentDataTakeFromDB(long registrantUserId, long cbContributedProductSavingId);
+	public List registryFinishingTouchesContributedTotalCartCount(long registrantUserId);
+	
+	public List registryFTContributedAddCartPaymentDataCheckInDB(long registrantUserId, long cbContributedPaymentSavingId);
+	public GuestFinishingTouchesContributedPaymentSaving registryFTContributedAddCartPaymentDataTakeFromDB(long registrantUserId, long cbContributedPaymentSavingId);
+	public int regFinishingTouchesContributedPaymentInfoUpdateInDB(long registrantUserId, long regPaymentInfoSavingId, String returnType, Timestamp currentDate);
+	public List regFinishingTouchesContributedMyAccountDataDisplay(long registrantUserId);
+	public List guestStoreCreditFTContributeRemoveDuplicateRows(long registrantUserId);
+	public List guestStoreCreditFTContributeAmountCheckingInDB(long registrantUserId, long regSelectedProdsId);
+	public List guestGiftReceivedFTContributeRemoveDuplicateRows(long registrantUserId);
+	public List guestGiftReceivedFTContributeAmountCheckingInDB(long registrantUserId, long regSelectedProdsId);
+	public GuestFinishingTouchesContributedPaymentSaving guestFTContributeGiftReceivedStatusFromDB(long registrantUserId, long regSelectedProdsId);
+	public List guestFTGiftReceivedContributedPaymentInfoList(long regSelectedProdsId);
+	public GuestFinishingTouchesContributedPaymentSaving guestFTGiftReceivedContributedPaymentDataTakeFromDB(long regSelectedProdsId);
+	public List guestFTContributedGRConToCreditDataList(long registrantUserId, long regSelectedProdsId, String contributedStatusRef);
+	public List guestMyAccountFTPaymentContributedPriceFromDB(long registrantUserId, long regSelectedProdsId);
+	public List guestMyAccountFTPaymentContributedInBOTDPriceFromDB(long registrantUserId, long regSelectedProdsId);
+	
+	public void delete(GuestFinishingTouchesContributedPaymentSaving persistentInstance);	
+	public GuestFinishingTouchesContributedPaymentSaving findById(long id);	
+	public List<GuestFinishingTouchesContributedPaymentSaving> findByExample(GuestFinishingTouchesContributedPaymentSaving instance);	
+	public List findByProperty(String propertyName, Object value);	
+	public List findAll();	
+	public GuestFinishingTouchesContributedPaymentSaving merge(GuestFinishingTouchesContributedPaymentSaving detachedInstance);	
+	public void attachDirty(GuestFinishingTouchesContributedPaymentSaving instance);	
+	public void attachClean(GuestFinishingTouchesContributedPaymentSaving instance);
+}
